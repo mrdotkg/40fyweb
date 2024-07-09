@@ -1,0 +1,20 @@
+description = 'Gaming theme for hugo'
+license = 'MIT'
+licenselink = 'https://github.com/mrdotkg/40fyweb/LICENSE'
+name = 'gamex'
+version = '1'
+
+# The home page of the theme, where the source can be found
+homepage = 'https://github.com/mrdotkg/40fyweb'
+
+# If you have a running demo of the theme
+demosite = 'https://mrdotkg.github.io/40fyweb'
+
+# Taxonomy terms
+features = ['home', 'blog', 'clan']
+tags = ['blog', 'company']
+
+# If the theme has a single author
+[author]
+homepage = 'https://www.dotkg.in'
+name = 'Kr Gaurav'
