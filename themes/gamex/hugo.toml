@@ -1,23 +1,44 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-US'
-title = 'My New Hugo Site'
+title = 'My New Gaming Site'
 
 # [[menus.main]]
 # name = 'Home'
 # pageRef = '/'
 # weight = 10
 
-# [[menus.main]]
-# name = 'Posts'
-# pageRef = '/posts'
-# weight = 20
+[[menus.main]]
+name = 'Clan'
+pageRef = '/'
+weight = 20
 
-# [[menus.main]]
-# name = 'Tags'
-# pageRef = '/tags'
-# weight = 30
+[[menus.main]]
+name = 'Posts'
+pageRef = '/posts'
+weight = 30
 
-# [module]
-#   [module.hugoVersion]
-#     extended = false
-#     min = "0.116.0"
+[[menus.main]]
+name = 'Products'
+pageRef = '/product'
+weight = 90
+
+[[menus.main]]
+name = 'Product 1'
+pageRef = '/products/product-1'
+parent = 'Products'
+weight = 1
+
+[[menus.main]]
+name = 'Product 2'
+pageRef = '/products/product-2'
+parent = 'Products'
+weight = 2
+[[menus.main]]
+name = 'Tags'
+pageRef = '/tags'
+weight = 40
+
+[module]
+[module.hugoVersion]
+extended = false
+min = "0.116.0"

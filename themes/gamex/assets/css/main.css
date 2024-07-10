@@ -1,3 +1,7 @@
 header.animated nav a.btn_1{
     border: 1px solid; 
 }
+
+.main_menu .main-menu-item {
+    justify-content: right;
+}
