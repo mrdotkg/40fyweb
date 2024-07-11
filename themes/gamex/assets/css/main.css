@@ -2,6 +2,40 @@ header.animated nav a.btn_1{
     border: 1px solid; 
 }
 
+.blog_item {
+    margin-bottom: 100px;
+}
+
 .main_menu .main-menu-item {
     justify-content: right;
+}
+
+.blog_right_sidebar .single_sidebar_widget {
+    background: currentColor;
+}
+
+.blog_area h1, .blog_area h2, .blog_area h3, .blog_area h4, .blog_area h5, .blog_area h6, .blog_area p, .blog_area a {
+    color: white !important;
+}
+
+.blog_right_sidebar input, .blog_right_sidebar .search_widget .input-group button {
+    background-color: transparent;
+}
+.pagination .page-item a {
+    background: transparent;
+}
+
+.page-item.active .page-link {
+    z-index: 1;
+    color: #fff !important;
+    background-color: #ff0000 !important;
+    border-color: #ff0000 !important;
+}
+.blog_right_sidebar  .form-control:focus {
+    border-color: #f0e9ff;
+    color: white !important;
+    background-color: transparent !important;
+}
+.footer_part .single_footer_part .mail_part .button-contactForm {
+    margin: 2px;
 }
