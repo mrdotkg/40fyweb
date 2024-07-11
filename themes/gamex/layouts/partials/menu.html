@@ -49,7 +49,7 @@ Renders a menu for the given menu ID.
               >{{ $name }}</a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
                 {{- range .Children }}
-                  <li><a class="dropdown-item" href="#">{{ $name }}</a></li>
+                  <li><a class="dropdown-item" href="#">{{ .Name }}</a></li>
                 {{- end }}
               </ul>
           </li>

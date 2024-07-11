@@ -39,3 +39,25 @@ header.animated nav a.btn_1{
 .footer_part .single_footer_part .mail_part .button-contactForm {
     margin: 2px;
 }
+
+.breadcrumb .breadcrumb_iner {
+    height: 250px;
+
+}
+.breadcrumb .breadcrumb_iner h2{
+    font-size: 60px;
+    margin-top: 50px;
+}
+.single-post-area .quotes {
+    background: transparent;
+}
+.single-post-area .blog-author {
+    background: rgb(0, 0, 0, 0.2);
+}
+/* 
+.breadcrumb{
+    background-color: transparent;
+}
+.section_padding {
+    padding: 100px 0px;
+} */
