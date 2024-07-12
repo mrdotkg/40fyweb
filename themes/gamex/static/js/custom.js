@@ -4,15 +4,21 @@
   $(document).ready(function () {
     $('select').niceSelect();
   });
+ 
   // menu fixed js code
+  var prevScrollpos = window.scrollY;
   $(window).scroll(function () {
-    var window_top = $(window).scrollTop() + 1;
-    if (window_top > 50) {
+    var currentScrollPos = window.scrollY;
+    
+    // if user is scrollig up and is at least 50 pixels far from the very top 
+    if (prevScrollpos > currentScrollPos && currentScrollPos > 50)  {
       $('.main_menu').addClass('menu_fixed animated fadeInDown');
     } else {
       $('.main_menu').removeClass('menu_fixed animated fadeInDown');
     }
+    prevScrollpos = currentScrollPos;
   });
+  
   $('.grid').masonry({
     itemSelector: '.grid-item',
     columnWidth: '.grid-sizer',

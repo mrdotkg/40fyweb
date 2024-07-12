@@ -65,3 +65,12 @@ header.animated nav a.btn_1{
 .war_text_item img {
     max-width: 75px !important;
 }
+.main_menu .main-menu-item ul li .nav-link:hover {
+    color: yellow !important;
+}
+.single_page_menu .main-menu-item .nav-item a:hover:before {
+    width: 0;
+}
+.dropdown .dropdown-item:hover {
+    color: yellow !important;
+}
