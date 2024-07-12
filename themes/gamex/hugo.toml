@@ -8,7 +8,7 @@ title = 'My New Gaming Site'
 # weight = 10
 
 [[menus.main]]
-name = 'Clan'
+name = 'The Clan'
 pageRef = '/'
 weight = 20
 
@@ -18,21 +18,24 @@ pageRef = '/posts'
 weight = 30
 
 [[menus.main]]
-name = 'Products'
-pageRef = '/product'
+name = 'Goodies'
+pageRef = ''
 weight = 90
 
 [[menus.main]]
-name = 'Product 1'
-pageRef = '/products/product-1'
-parent = 'Products'
+name = 'Free Website Theme'
+pageRef = 'https://github.com/mrdotkg/40fyweb'
+parent = 'Goodies'
+target = '_blank'
 weight = 1
 
 [[menus.main]]
-name = 'Product 2'
-pageRef = '/products/product-2'
-parent = 'Products'
+name = 'Game Dev Community'
+pageRef = 'https://butterops.dotkg.in'
+parent = 'Goodies'
+target = '_blank'
 weight = 2
+
 [[menus.main]]
 name = 'Tags'
 pageRef = '/tags'

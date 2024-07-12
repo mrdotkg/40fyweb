@@ -40,9 +40,8 @@ header.animated nav a.btn_1{
     margin: 2px;
 }
 
-.breadcrumb .breadcrumb_iner {
+ .breadcrumb .breadcrumb_iner {
     height: 250px;
-
 }
 .breadcrumb .breadcrumb_iner h2{
     font-size: 60px;
@@ -54,10 +53,15 @@ header.animated nav a.btn_1{
 .single-post-area .blog-author {
     background: rgb(0, 0, 0, 0.2);
 }
-/* 
+
 .breadcrumb{
-    background-color: transparent;
+    /* background-color: transparent; */
+    /* z-index: 0; */
 }
 .section_padding {
-    padding: 100px 0px;
-} */
+    /* margin: -150px; */
+    /* padding: 0px !important; */
+}
+.war_text_item img {
+    max-width: 75px !important;
+}

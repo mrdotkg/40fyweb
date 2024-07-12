@@ -85,7 +85,7 @@
   var review = $('.live_stareams_slide');
   if (review.length) {
     review.owlCarousel({
-      items: 2,
+      items: 3,
       loop: true,
       dots: false,
       autoplay: true,
