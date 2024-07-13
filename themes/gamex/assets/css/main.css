@@ -108,3 +108,12 @@ header.animated nav a.btn_1{
       font-size: 0.7rem;
     }
   }
+.footer_part .single_footer_part a {
+    color: red;
+}
+.blog_right_sidebar .tag_cloud_widget ul li a {
+    background-color: transparent;
+}
+.blog_right_sidebar .post_category_widget ul li a:hover {
+    background: #ff0000;
+}

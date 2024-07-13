@@ -2,6 +2,10 @@ baseURL = 'https://example.org/'
 languageCode = 'en-US'
 paginate = 3
 title = 'My New Gaming Site'
+
+[taxonomies]
+category = "categories"
+tag = "tags"
 # [[menus.main]]
 # name = 'Home'
 # pageRef = '/'
@@ -21,26 +25,26 @@ pageRef = '/posts'
 weight = 30
 
 [[menus.main]]
-name = 'Goodies'
+name = 'Free Goodies'
 pageRef = ''
 weight = 90
 
 [[menus.main]]
 name = 'Free Website Theme'
 pageRef = 'https://github.com/mrdotkg/40fyweb'
-parent = 'Goodies'
+parent = 'Free Goodies'
 target = '_blank'
 weight = 1
 
 [[menus.main]]
 name = 'Game Dev Community'
 pageRef = 'https://butterops.dotkg.in'
-parent = 'Goodies'
+parent = 'Free Goodies'
 target = '_blank'
 weight = 2
 
 [[menus.main]]
-name = 'Tags'
+name = 'Browse'
 pageRef = '/tags'
 weight = 40
 
