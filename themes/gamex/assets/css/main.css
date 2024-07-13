@@ -74,3 +74,37 @@ header.animated nav a.btn_1{
 .dropdown .dropdown-item:hover {
     color: yellow !important;
 }
+.page-item.disabled .page-link {
+    background-color: transparent;
+    opacity: 0.2;
+}
+.pagination {
+    justify-content: center;
+
+    li:nth-child(3) {
+      margin-left: 1.0rem;
+    }
+    li:nth-last-child(2) {
+      margin-left: 1.0rem;
+    }
+  }
+  @media (max-width: 549.98px) {
+    .pagination {
+      li:first-child,
+      li:nth-child(2),
+      li:last-child,
+      li:nth-last-child(2) {
+        display: none;
+      }
+    }
+    .pagination {
+      li:nth-child(3) {  
+        margin-left: 0;
+      }
+    }
+  }
+  @media (max-width: 399.98px) {
+    .pagination {
+      font-size: 0.7rem;
+    }
+  }

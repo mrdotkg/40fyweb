@@ -1,11 +1,14 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-US'
+paginate = 3
 title = 'My New Gaming Site'
-
 # [[menus.main]]
 # name = 'Home'
 # pageRef = '/'
 # weight = 10
+[outputs]
+home = ['html', 'rss']
+page = ['html']
 
 [[menus.main]]
 name = 'The Clan'
@@ -47,6 +50,6 @@ extended = false
 min = "0.116.0"
 
 [pagination]
-disableAliases = false
-pagerSize = 10
-path = 'page'
+disableAliases = true
+pagerSize = 3
+path = 'posts'
