@@ -21,30 +21,33 @@
    <!--================Blog Area =================-->
    <section class="blog_area single-post-area section_padding">
     <div class="container">
-      <nav aria-label="breadcrumb">
-         <ol class="breadcrumb" style="background-color: transparent;">
-            <li class="breadcrumb-item"><a href="/">Home</a></li>
-            {{- range .Ancestors.Reverse }}
-               {{- if not .IsHome}}   
-                  <li class="breadcrumb-item"><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
-               {{- end }}
-            {{- end }}
-            <li class="breadcrumb-item active" aria-current="page">{{ .Title }}</a></li>
-         </ol>
-      </nav>
-
        <div class="row">
           <div class="col-lg-8 posts-list">
              <div class="single-post">
                <div class="feature-img">
-                  <img class="/img-fluid" src="/img/blog/single_blog_1.png" alt="">
-                  
+                  <div class="blog_item_img">
+                     <img class="card-img rounded-0 img-fluid" src="/img/blog/single_blog_1.png" alt="">
+                     <a href="{{ .RelPermalink }}" class="blog_item_date">
+                        <p>{{.Date| time.Format ":date_medium"}}</p>
+                     </a>
+                  </div>
                </div>
                <div class="blog_details">
-                   <h2>{{.Title}}</h2>
+                  <h2>{{.Title}}</h2>
+                  <nav aria-label="breadcrumb">
+                     <ol class="breadcrumb" style="background-color: transparent;">
+                        <li class="breadcrumb-item"><a href="/">Home</a></li>
+                        {{- range .Ancestors.Reverse }}
+                           {{- if not .IsHome}}   
+                              <li class="breadcrumb-item"><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+                           {{- end }}
+                        {{- end }}
+                        <li class="breadcrumb-item active" aria-current="page"> This Post</a></li>
+                     </ol>
+                  </nav>
                    <ul class="blog-info-link mt-3 mb-4">
-                     <li><a href="#"><i class="far fa-clock"></i> {{.Date| time.Format ":date_medium"}}</a></li>  
-                     <li><a href="#"><i class="far fa-bookmark"></i> Tags: {{ partial "tagslist.html" (dict "taxonomy" "tags" "page" .) }}</a></li>
+                     {{/*  <li><a href="#"><i class="far fa-clock"></i> {{.Date| time.Format ":date_medium"}}</a></li>    */}}
+                     <li><a href="#"><i class="far fa-bookmark"></i> Tags: {{ partial "taxonomy-terms-list.html" (dict "taxonomy" "tags" "page" .) }}</a></li>
                    </ul>
                    {{ .Content }}
 

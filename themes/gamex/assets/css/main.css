@@ -39,8 +39,10 @@ header.animated nav a.btn_1{
 .footer_part .single_footer_part .mail_part .button-contactForm {
     margin: 2px;
 }
-
- .breadcrumb .breadcrumb_iner {
+.breadcrumb{
+    padding: 1rem 0rem;
+}
+.breadcrumb .breadcrumb_iner {
     height: 250px;
 }
 .breadcrumb .breadcrumb_iner h2{
@@ -114,4 +116,7 @@ header.animated nav a.btn_1{
 .thumb {
     margin-right: 20px;
     background: #000;
+}
+.single-post-area .blog_details {
+    padding-top: 50px;
 }
