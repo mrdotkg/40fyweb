@@ -4,9 +4,9 @@ paginate = 3
 title = 'My New Gaming Site'
 
 [taxonomies]
+author = "authors"
 category = "categories"
 tag = "tags"
-
 # [[menus.main]]
 # name = 'Home'
 # pageRef = '/'

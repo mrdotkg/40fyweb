@@ -109,14 +109,18 @@
              </div>
             <div class="blog-author">
                <div class="media align-items-center">
-                  <img src="/img/blog/author.png" alt="">
-                  <div class="media-body">
-                     <a href="#">
-                        <h4>Harvard milan</h4>
-                     </a>
-                     <p>Second divided from form fish beast made. Every of seas all gathered use saying you're, he
-                        our dominion twon Second divided from</p>
-                  </div>
+                  {{- range .Params.authors }}
+                  {{- with $.Site.GetPage "taxonomyTerm" (printf "authors/%s" (urlize .)) }}
+                     <img src="{{ .Params.photo }}" alt="">
+                     <div class="media-body">
+                        <a href="{{ .Permalink }}">
+                           <h4>{{ .Params.name }}</h4>
+                        </a>
+                        <p>{{ .Content}}</p>
+                     </div>
+                     {{ end }}
+                  {{ end }}
+                  
                </div>
             </div>
             <script src="https://giscus.app/client.js"

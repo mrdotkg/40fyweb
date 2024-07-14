@@ -1,4 +1,4 @@
-baseURL = '127.0.0.1'
+baseURL = 'https://example.org/'
 languageCode = 'en-us'
 theme = "gamex"
 themesDir = "./themes/"
