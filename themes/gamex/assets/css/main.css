@@ -44,7 +44,7 @@ header.animated nav a.btn_1{
     height: 250px;
 }
 .breadcrumb .breadcrumb_iner h2{
-    font-size: 60px;
+    font-size: 60px !important;
     margin-top: 50px;
 }
 .single-post-area .quotes {

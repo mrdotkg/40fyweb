@@ -26,6 +26,11 @@ pageRef = '/posts'
 weight = 30
 
 [[menus.main]]
+name = 'Collections'
+pageRef = '/collections'
+weight = 40
+
+[[menus.main]]
 name = 'Free Goodies'
 pageRef = ''
 weight = 90
@@ -43,11 +48,6 @@ pageRef = 'https://butterops.dotkg.in'
 parent = 'Free Goodies'
 target = '_blank'
 weight = 2
-
-[[menus.main]]
-name = 'Browse'
-pageRef = '/tags'
-weight = 40
 
 [module]
 [module.hugoVersion]
