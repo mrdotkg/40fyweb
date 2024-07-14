@@ -11,14 +11,15 @@ tag = "tags"
 # name = 'Home'
 # pageRef = '/'
 # weight = 10
+
 [outputs]
 home = ['html', 'rss']
 page = ['html']
 
-[[menus.main]]
-name = 'The Clan'
-pageRef = '/'
-weight = 20
+# [[menus.main]]
+# name = 'The Clan'
+# pageRef = '/'
+# weight = 20
 
 [[menus.main]]
 name = 'Posts'
