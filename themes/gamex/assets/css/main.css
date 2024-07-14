@@ -52,15 +52,7 @@ header.animated nav a.btn_1{
 }
 .single-post-area .blog-author {
     background: rgb(0, 0, 0, 0.2);
-}
-
-.breadcrumb{
-    /* background-color: transparent; */
-    /* z-index: 0; */
-}
-.section_padding {
-    /* margin: -150px; */
-    /* padding: 0px !important; */
+    margin: 50px 0;
 }
 .war_text_item img {
     max-width: 75px !important;
@@ -80,34 +72,33 @@ header.animated nav a.btn_1{
 }
 .pagination {
     justify-content: center;
-
     li:nth-child(3) {
-      margin-left: 1.0rem;
+        margin-left: 1.0rem;
     }
     li:nth-last-child(2) {
-      margin-left: 1.0rem;
+        margin-left: 1.0rem;
     }
-  }
-  @media (max-width: 549.98px) {
-    .pagination {
-      li:first-child,
-      li:nth-child(2),
-      li:last-child,
-      li:nth-last-child(2) {
-        display: none;
-      }
+}
+@media (max-width: 549.98px) {
+.pagination {
+    li:first-child,
+    li:nth-child(2),
+    li:last-child,
+    li:nth-last-child(2) {
+    display: none;
     }
-    .pagination {
-      li:nth-child(3) {  
-        margin-left: 0;
-      }
+}
+.pagination {
+    li:nth-child(3) {  
+    margin-left: 0;
     }
-  }
-  @media (max-width: 399.98px) {
-    .pagination {
-      font-size: 0.7rem;
-    }
-  }
+}
+}
+@media (max-width: 399.98px) {
+.pagination {
+    font-size: 0.7rem;
+}
+}
 .footer_part .single_footer_part a {
     color: red;
 }
@@ -116,4 +107,11 @@ header.animated nav a.btn_1{
 }
 .blog_right_sidebar .post_category_widget ul li a:hover {
     background: #ff0000;
+}
+.blog_area a:hover {
+    color: #ff0000 !important;
+}
+.thumb {
+    margin-right: 20px;
+    background: #000;
 }

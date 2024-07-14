@@ -1,3 +1,11 @@
+{{/*  {{ define "main" }}
+  <h1>{{ .Title }}</h1>
+  {{ .Content }}
+  {{ range .Pages }}
+    <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+  {{ end }}
+{{ end }}  */}}
+
 {{ define "main" }}
 
 <!-- breadcrumb start-->
@@ -7,8 +15,8 @@
             <div class="col-lg-12">
                 <div class="breadcrumb_iner text-center">
                     <div class="breadcrumb_iner_item">
-                        <h2>{{ .Title }}</h2>
-                        <h3>{{ .Summary }}</h3>
+                        <h2>#{{ .Title }}</h2>
+                        <h3>Blogs</h3>
                     </div>
                 </div>
             </div>
