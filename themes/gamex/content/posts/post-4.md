@@ -1,5 +1,5 @@
 +++
-title = 'empor proident minim aliquip reprehenderit dolor et ad anim Lorem duis sint eiusmod.'
+title = 'Empor proident minim aliquip reprehenderit dolor et ad anim. Empor proident minim aliquip reprehenderit dolor et ad anim.'
 date = 2023-01-15T09:00:00-07:00
 draft = false
 tags = ['red']

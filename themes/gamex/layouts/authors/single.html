@@ -1,0 +1,26 @@
+{{ define "main" }}
+<section class="blog_area section_padding">
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-12">
+            <div class="blog_right_sidebar">
+              <aside class="single_sidebar_widget">
+               
+                <h4 class="widget_title">Bio</h4>
+                <p>{{ .Content }}</p>
+                <div class="flex-row d-flex justify-content-start align-items-center ">
+                  <img style="padding:5px;" src="{{ .Params.photo }}" alt=""/>
+                  {{ with .Params.twitter }}
+                    <a style="margin:30px 10px" href="https://twitter.com/{{ substr . 1 }}" target="_blank">
+                    Follow {{ $.Params.title }} on Twitter
+                    </a>                 
+                  {{ end }}
+                </div>
+              </aside>
+            </div>
+          </div>
+          
+        </div>
+  </div>
+</section>
+{{ end }}

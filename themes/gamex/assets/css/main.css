@@ -43,10 +43,10 @@ header.animated nav a.btn_1{
     padding: 1rem 0rem;
 }
 .breadcrumb .breadcrumb_iner {
-    height: 250px;
+    height: 300px;
 }
 .breadcrumb .breadcrumb_iner h2{
-    font-size: 60px !important;
+    font-size: 50px !important;
     margin-top: 50px;
 }
 .single-post-area .quotes {
@@ -54,7 +54,8 @@ header.animated nav a.btn_1{
 }
 .single-post-area .blog-author {
     background: rgb(0, 0, 0, 0.2);
-    margin: 50px 0;
+    margin: 10px 0;
+    padding: 10px 0;
 }
 .war_text_item img {
     max-width: 75px !important;
@@ -119,4 +120,30 @@ header.animated nav a.btn_1{
 }
 .single-post-area .blog_details {
     padding-top: 50px;
+}
+.navigation-top{
+    margin-top: 40px;
+    margin-bottom: 5px;
+}
+.single-post-area .navigation-area {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 30px;
+    margin-top: 30px;
+}
+.single-post-area .blog-author img {
+    margin: 0 10px;
+}
+.breadcrumb .breadcrumb_iner .breadcrumb_iner_item h2 {
+    text-transform: none;
+}
+.single-post-area .navigation-area h4 {
+overflow: hidden;
+text-overflow: ellipsis;
+display: -webkit-box;
+-webkit-line-clamp: 1; /* number of lines to show */
+-webkit-box-orient: vertical;
+}
+
+.single-post-area .navigation-area img {
+    max-width: unset;
 }

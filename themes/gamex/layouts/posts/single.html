@@ -1,24 +1,5 @@
 {{ define "main" }}
-
-     <!-- breadcrumb start-->
-   <section class="breadcrumb breadcrumb_bg">
-      <div class="container">
-         <div class="row">
-            <div class="col-lg-12">
-               <div class="breadcrumb_iner text-center">
-                   <div class="breadcrumb_iner_item text-center" >
-                     <h2>Blog</h2>
-                     <h3>{{.Title}}</h3>
-                   </div>
-               </div>
-            </div>
-         </div>
-      </div>
-   </section>
-   <!-- breadcrumb start-->
-
-
-   <!--================Blog Area =================-->
+<!--================Blog Area =================-->
    <section class="blog_area single-post-area section_padding">
     <div class="container">
        <div class="row">
@@ -27,45 +8,18 @@
                <div class="feature-img">
                   <div class="blog_item_img">
                      <img class="card-img rounded-0 img-fluid" src="/img/blog/single_blog_1.png" alt="">
-                     <a href="{{ .RelPermalink }}" class="blog_item_date">
-                        <p>{{.Date| time.Format ":date_medium"}}</p>
-                     </a>
                   </div>
                </div>
                <div class="blog_details">
-                  <h2>{{.Title}}</h2>
-                  <nav aria-label="breadcrumb">
-                     <ol class="breadcrumb" style="background-color: transparent;">
-                        <li class="breadcrumb-item"><a href="/">Home</a></li>
-                        {{- range .Ancestors.Reverse }}
-                           {{- if not .IsHome}}   
-                              <li class="breadcrumb-item"><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
-                           {{- end }}
-                        {{- end }}
-                        <li class="breadcrumb-item active" aria-current="page"> This Post</a></li>
-                     </ol>
-                  </nav>
-                   <ul class="blog-info-link mt-3 mb-4">
-                     {{/*  <li><a href="#"><i class="far fa-clock"></i> {{.Date| time.Format ":date_medium"}}</a></li>    */}}
-                     <li><a href="#"><i class="far fa-bookmark"></i> Tags: {{ partial "taxonomy-terms-list.html" (dict "taxonomy" "tags" "page" .) }}</a></li>
-                   </ul>
                    {{ .Content }}
-
                 </div>
              </div>
              <div class="navigation-top">
-                <div class="d-sm-flex justify-content-between text-center">
-                   <ul class="social-icons">
-                     <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                     <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                     <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
-                     <li><a href="#"><i class="fab fa-behance"></i></a></li>
-                  </ul>
-                </div>
                 <div class="navigation-area">
                    <div class="row">
-                     {{ with .PrevInSection }} 
+                     
                      <div class="col-lg-6 col-md-6 col-12 nav-left flex-row d-flex justify-content-start align-items-center">
+                        {{ with .PrevInSection }} 
                         <div class="thumb">
                            <a href="{{ .Permalink }}">
                               <img class="/img-fluid" src="/img/post/preview.png" alt="">
@@ -77,17 +31,19 @@
                               </a>
                            </div>
                            <div class="detials">
-                           <p>Prev Post</p>
+                           <p>Previous  </p>
                            <a href="{{ .Permalink }}">
                               <h4>{{ .Title }}</h4>
                            </a>
                         </div>
+                        {{ end }}
+
                       </div>
-                      {{ end }}
-                      {{ with .NextInSection }}
+                      
                       <div class="col-lg-6 col-md-6 col-12 nav-right flex-row d-flex justify-content-end align-items-center">
-                         <div class="detials">
-                           <p>Next Post</p>
+                        {{ with .NextInSection }}
+                        <div class="detials">
+                           <p>Next </p>
                            <a href="{{ .Permalink }}">
                                <h4>{{ .Title }}</h4>
                            </a>
@@ -102,27 +58,13 @@
                                <img class="/img-fluid" src="/img/post/next.png" alt="">
                             </a>
                          </div>
+                         {{ end }}
+
                       </div>
-                      {{ end }}
                      </div>
                 </div>
              </div>
-            <div class="blog-author">
-               <div class="media align-items-center">
-                  {{- range .Params.authors }}
-                  {{- with $.Site.GetPage "taxonomyTerm" (printf "authors/%s" (urlize .)) }}
-                     <img src="{{ .Params.photo }}" alt="">
-                     <div class="media-body">
-                        <a href="{{ .Permalink }}">
-                           <h4>{{ .Params.name }}</h4>
-                        </a>
-                        <p>{{ .Content}}</p>
-                     </div>
-                     {{ end }}
-                  {{ end }}
-                  
-               </div>
-            </div>
+
             <script src="https://giscus.app/client.js"
                   data-repo="mrdotkg/40fyweb"
                   data-repo-id="R_kgDOMT7UrQ"
@@ -142,20 +84,75 @@
           <div class="col-lg-4">
              <div class="blog_right_sidebar">
                 <aside class="single_sidebar_widget popular_post_widget">
-                  <h3 class="widget_title">Recent Post</h3>
-                  {{ range ( where .Site.RegularPages "Type" "posts" | first 5 ) }}
-                     <div class="media post_item">
-                        <img src="/img/post/post_1.png" alt="post">
-                        <div class="media-body">
-                           <a href="{{ .Permalink }}">
-                              <h3>{{ .Title }}</h3>
-                           </a>
-                           <p>{{.Date| time.Format ":date_medium"}}</p>
-                        </div>
-                     </div>
-                  {{end}}
+                  
+                  <h3 class="widget_title">About This Post</h3>
+                  
+                  {{/*  Breadcrumbs  */}}
+                  <nav aria-label="breadcrumb">
+                     <ol class="breadcrumb" style="background-color: transparent;">
+                        <li class="breadcrumb-item"><a href="/">Home</a></li>
+                        {{- range .Ancestors.Reverse }}
+                           {{- if not .IsHome}}   
+                              <li class="breadcrumb-item"><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+                           {{- end }}
+                        {{- end }}
+                        <li class="breadcrumb-item active" aria-current="page"> This Post</a></li>
+                     </ol>
+                  </nav>
+                  
+                  {{/*  Publish date  */}}
+                  <h5> {{.Date| time.Format ":date_medium"}}</h5>
+                  
+                  
+                  {{/*  Tags  */}}
+                  <p>Tagged as<a href="#">{{ partial "taxonomy-terms-list.html" (dict "taxonomy" "tags" "page" .) }}</a></p>
+                  <p>Post Category <a href="#">{{ partial "taxonomy-terms-list.html" (dict "taxonomy" "categories" "page" .) }}</a></p>
+                                    
+                  {{/*  Social Share   */}}
+                  <div class="navigation-top d-flex justify-content-between text-center">
+                     <h5>Share on </h5>
+                     <ul class="social-icons">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
+                        <li><a href="#"><i class="fab fa-behance"></i></a></li>
+                     </ul>
+                  </div>
 
-                </aside>
+               </aside>
+               {{ if .Params.authors }}
+               <aside class="single_sidebar_widget popular_post_widget">
+                  {{/*  Author  */}}
+                  <h3 class="widget_title">About The Author</h3>
+                  <a href="{{ .Permalink }}">
+                     <div class="blog-author media align-items-center">
+                           {{- range .Params.authors }}
+                           {{- with $.Site.GetPage "taxonomyTerm" (printf "authors/%s" (urlize .)) }}
+                              <img src="{{ .Params.photo }}" alt="">
+                              <div class="media-body">
+                                 <h4>{{ .Params.title }}</h4>
+                                 <p>{{ .Params.subtitle }} </p>
+                                 {{/*  <p>{{ .Summary}}</p>  */}}
+                              </div>
+                              {{ end }}
+                           {{ end }}
+                     </div></a>
+
+                                    
+                  {{/*  Social Share   */}}
+                  <div class="navigation-top d-flex justify-content-between text-center">
+                     <h5>Follow on </h5>
+                     <ul class="social-icons">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
+                        <li><a href="#"><i class="fab fa-behance"></i></a></li>
+                     </ul>
+                  </div>
+
+               </aside>
+               {{ end }}
+
              </div>
           </div>
        </div>

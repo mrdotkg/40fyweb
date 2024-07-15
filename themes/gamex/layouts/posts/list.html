@@ -1,22 +1,5 @@
 {{ define "main" }}
 
-<!-- breadcrumb start-->
-<section class="breadcrumb breadcrumb_bg">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="breadcrumb_iner text-center">
-                    <div class="breadcrumb_iner_item">
-                        <h2>{{ .Title }}</h2>
-                        <h3>{{ .Summary }}</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- breadcrumb end-->
-
 <!--================Blog Area =================-->
 <section class="blog_area section_padding">
     <div class="container">
@@ -24,21 +7,24 @@
             <div class="col-lg-8 mb-5 mb-lg-0">
                 <div class="blog_left_sidebar">
                     {{ range .Paginator.Pages }}
+                    <a href="{{ .RelPermalink }}">
                         <article class="blog_item">
                             <div class="blog_item_img">
                                 <img class="card-img rounded-0" src="/img/blog/single_blog_1.png" alt="">
-                                <a href="{{ .RelPermalink }}" class="blog_item_date">
-                                    <p>{{.Date| time.Format ":date_medium"}}</p>
-                                </a>
+                                <p class="blog_item_date pull-sm-1">
+                                    {{.Date| time.Format ":date_medium"}}</p>
+                                </p>
                             </div>
   
                             <div class="blog_details">
-                                <a class="d-inline-block" href="{{ .RelPermalink }}">
-                                    <h2>{{ .LinkTitle }}</h2>
-                                </a>
+                                <h3> {{ .LinkTitle }}</h3>
                                 <p>{{ .Summary }}</p>
+                                <ul class="blog-info-link">
+                                    <li><a href="#"><i class="far fa-bookmark"></i> Tags: {{ partial "taxonomy-terms-list.html" (dict "taxonomy" "tags" "page" .) }}</a></li>
+                                </ul>
                             </div>
                         </article>
+                    </a>
                     {{ end }}   
                     
                     {{ template "_internal/pagination.html" . }}

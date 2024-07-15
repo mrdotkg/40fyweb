@@ -1,0 +1,28 @@
+
+
+{{ if not .IsHome }}
+
+    {{ $headLine := .Title }}
+    {{ $subHeadLine := "Blogs" }}
+    {{ if .Params.subtitle }}
+        {{ $subHeadLine = .Params.subtitle }}
+    {{ end }}
+    <!-- Banner -->
+    <section class="breadcrumb breadcrumb_bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb_iner text-center">
+                        <div class="breadcrumb_iner_item">
+                            <h2>{{ $headLine }}</h2>   
+                            <h3>{{ $subHeadLine }}</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{{ end }}
+
+
