@@ -40,7 +40,7 @@
               >{{ $name }}</a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
                 {{- range .Children }}
-                  <li><a class="dropdown-item" href="{{ .PageRef }}" target="_blank">{{ .Name }}</a></li>
+                  <li><a class="nav-link dropdown-item" href="{{ .PageRef }}" target="_blank">{{ .Name }}</a></li>
                 {{- end }}
               </ul>
           </li>
