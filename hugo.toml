@@ -1,4 +1,4 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://40fy.dotkg.in/'
 languageCode = 'en-us'
 theme = "gamex"
 themesDir = "./themes/"
