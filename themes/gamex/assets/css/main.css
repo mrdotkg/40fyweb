@@ -240,3 +240,6 @@ display: -webkit-box;
     border-radius: 50%;
     max-width: 100px;
 }
+.footer_part .single_footer_part .mail_part input {
+    font-size: 15px;
+}
