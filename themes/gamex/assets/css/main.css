@@ -243,3 +243,7 @@ display: -webkit-box;
 .footer_part .single_footer_part .mail_part input {
     font-size: 15px;
 }
+body {
+    height: unset;
+    max-height: 100% !important;
+}
