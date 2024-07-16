@@ -6,24 +6,17 @@
                 <div class="blog_right_sidebar">
                     {{ range .Data.Pages }}
                         <aside class="single_sidebar_widget">
-                            <h4 class="widget_title"><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
-                            <img class="author-image" src="{{ .Params.photo }}" alt=""/>
+                            {{ $author := .Title }}
+                            <h4 class="widget_title"><a href="{{ .Permalink }}">{{ $author }}</a></h4>
                             <p>{{ .Params.subtitle }} </p>
+                            <img class="author-image" src="{{ .Params.photo }}" alt=""/>
+                            
                             {{/*  <p>{{ .Content }}</p>  */}}
                             {{ with .Params.twitter }}
                             <a style="margin-right:30px;" href="https://twitter.com/{{ substr . 1 }}">
-                                Follow on Twitter
+                                Follow {{ $author }} on Twitter
                             </a>
-                            
-                          {{ end }} 
-                            <ul class="list">
-                                {{ $author := site.GetPage .Permalink  }}
-                                {{ range $author.Pages }}
-                                    <li>
-                                        <a href="{{ .Permalink }}">{{ .Title }}</a>
-                                    </li>
-                                {{ end  }}
-                            </ul>
+                            {{ end }}
                         </aside>
                     {{ end }}
                 </div>

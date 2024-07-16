@@ -110,7 +110,7 @@
                                     
                   {{/*  Social Share   */}}
                   <div class="navigation-top d-flex justify-content-between text-center">
-                     <h5>Share on </h5>
+                     <h5>Share blog on </h5>
                      <ul class="social-icons">
                         <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
                         <li><a href="#"><i class="fab fa-twitter"></i></a></li>
@@ -124,24 +124,25 @@
                <aside class="single_sidebar_widget popular_post_widget">
                   {{/*  Author  */}}
                   <h3 class="widget_title">About The Author</h3>
+                  {{- range .Params.authors }}
+                  {{- with $.Site.GetPage "taxonomyTerm" (printf "authors/%s" (urlize .)) }}
                   <a href="{{ .Permalink }}">
                      <div class="blog-author media align-items-center">
-                           {{- range .Params.authors }}
-                           {{- with $.Site.GetPage "taxonomyTerm" (printf "authors/%s" (urlize .)) }}
-                              <img src="{{ .Params.photo }}" alt="">
-                              <div class="media-body">
-                                 <h4>{{ .Params.title }}</h4>
-                                 <p>{{ .Params.subtitle }} </p>
-                                 {{/*  <p>{{ .Summary}}</p>  */}}
-                              </div>
-                              {{ end }}
-                           {{ end }}
-                     </div></a>
-
+                        <img src="{{ .Params.photo }}" alt="">
+                        <div class="media-body">
+                           <h4>{{ .Params.title }}</h4>
+                           <p>{{ .Params.subtitle }} </p>
+                           {{/*  <p>{{ .Summary}}</p>  */}}
+                        </div>
+                     </div>
+                  </a>
+                  {{ end }}
+                  {{ end }}
+         
                                     
                   {{/*  Social Share   */}}
                   <div class="navigation-top d-flex justify-content-between text-center">
-                     <h5>Follow on </h5>
+                     <h5>Follow author on </h5>
                      <ul class="social-icons">
                         <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
                         <li><a href="#"><i class="fab fa-twitter"></i></a></li>
