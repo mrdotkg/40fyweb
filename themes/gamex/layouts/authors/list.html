@@ -7,7 +7,7 @@
                     {{ range .Data.Pages }}
                         <aside class="single_sidebar_widget">
                             <h4 class="widget_title"><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
-                            <img src="{{ .Params.photo }}" alt=""/>
+                            <img class="author-image" src="{{ .Params.photo }}" alt=""/>
                             <p>{{ .Params.subtitle }} </p>
                             {{/*  <p>{{ .Content }}</p>  */}}
                             {{ with .Params.twitter }}

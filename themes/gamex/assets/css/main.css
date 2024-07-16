@@ -235,3 +235,8 @@ display: -webkit-box;
         right: 100px;
     }
 }
+
+.author-image {
+    border-radius: 50%;
+    max-width: 100px;
+}
