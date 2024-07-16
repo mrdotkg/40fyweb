@@ -61,14 +61,14 @@ header.animated nav a.btn_1{
     max-width: 75px !important;
 }
 .main_menu .main-menu-item ul li .nav-link:hover {
-    color: yellow !important;
+    color: white !important;
 }
 .single_page_menu .main-menu-item .nav-item a:hover:before {
     width: 0;
 }
-.dropdown .dropdown-item:hover {
+/* .dropdown .dropdown-item:hover {
     color: yellow !important;
-}
+} */
 .page-item.disabled .page-link {
     background-color: transparent;
     opacity: 0.2;
@@ -146,4 +146,92 @@ display: -webkit-box;
 
 .single-post-area .navigation-area img {
     max-width: unset;
+}
+.breadcrumb_bg {
+    /* background-image: unset; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-color: purple; */
+}
+.progress-table .table-row .country img {
+    margin-right: 15px;
+    width: inherit;
+}
+
+.progress-table {
+    background-color:rgb(0, 0, 0, 0.0);
+    color: white;
+}
+.progress-table .visit{
+    width: 30%;
+}
+.progress-table-wrap{
+    overflow-x: auto;
+}
+
+.progress-table .table-row {
+    /* padding: 15px 0; */
+    border-top: unset;
+    /* display: flex; */
+}
+@media only screen and (max-width: 991px) {
+    .navbar-collapse {
+        background-color: #212529;
+     }
+}
+@media (max-width: 991px) {
+    .main_menu .main-menu-item .nav-item .nav-link {
+        /* padding: 5px 15px !important; */
+        color: #fff;
+    }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .banner_part .banner_text h1 {
+        font-size: 40px;
+    }    
+}
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+@-webkit-keyframes fadeInDown {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -100%, 0);
+      transform: translate3d(0, -100%, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -100%, 0);
+      transform: translate3d(0, -100%, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+.fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .navbar-brand img {
+        /* max-width: 100px; */
+        right: 100px;
+    }
 }

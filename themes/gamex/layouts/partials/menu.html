@@ -2,7 +2,7 @@
 {{- $menuID := .menuID }}
 
 {{- with index site.Menus $menuID }}
-  <nav class="navbar navbar-expand-lg navbar-light navbar-dark">
+  <nav class="navbar navbar-light navbar-expand-lg">
     {{/*  logo   */}}
     <a class="navbar-brand" href="/"> <img src="/img/logo.png" alt="logo"> </a>
   
@@ -40,7 +40,7 @@
               >{{ $name }}</a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
                 {{- range .Children }}
-                  <li><a class="nav-link dropdown-item" href="{{ .PageRef }}" target="_blank">{{ .Name }}</a></li>
+                  <li class="nav-item"><a class="nav-link dropdown-item" href="{{ .PageRef }}" target="_blank">{{ .Name }}</a></li>
                 {{- end }}
               </ul>
           </li>
@@ -60,6 +60,6 @@
     </div>
     
     {{/*  Call to Action  */}}
-    <a href="#" class="btn_1 d-none d-sm-block"> Join Us On Discord</a>
+    <a href="#" class="btn_1 d-none d-sm-block"> Join Discord</a>
   </nav>
 {{- end }}
