@@ -5,11 +5,13 @@
        <div class="row">
           <div class="col-lg-8 posts-list">
              <div class="single-post">
+               {{ with .Params.image }}
                <div class="feature-img">
                   <div class="blog_item_img">
-                     <img class="card-img rounded-0 img-fluid" src="/img/blog/single_blog_1.png" alt="">
+                     <img class="card-img rounded-0 img-fluid" src="{{ . }}" alt="">
                   </div>
                </div>
+               {{ end }}
                <div class="blog_details">
                    {{ .Content }}
                 </div>
@@ -20,16 +22,16 @@
                      
                      <div class="col-lg-6 col-md-6 col-12 nav-left flex-row d-flex justify-content-start align-items-center">
                         {{ with .PrevInSection }} 
-                        <div class="thumb">
+                        {{/*  <div class="thumb">
                            <a href="{{ .Permalink }}">
                               <img class="/img-fluid" src="/img/post/preview.png" alt="">
                            </a>
-                           </div>
-                           <div class="arrow">
+                           </div>  */}}
+                           {{/*  <div class="arrow">
                               <a href="{{ .Permalink }}">
                                  <span class="lnr text-white ti-arrow-left"></span>
                               </a>
-                           </div>
+                           </div>  */}}
                            <div class="detials">
                            <p>Previous  </p>
                            <a href="{{ .Permalink }}">
@@ -48,16 +50,16 @@
                                <h4>{{ .Title }}</h4>
                            </a>
                          </div>
-                         <div class="arrow">
+                         {{/*  <div class="arrow">
                             <a href="{{ .Permalink }}">
                                <span class="lnr text-white ti-arrow-right"></span>
                             </a>
-                         </div>
-                         <div class="thumb">
+                         </div>  */}}
+                         {{/*  <div class="thumb">
                             <a href="{{ .Permalink }}">
                                <img class="/img-fluid" src="/img/post/next.png" alt="">
                             </a>
-                         </div>
+                         </div>  */}}
                          {{ end }}
 
                       </div>
@@ -110,12 +112,13 @@
                                     
                   {{/*  Social Share   */}}
                   <div class="navigation-top d-flex justify-content-between text-center">
-                     <h5>Share blog on </h5>
+                     <h5>Share </h5>
                      <ul class="social-icons">
+                        <li><a href="#"><i class="fab fa-reddit"></i></a></li>
+                        <li><a href="#"><i class="fab fa-steam"></i></a></li>
                         <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
                         <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
-                        <li><a href="#"><i class="fab fa-behance"></i></a></li>
+                     
                      </ul>
                   </div>
 
@@ -132,22 +135,32 @@
                         <div class="media-body">
                            <h4>{{ .Params.title }}</h4>
                            <p>{{ .Params.subtitle }} </p>
-                           {{/*  <p>{{ .Summary}}</p>  */}}
                         </div>
                      </div>
+                     <p>{{ .Summary}}</p>
                   </a>
-                  {{ end }}
+                  {{ else }}
+                     <a>
+                        <div class="blog-author media align-items-center">
+                           <img src="" alt="">
+                           <div class="media-body">
+                              <h4>{{ . }}</h4>
+                              <p></p>
+                           </div>
+                        </div>
+                     </a> 
+                     {{ end }}
                   {{ end }}
          
                                     
                   {{/*  Social Share   */}}
                   <div class="navigation-top d-flex justify-content-between text-center">
-                     <h5>Follow author on </h5>
+                     <h5>Follow </h5>
                      <ul class="social-icons">
-                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
                         <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
-                        <li><a href="#"><i class="fab fa-behance"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
                      </ul>
                   </div>
 

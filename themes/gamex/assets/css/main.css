@@ -119,7 +119,7 @@ header.animated nav a.btn_1{
     background: #000;
 }
 .single-post-area .blog_details {
-    padding-top: 50px;
+    padding-top: 0px;
 }
 .navigation-top{
     margin-top: 40px;
@@ -246,4 +246,141 @@ display: -webkit-box;
 body {
     height: unset;
     max-height: 100% !important;
+}
+
+/* Blog Post CSS */
+.single-post .feature-img {
+    padding-bottom: 20px;
+}
+.single-post .blog_details p img {
+    display: block;
+    float: none;
+    padding: 0 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+.single-post .blog_details li,
+.single-post .blog_details table,
+.single-post .blog_details dt {
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+.single-post .blog_details pre {
+    color: rgba(255, 255, 255, 0.715);
+    padding: 10px;
+}
+
+.single-post .blog_details pre code{
+    color: var(--bs-code-color)
+}
+
+.single-post .blog_details ul li {
+    font-family: "Poppins", sans-serif;
+    position: relative;
+    padding-left: 30px;
+    line-height: 1.82em !important;
+}
+
+.single-post .blog_details ul li:before {
+    content: "";
+    position: absolute;
+    border: 2px solid #ff0000;
+    background: #fff;
+    top: 9px;
+    left: 0;
+    border-radius: 50%;
+}
+
+.single-post .blog_details ol {
+    padding-left: 30px;
+}
+
+.single-post .blog_details ol li::marker {
+    color: red;
+}
+.single-post .blog_details ol li {
+    /* list-style-type: decimal-leading-zero; */
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    line-height: 1.82em !important;
+}
+.single-post .blog_details blockquote {
+    padding: 20px 30px;
+    /* background: #f9f9ff; */
+    border-left: 2px solid #ff0000;
+}
+.single-post hr{
+    border-top: 1px solid rgba(255, 255, 255, .1);
+}
+
+/* Table */
+
+table {
+    margin: 20px auto;
+    width: 100%;
+    border-spacing:0;
+    border-collapse: collapse;
+    /* background-color: #fff; */
+}
+@media only screen and (min-width: 768px) {
+    table {
+        margin: 30px auto;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    table {
+        max-width: 80%;
+    }
+}
+@media only screen and (min-width: 1220px) {
+    table {
+        margin: 40px auto;
+        max-width: 75%;
+    }
+}
+@media only screen and (min-width: 1600px) {
+    table {
+        max-width: 70%;
+    }
+}
+.table-wrap {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+}
+table {
+    min-width: 600px;
+    border: 2px solid #2a2f36;
+}
+table thead {
+    background: #2a2f36;
+    color: #fff;
+    text-align: left;
+    font-weight: 600;
+}
+table thead th {
+    font-weight: 600;
+}
+table td,
+table th {
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 400;
+}
+@media only screen and (min-width: 768px) {
+    table td,
+    table th {
+        padding: 15px;
+    }
+}
+@media only screen and (min-width: 1220px) {
+    table td,
+    table th {
+        padding: 20px;
+    }
+}
+table tr:nth-child(2n) {
+    background: #00000092;
 }

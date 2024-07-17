@@ -1,4 +1,5 @@
 baseURL = 'https://example.org/'
+enableEmoji = true
 languageCode = 'en-US'
 paginate = 3
 title = 'My New Gaming Site'
@@ -59,3 +60,6 @@ min = "0.116.0"
 disableAliases = true
 pagerSize = 3
 path = 'posts'
+
+[markup.goldmark.renderer]
+unsafe = true

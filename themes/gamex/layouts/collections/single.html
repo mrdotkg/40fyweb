@@ -35,11 +35,11 @@
                             <ul>
                                 {{ range .Pages }}
                                 <li class="flex-row d-flex justify-content-start align-items-center">
-                                    <div class="thumb">
+                                    {{/*  <div class="thumb">
                                         <a href="{{ .Permalink }}">
                                            <img class="/img-fluid" src="/img/post/preview.png" alt="">
                                         </a>
-                                    </div>
+                                    </div>  */}}
                                     <div class="detials">
                                         <a href="{{ .Params.externalLink | default .RelPermalink }}">
                                             <p>{{ .Date.Format (.Site.Params.dateFormat | default "Jan 2, 2006" ) }}</p>
