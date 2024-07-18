@@ -9,7 +9,7 @@
                   {{ range .Paginator.Pages }}
                       <article class="blog_item">
                           <div class="blog_item_img">
-                              <img class="card-img rounded-0" src="/img/blog/single_blog_1.png" alt="">
+                              <img class="card-img rounded-0" src="{{ .RelPermalink }}{{ .Params.image }}" alt="">
                               <a href="{{ .RelPermalink }}" class="blog_item_date">
                                   <p>{{.Date| time.Format ":date_medium"}}</p>
                               </a>
