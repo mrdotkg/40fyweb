@@ -30,11 +30,10 @@
                     </aside>
                     <aside class="single_sidebar_widget post_category_widget">
                         {{ range (where .Site.RegularPages "Type" "in" (slice "posts")).GroupByDate "2006" }}
-                            <h4 class="widget_title">In Year {{ .Key }}</h4>
-                            <ul class="list cat-list    ">
-                            <ul>
+                            <h4 class="widget_title">{{ .Key }}</h4>
+                            <ul class="list cat-list">
                                 {{ range .Pages }}
-                                <li class="flex-row d-flex justify-content-start align-items-center">
+                                <li class="offset-sm-1 flex-row d-flex justify-content-start align-items-center">
                                     {{/*  <div class="thumb">
                                         <a href="{{ .Permalink }}">
                                            <img class="/img-fluid" src="/img/post/preview.png" alt="">

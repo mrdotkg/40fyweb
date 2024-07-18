@@ -4,6 +4,10 @@ languageCode = 'en-US'
 paginate = 3
 title = 'My New Gaming Site'
 
+[permalinks]
+page = "/:title"
+post = "/:year/:month/:title/"
+
 [taxonomies]
 author = "authors"
 category = "categories"
@@ -12,10 +16,6 @@ tag = "tags"
 # name = 'Home'
 # pageRef = '/'
 # weight = 10
-
-[outputs]
-home = ['html', 'rss']
-page = ['html']
 
 # [[menus.main]]
 # name = 'The Clan'

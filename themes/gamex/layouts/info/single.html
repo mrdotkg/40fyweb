@@ -1,0 +1,34 @@
+{{ define "main" }}
+
+<!--================Blog Area =================-->
+<section class="blog_area section_padding">
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-8 mb-5 mb-lg-0">
+            <div class="blog_left_sidebar">
+                <div class="single-post">
+                    <div class="blog_details">
+                        {{ .Content }}
+                     </div>
+                  </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+              <div class="blog_right_sidebar ">
+                  <aside class="single_sidebar_widget post_category_widget">
+                      <h4 class="widget_title">Pages</h4>
+                      <ul class="list cat-list">
+                        <li><a class="d-flex" href="/about"><p>About Us</p></a></li>
+                        <li><a class="d-flex" href="/contribute"><p>Contribute</p></a></li>
+                        <li><a class="d-flex" href="/guidelines"><p>Joining Guidelines</p></a></li>
+                        <li><a class="d-flex" href="/privacy"><p>Terms and Privacy</p></a></li>
+                      </ul>
+                  </aside>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<!--================Blog Area =================-->
+
+{{ end }}
