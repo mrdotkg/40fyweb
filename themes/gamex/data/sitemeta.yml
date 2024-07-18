@@ -1,0 +1,64 @@
+logo: '/img/logo.png'
+title: 'Hare Ram'
+
+# Home Page
+banner:
+  headline: 'The 40FY Gaming'
+  text: 'We at 40FY (as in FORTIFY) Gaming are enthusiast about Anime, Video Games and Movies. Come be part of our family to play and watch together and share stories.'
+  call-to-action:
+    link: 
+    text: Join Us on Discord
+  games-logo:
+    - ''
+    - ''
+    - ''
+
+about:
+  video:
+  headline: 'Breathtaking Gameplay & Mindful Strategies'
+  text: 'Multiplayer Team Games push the adranaline level, in situations. Bring your squad to power up competetion and challenges.'
+  call-to-action:
+    link: 
+    text: 
+
+videos:
+  headline:
+  text:
+  call-to-action:
+    link:
+    text:
+  video-links:
+    - ''
+    - ''
+    - ''
+
+lfg:
+  headline:
+  sub-headline:
+  text:
+  call-to-action:
+    link:
+    text:
+  video-links:
+    - ''
+    - ''
+    - ''
+  table:
+    - game: ''
+      match-type:
+      frequency:
+    - game: ''
+      match-type:
+      frequency:
+    - game: ''
+      match-type:
+      frequency:
+    - game: ''
+      match-type:
+      frequency:
+
+footer:
+  links:
+    - ''
+    - ''
+    - ''

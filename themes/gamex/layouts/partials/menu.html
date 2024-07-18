@@ -1,10 +1,11 @@
 {{- $page := .page }}
 {{- $menuID := .menuID }}
+{{- $meta := site.Data.sitemeta }}
 
 {{- with index site.Menus $menuID }}
   <nav class="navbar navbar-light navbar-expand-lg">
     {{/*  logo   */}}
-    <a class="navbar-brand" href="/"> <img src="/img/logo.png" alt="logo"> </a>
+    <a class="navbar-brand" href="/"> <img src="{{ $meta.logo }}" alt="logo"> </a>
   
     {{/*  hamburger menu  */}}
     <button class="navbar-toggler" type="button" data-toggle="collapse"
