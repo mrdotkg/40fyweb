@@ -409,13 +409,13 @@ table tr:nth-child(2n) {
     color: red !important;
 }
 .fa-reddit{
-    color: orangered !important;
+    color: rgb(245, 88, 31) !important;
 }
 .fa-facebook-f{
     color: lightblue !important;
 }
 .fa-steam{
-    color: lightslategray !important;
+    color: rgb(182, 210, 238) !important;
 }
 .fa-linkedin{
     color: skyblue !important;
@@ -424,10 +424,10 @@ table tr:nth-child(2n) {
     color: White !important;
 }
 .fa-instagram{
-    color: purple !important;
+    color: rgb(236, 8, 236) !important;
 }
 .fa-discord{
-    color: cyan !important;
+    color: rgb(2, 186, 186) !important;
 }
 .fa-twitter{
     color: skyblue !important;
