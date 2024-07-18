@@ -412,7 +412,7 @@ table tr:nth-child(2n) {
     color: orangered !important;
 }
 .fa-facebook-f{
-    color: cyan !important;
+    color: lightblue !important;
 }
 .fa-steam{
     color: lightslategray !important;
@@ -425,4 +425,10 @@ table tr:nth-child(2n) {
 }
 .fa-instagram{
     color: purple !important;
+}
+.fa-discord{
+    color: cyan !important;
+}
+.fa-twitter{
+    color: skyblue !important;
 }
