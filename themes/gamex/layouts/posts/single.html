@@ -95,10 +95,10 @@
                   <div class="navigation-top d-flex justify-content-between text-center">
                      <h5>Share </h5>
                      <ul class="social-icons">
-                        <li><a target="_blank" href="https://reddit.com/submit/?url={{ .Page.Permalink }}&resubmit=true&title=Awesome"><i class="fab fa-reddit"></i></a></li>
-                        <li><a target="_blank" href="whatsapp://send?text=Awesome%20u={{ .Page.Permalink }}"><i class="fab fa-whatsapp"></i></a></li>
-                        <li><a target="_blank" href="https://facebook.com/sharer/sharer.php?u={{- .Page.Permalink -}}"><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a target="_blank" href="https://twitter.com/intent/tweet/?text=Super%20fast%20and%20easy%20Social%20Media%20Sharing%20Buttons.%20No%20JavaScript.%20No%20tracking.&amp;url={{ .Page.Permalink }}"><i class="fab fa-twitter"></i></a></li>
+                        <li><a target="_blank" href="https://reddit.com/submit/?url={{ .Page.Permalink  }}&resubmit=true&title={{ .Page.Title  }}"><i class="fab fa-reddit"></i></a></li>
+                        <li><a target="_blank" href="whatsapp://send?text={{ .Page.Title  }}%20u={{ .Page.Permalink  }}"><i class="fab fa-whatsapp"></i></a></li>
+                        <li><a target="_blank" href="https://facebook.com/sharer/sharer.php?u={{ .Page.Permalink  }}"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a target="_blank" href="https://twitter.com/intent/tweet/?text={{ .Page.Title  }}&url={{ .Page.Permalink  }}"><i class="fab fa-twitter"></i></a></li>
                      </ul>
                   </div>
                </aside>
