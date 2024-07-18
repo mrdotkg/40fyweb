@@ -4,26 +4,23 @@ languageCode = 'en-US'
 paginate = 3
 title = 'My New Gaming Site'
 
-[permalinks]
-page = "/:title"
-post = "/:year/:month/:title/"
-
 [taxonomies]
 author = "authors"
 category = "categories"
 tag = "tags"
-# [[menus.main]]
-# name = 'Home'
-# pageRef = '/'
-# weight = 10
-
-# [[menus.main]]
-# name = 'The Clan'
-# pageRef = '/'
-# weight = 20
 
 [[menus.main]]
-name = 'Blog Posts'
+name = 'Home'
+pageRef = '/'
+weight = 10
+
+[[menus.main]]
+name = 'Clan'
+pageRef = '/about'
+weight = 20
+
+[[menus.main]]
+name = 'Blogs'
 pageRef = '/posts'
 weight = 30
 
@@ -55,11 +52,6 @@ weight = 2
 [module.hugoVersion]
 extended = false
 min = "0.116.0"
-
-[pagination]
-disableAliases = true
-pagerSize = 3
-path = 'posts'
 
 [markup.goldmark.renderer]
 unsafe = true

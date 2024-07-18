@@ -1,6 +1,6 @@
 ---
 title: "About Us"
-subtitle: "Our Story"
+subtitle: "The Clan and Our Story"
 date: 2023-03-21T12:40:07+06:00
 type: "info"
 layout: "single"
@@ -8,7 +8,7 @@ _build:
   list: never
 ---
 
-# 👋 Hello
+# The Clan
 ----
 
 We are 40FY.
