@@ -384,3 +384,19 @@ table th {
 table tr:nth-child(2n) {
     background: #00000092;
 }
+
+.single_footer_part .footer_icon.social_icon {
+    float: left;
+    margin: 10px 0;
+}
+
+.single_sidebar_widget .navigation-top {
+    /* padding-top: 15px; */
+    margin-top: 10px;
+    margin-bottom: 30px; 
+    border-top: unset;
+    border-bottom: 1px solid #f0e9ff;
+}
+.blog_right_sidebar .widget_title {
+    margin-bottom: 20px;
+}
