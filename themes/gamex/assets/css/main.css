@@ -400,3 +400,29 @@ table tr:nth-child(2n) {
 .blog_right_sidebar .widget_title {
     margin-bottom: 20px;
 }
+
+.fa-whatsapp{
+    color: greenyellow !important;
+}
+
+.fa-youtube{
+    color: red !important;
+}
+.fa-reddit{
+    color: orangered !important;
+}
+.fa-facebook-f{
+    color: cyan !important;
+}
+.fa-steam{
+    color: lightslategray !important;
+}
+.fa-linkedin{
+    color: skyblue !important;
+}
+.fa-github{
+    color: White !important;
+}
+.fa-instagram{
+    color: purple !important;
+}
