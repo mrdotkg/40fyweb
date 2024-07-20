@@ -91,6 +91,23 @@
                     </div>
     
                     <script>
+                        function logininit(){
+                            //set the welcome username string
+                            document.getElementById('banner').style="background-color:" + sessionStorage.getItem('banner_color') + ";";
+                            document.getElementById('name').innerText = sessionStorage.getItem('global_name');
+                            document.getElementById('username').innerText = ` ${sessionStorage.getItem('username')}#${sessionStorage.getItem('discriminator')}`;
+                                
+                            //set the avatar image by constructing a url to access discord's cdn
+                            document.getElementById("avatar").src = `https://cdn.discordapp.com/avatars/${sessionStorage.getItem('id')}/${sessionStorage.getItem('avatar')}.jpg`;
+                            
+                            document.getElementById("login").style = `display:none`;
+                            document.getElementById("logout").style = `display:inline-block`;
+                            var inputs = document.getElementsByTagName('fieldset');
+                            for(var i = 0; i < inputs.length; i++) {
+                                inputs[i].disabled = false;
+                            }
+                        }
+
                         window.onload = () => {
                             const fragment = new URLSearchParams(window.location.hash.slice(1));
                             const [accessToken, tokenType] = [fragment.get('access_token'), fragment.get('token_type')];
@@ -100,8 +117,14 @@
                             
                             if (!accessToken) {
                                 console.log("no user token")
-                                document.getElementById("login").style = `display:inline-block`;
-                                document.getElementById("logout").style = `display:none`;
+                                if (sessionStorage.getItem('accessToken')){
+                                    console.log('local session available')
+                                    logininit()
+                                }else{
+                                    console.log('no local session')
+                                    document.getElementById("login").style = `display:inline-block`;
+                                    document.getElementById("logout").style = `display:none`;
+                                }
                             }else{
                                 console.log("logging in.")
                                 document.getElementById("login").innerText="Logging In..."
@@ -126,21 +149,7 @@
                                     sessionStorage.setItem('email', email);
                                     sessionStorage.setItem('id', id);
                                     sessionStorage.setItem('global_name',global_name);
-
-                                    //set the welcome username string
-                                    document.getElementById('banner').style="background-color:" + sessionStorage.getItem('banner_color') + ";";
-                                    document.getElementById('name').innerText = sessionStorage.getItem('global_name');
-                                    document.getElementById('username').innerText = ` ${sessionStorage.getItem('username')}#${sessionStorage.getItem('discriminator')}`;
-                                     
-                                    //set the avatar image by constructing a url to access discord's cdn
-                                    document.getElementById("avatar").src = `https://cdn.discordapp.com/avatars/${sessionStorage.getItem('id')}/${sessionStorage.getItem('avatar')}.jpg`;
-                                    
-                                    document.getElementById("login").style = `display:none`;
-                                    document.getElementById("logout").style = `display:inline-block`;
-                                    var inputs = document.getElementsByTagName('fieldset');
-                                    for(var i = 0; i < inputs.length; i++) {
-                                        inputs[i].disabled = false;
-                                    }
+                                    logininit();
                                 
                                 }).catch(console.error);
                             }
