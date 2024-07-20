@@ -465,4 +465,19 @@ table tr:nth-child(2n) {
         width: 90px;
         height: 90px;
     }
-}   
+}
+fieldset:disabled{
+    display: none;
+}
+
+#avatar{
+    width: 150px;
+    height: 150px;
+}
+#name{
+    margin-bottom: 0;
+}
+
+#username{
+    margin-bottom: 0.5rem;
+}

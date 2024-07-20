@@ -13,8 +13,8 @@
                             {{/*  <h3 class="widget_title">Select Game(s)</h3>  */}}
                             <fieldset>
                                 <legend>Welcome!</legend>
-                                <div class="blog-author media align-items-center">
-                                    <img id="avatar" class="author-image" src="/img/author/author-1.jpeg" alt="khair">
+                                <div id="banner" class="blog-author media align-items-center">
+                                    <img id="avatar" class="" src="/img/author/author-1.jpeg" alt="avatar">
                                     <div class="media-body">
                                     <h3 id="name">Xxxxx</h3>
                                     <p id="username">@xxxxx</p>
@@ -23,16 +23,16 @@
                                         class="btn_1">Login to confirm identity</a>    */}}
                                     
                                         <a 
-                                        href="https://discord.com/oauth2/authorize?client_id=820665887513247794&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A1313%2Fplay%2F&response_type=token&scope=identify+email"
+                                        href="https://discord.com/oauth2/authorize?client_id=820665887513247794&response_type=token&redirect_uri=https%3A%2F%2F40fy.dotkg.in%2Fplay&scope=identify"
                                         id="login"
-                                        style="display: none;"
-                                        class="btn_1">Log In To Proceed</a>
-                                        <a 
-                                        href=""
+                                        class="btn_1">
+                                        Log In To Proceed
+                                    </a>
+                                        <button 
                                         id="logout"
-                                        onclick="sessionStorage.clear();location.reload();"
+                                        onclick="logout();"
                                         style="display: none;"
-                                        class="btn_1">Log out</a>
+                                        class="btn_1">Log out</button>
                                     
                                     </div>
                                 </div>
@@ -40,7 +40,7 @@
                             <p></p>
                             
                             <fieldset disabled>
-                                <legend>Select one / more game(s): </legend>
+                                <legend>Games </legend>
                                 <div class="checkbox-lable">
                                     <input onclick="selectGames();" class="selected_games" type="checkbox" value="Age of Empires" id="aoe" />
                                     <label for="aoe">Age of Empires</label>
@@ -69,7 +69,7 @@
                             </fieldset>
                             <p></p>
                             <fieldset disabled>
-                                <legend>Match request message: </legend>
+                                <legend>Message </legend>
                                 <textarea 
                                     id="game_request_message" 
                                     value="Hey Guys! I would like to reserve a game request with you. I play -"
@@ -81,11 +81,11 @@
                                 <p></p>
                                 <button 
                                     href="https://discord.com/api/webhooks/1264120016165670914/969O6hvEaf4Xhf8zlnhmcMf2Rhzxs7nbkWu9kyTT7IXt8hR7u4WnUwJv8fxSOE8IUH9r"
+                                    id="send"
                                     class="btn_1"
                                     onclick="sendMessage();">
                                     Send to Our Discord Gaming Server</button>                             
                             </fieldset>
-
                         </div>
                         
                     </div>
@@ -97,12 +97,17 @@
                         
                             // Getting session storage
                             var loc_username = sessionStorage.getItem('username');
-
+                            
                             if (!accessToken) {
                                 console.log("no user token")
                                 document.getElementById("login").style = `display:inline-block`;
                                 document.getElementById("logout").style = `display:none`;
                             }else{
+                                console.log("logging in.")
+                                document.getElementById("login").innerText="Logging In..."
+                                sessionStorage.setItem('tokenType', tokenType);
+                                sessionStorage.setItem('accessToken', accessToken);
+                                    
                                 fetch('https://discord.com/api/users/@me', {
                                     headers: {
                                         authorization: `${tokenType} ${accessToken}`,
@@ -111,9 +116,10 @@
                                 .then(result => result.json())
                                 .then(response => {
                                     console.log(response);
-                                    const { username, avatar, discriminator, email, id, global_name} = response;
+                                    const { banner_color, username, avatar, discriminator, email, id, global_name} = response;
                                     
                                     // Setting session storage
+                                    sessionStorage.setItem('banner_color', banner_color);
                                     sessionStorage.setItem('username', username);
                                     sessionStorage.setItem('discriminator', discriminator);
                                     sessionStorage.setItem('avatar', avatar);
@@ -122,11 +128,12 @@
                                     sessionStorage.setItem('global_name',global_name);
 
                                     //set the welcome username string
-                                    document.getElementById('name').innerText = ` ${global_name}`;
-                                    document.getElementById('username').innerText = ` ${username}#${discriminator}`;
+                                    document.getElementById('banner').style="background-color:" + sessionStorage.getItem('banner_color') + ";";
+                                    document.getElementById('name').innerText = sessionStorage.getItem('global_name');
+                                    document.getElementById('username').innerText = ` ${sessionStorage.getItem('username')}#${sessionStorage.getItem('discriminator')}`;
                                      
                                     //set the avatar image by constructing a url to access discord's cdn
-                                    document.getElementById("avatar").src = `https://cdn.discordapp.com/avatars/${id}/${avatar}.jpg`;
+                                    document.getElementById("avatar").src = `https://cdn.discordapp.com/avatars/${sessionStorage.getItem('id')}/${sessionStorage.getItem('avatar')}.jpg`;
                                     
                                     document.getElementById("login").style = `display:none`;
                                     document.getElementById("logout").style = `display:inline-block`;
@@ -135,22 +142,28 @@
                                         inputs[i].disabled = false;
                                     }
                                 
-                                })
-                                .catch(console.error);
+                                }).catch(console.error);
                             }
                         };
                         function sendMessage() {
+                            document.getElementById("send").innerText="Sending..."
+                                
                             const request = new XMLHttpRequest();
                             request.open("POST", "https://discord.com/api/webhooks/1264120016165670914/969O6hvEaf4Xhf8zlnhmcMf2Rhzxs7nbkWu9kyTT7IXt8hR7u4WnUwJv8fxSOE8IUH9r");
                       
                             request.setRequestHeader('Content-type', 'application/json');
                       
                             const params = {
-                              //username: "mrdotkg",
-                              //avatar_url: "",
+                              username: document.getElementById('username').innerText,
+                              avatar_url: document.getElementById('avatar').src,
                               content: document.getElementById('game_request_message').value
                             }
-                      
+                            console.log(params)
+                            function disablesending(){
+                                document.getElementById("send").innerText="Sent. Thanks! We've your id."
+                                document.getElementById("send").removeAttribute("onclick");
+                            }
+                            request.onreadystatechange = disablesending;
                             request.send(JSON.stringify(params));
                         }
                         function selectGames(){
@@ -162,11 +175,50 @@
                             }
                             document.getElementById('game_request_message').value = `Hey Guys! I would like to reserve a game request with you. I play - ${games.replace(/,([^,]*)$/, ".$1")}`;
                         }
+                        function logout(){
+                            console.log("logging out")
+                            sessionStorage.clear();
+                            var length=history.length;
+                            history.go(-length);
+                            window.location.replace('/play');
+
+                            /*TODO: 🤯 Discord Session Token is not being revoked. why?
+                            fetch('https://discord.com/api/oauth2/token/revoke', {
+                                // Adding method type 
+                                method: "POST",
+                                headers: {
+                                    'Content-Type': 'application/json',
+                                    authorization: `${sessionStorage.getItem('tokenType')} ${sessionStorage.getItem('accessToken')}`,
+                                },
+                                body: JSON.stringify({
+                                    client_id     : '',
+                                    client_secret : '',
+                                    grant_type    : 'access_token',
+                                    access_token : sessionStorage.getItem('accessToken')
+                                })
+                            })
+                            .then(result => { console.log(result); return result.json();})
+                            .then(response => {
+                                console.log(response.json);
+                            }).catch(console.error);
+                            */
+                        }
+                        function jagmag(){
+                            setInterval(function(){ 
+                                // toggle the class every five second
+                                $('#login').toggleClass('btn_1:hover');  
+                                setTimeout(function(){
+                                  // toggle back after 1 second
+                                  $('#login').toggleClass('btn_1:hover');  
+                                },1000);
+                             
+                             },5000);
+                        }
                     </script>
                 </div>
             </div>
         </div>
-        {{ partial "widget-pages.html" . }}
+        {{ partial "widget-discord.html" . }}
         </div>
        
     </div>
