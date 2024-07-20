@@ -114,6 +114,9 @@ header.animated nav a.btn_1{
 .blog_area a:hover {
     color: #ff0000 !important;
 }
+.blog_area a.btn_1:hover {
+    color: white !important;
+}
 .thumb {
     margin-right: 20px;
     background: #000;
@@ -262,9 +265,14 @@ body {
 }
 .single-post .blog_details li,
 .single-post .blog_details table,
+.single-post .blog_details label,
 .single-post .blog_details dt {
     color: white;
     font-family: "Poppins", sans-serif;
+}
+.single-post .blog_details legend
+{
+    color: white;
 }
 
 .single-post .blog_details pre {
@@ -442,3 +450,19 @@ table tr:nth-child(2n) {
 .blog_right_sidebar .blog-author img {
     margin: 0 10px;
 }
+.blog_details {
+    box-shadow: 0px 10px 20px 0px rgba(221, 221, 221, 0.3);
+}
+.summary {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* number of lines to show */
+    -webkit-box-orient: vertical;
+}
+@media (max-width: 600px) {
+    .single-post-area .blog-author img {
+        width: 90px;
+        height: 90px;
+    }
+}   

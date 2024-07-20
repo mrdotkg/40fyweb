@@ -18,7 +18,7 @@
   
                             <div class="blog_details">
                                 <h3> {{ .LinkTitle }}</h3>
-                                <p>{{ .Summary }}</p>
+                                <p class="summary">{{ .Summary }}</p>
                                 <ul class="blog-info-link">
                                     <li><a href="#"><i class="far fa-bookmark"></i> Tags: {{ partial "taxonomy-terms-list.html" (dict "taxonomy" "tags" "page" .) }}</a></li>
                                 </ul>

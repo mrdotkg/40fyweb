@@ -19,7 +19,7 @@
                               <a class="d-inline-block" href="{{ .RelPermalink }}">
                                   <h2>{{ .LinkTitle }}</h2>
                               </a>
-                              <p>{{ .Summary }}</p>
+                              <p class="summary">{{ .Summary }}</p>
                               <ul class="blog-info-link">
                                   <li><a href="#"><i class="far fa-bookmark"></i> Tags: {{ partial "taxonomy-terms-list.html" (dict "taxonomy" "tags" "page" .) }}</a></li>
                               </ul>
