@@ -596,15 +596,8 @@ header nav a.btn_1{
     border: 1px solid;
     font-family: "Aclonica", sans-serif !important;
 }
-.blog_area {
-    background-image: url("../img/banner.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }  
 
-
-/* Banner */
+/* Hall of Fame */
 @import url("https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css");
 @import url("https://fonts.googleapis.com/css2?family=Jura:wght@500;600;900&display=swap");
 
