@@ -747,3 +747,6 @@ video{
         margin: 0 20px;
     }
 }
+.live_stareams_slide_img::after{
+    border-radius: 3rem;
+}

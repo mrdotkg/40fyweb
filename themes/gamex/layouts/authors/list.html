@@ -2,26 +2,23 @@
 <section class="blog_area section_padding">
     <div class="container">
         <div class="row">
-            <div class="col-lg-12">
+            {{ range .Data.Pages }}
+            <div class="col-lg-6">
                 <div class="blog_right_sidebar">
-                    {{ range .Data.Pages }}
-                        <aside class="single_sidebar_widget">
-                            {{ $author := .Title }}
-                            <h4 class="widget_title"><a href="{{ .Permalink }}">{{ $author }}</a></h4>
-                            <p>{{ .Params.subtitle }} </p>
-                            <img class="author-image" src="{{ .Params.photo }}" alt=""/>
-                            
-                            {{/*  <p>{{ .Content }}</p>  */}}
-                            {{ with .Params.twitter }}
-                            <a style="margin-right:30px;" href="https://twitter.com/{{ substr . 1 }}">
-                                Follow {{ $author }} on Twitter
-                            </a>
-                            {{ end }}
-                        </aside>
-                    {{ end }}
+                    <aside class="single_sidebar_widget">
+                        <a href="{{ .Permalink }}">
+                        <div class="blog-author media align-items-center">
+                            <img class="author-image" src="{{ .Params.photo }}" alt="">
+                            <div class="media-body">
+                                <h4>{{ .Title }}</h4>
+                                <p>{{ .Params.subtitle }} </p>
+                            </div>
+                        </div></a>
+                    </aside>
                 </div>
             </div>
-        </div>
+        {{ end }}
     </div>
+</div>
 </section>
 {{ end }}

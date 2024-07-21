@@ -58,7 +58,7 @@
   if (review.length) {
     review.owlCarousel({
       items: 2,
-      loop: true,
+      // loop: true,
       dots: false,
       autoplay: true,
       autoplayHoverPause: true,
