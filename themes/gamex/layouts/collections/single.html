@@ -5,32 +5,8 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8">
-                <div class="blog_right_sidebar blog_details">
-                    
-                    <aside class="post_category_widget">
-                        {{ range (where .Site.RegularPages "Type" "in" (slice "posts")).GroupByDate "2006" }}
-                            <h4 class="widget_title">{{ .Key }}</h4>
-                            <ul class="list cat-list">
-                                {{ range .Pages }}
-                                <li class="offset-sm-1 flex-row d-flex justify-content-start align-items-center">
-                                    {{/*  <div class="thumb">
-                                        <a href="{{ .Permalink }}">
-                                           <img class="/img-fluid" src="/img/post/preview.png" alt="">
-                                        </a>
-                                    </div>  */}}
-                                    <div class="detials">
-                                        <a href="{{ .Params.externalLink | default .RelPermalink }}">
-                                            <p>{{ .Date.Format (.Site.Params.dateFormat | default "Jan 2, 2006" ) }}</p>
-                                            <h4>{{ .Title }}</h4>
-                                        </a> 
-                                    </div>
-                                   
-                                </li>
-                                {{- end -}}
-                            </ul>
-                        {{ end }}
-                        </ul>
-                    </aside>
+                <div class="blog_right_sidebar">
+                    {{ partial "widget-year" . }}
                 </div>
             </div>
             <div class="col-lg-4">

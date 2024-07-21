@@ -1,26 +1,5 @@
 (function ($) {
   "use strict";
-  jQuery(document).ready(function() {
-    jQuery('.owl-carousel').owlCarousel({
-    loop: true,
-    items: 6,
-    autoplay: true,
-    slideTransition: 'linear',
-    autoplaySpeed: 6000,
-    smartSpeed: 6000,
-    center: true,
-    });
-
-
-    jQuery('.owl-carousel').trigger('play.owl.autoplay',[2000]);
-
-    function setSpeed(){
-        jQuery('.owl-carousel').trigger('play.owl.autoplay',[6000]);
-    }
-
-    setTimeout(setSpeed, 1000);
-});
-
   // menu fixed js code
   var prevScrollpos = window.scrollY;
   $(window).scroll(function () {
@@ -47,12 +26,13 @@
       autoplayTimeout: 6000,
       autoplaySpeed: 6000,
       autoplayHoverPause: true,
+      margin: 10,
       responsive: {
         0: {
-          items: 3,
+          items: 2,
         },
         600: {
-          items: 3,
+          items: 4,
         },
         991: {
           items: 5,

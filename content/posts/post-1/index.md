@@ -5,7 +5,6 @@ draft = false
 tags = ['red','green','blue']
 categories = ['battleground','rpg']
 authors =['Kr Gaurav']
-image = 'featured.jpg'
 +++
 ---
 
