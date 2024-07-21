@@ -717,8 +717,8 @@ font-size: 0.9rem;
     /* background-image: none; */
 }
 .halloffame{
-    /* margin-top: 100px; */
-    /* padding: 50px; */
+    margin-top: 100px;
+    padding: 50px 15px;
     /* box-shadow: 0px 10px 20px 0px rgba(221, 221, 221, 0.3); */
 
 }
@@ -749,4 +749,7 @@ video{
 }
 .live_stareams_slide_img::after{
     border-radius: 3rem;
+}
+.footer_part img {
+    margin-bottom: 15px;
 }

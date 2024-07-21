@@ -1,6 +1,25 @@
 (function ($) {
   "use strict";
+  jQuery(document).ready(function() {
+    jQuery('.owl-carousel').owlCarousel({
+    loop: true,
+    items: 6,
+    autoplay: true,
+    slideTransition: 'linear',
+    autoplaySpeed: 6000,
+    smartSpeed: 6000,
+    center: true,
+    });
 
+
+    jQuery('.owl-carousel').trigger('play.owl.autoplay',[2000]);
+
+    function setSpeed(){
+        jQuery('.owl-carousel').trigger('play.owl.autoplay',[6000]);
+    }
+
+    setTimeout(setSpeed, 1000);
+});
 
   // menu fixed js code
   var prevScrollpos = window.scrollY;
@@ -22,22 +41,24 @@
     client_logo.owlCarousel({
       items: 5,
       loop: true,
+      autoplay: true,
+      // autoplayTimeout:1000,
+      slideTransition: 'linear',
+      autoplayTimeout: 6000,
+      autoplaySpeed: 6000,
+      autoplayHoverPause: true,
       responsive: {
         0: {
           items: 3,
-          margin: 15,
         },
         600: {
           items: 3,
-          margin: 15,
         },
         991: {
           items: 5,
-          margin: 15,
         },
         1200: {
           items: 5,
-          margin: 15,
         }
       }
     });

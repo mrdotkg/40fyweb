@@ -35,10 +35,10 @@ name = 'Gamers'
 pageRef = '/authors'
 weight = 30
 
-[[menus.main]]
-name = 'Collection'
-pageRef = '/collections'
-weight = 40
+# [[menus.main]]
+# name = 'Collection'
+# pageRef = '/collections'
+# weight = 40
 
 [[menus.main]]
 name = 'Free Goodies'
