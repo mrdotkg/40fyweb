@@ -20,13 +20,19 @@ pageRef = '/about'
 weight = 10
 
 [[menus.main]]
-name = "Play"
+class = "btn_1"
+name = "Match & Play"
 pageRef = '/play'
-weight = 20
+weight = 2
 
 [[menus.main]]
 name = 'Blogs'
 pageRef = '/posts'
+weight = 50
+
+[[menus.main]]
+name = 'Gamers'
+pageRef = '/authors'
 weight = 30
 
 [[menus.main]]

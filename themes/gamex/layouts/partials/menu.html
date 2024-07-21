@@ -5,7 +5,9 @@
 {{- with index site.Menus $menuID }}
   <nav class="navbar navbar-light navbar-expand-lg">
     {{/*  logo   */}}
-    <a class="navbar-brand" href="/"> <img src="{{ $meta.logo }}" alt="logo"> </a>
+    <a class="navbar-brand" href="/"> 
+      <img src="{{ $meta.logo }}" height="55px" alt="logo"> 
+    </a>
   
     {{/*  hamburger menu  */}}
     <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -23,6 +25,11 @@
             {{- $attrs = merge $attrs (dict "class" "ancestor" "aria-current" "true") }}
           {{- end }}
           {{- $name := .Name }}
+          {{- $class := "" }}
+          {{- if strings.Contains .URL $.cta }}
+            {{- $class = "btn_1 d-block" }}
+          {{- end }}
+          
           {{- with .Identifier }}
             {{- with T . }}
               {{- $name = . }}
@@ -31,8 +38,8 @@
           
           {{- if .HasChildren }}
           {{/* Dropdown Menus    */}}
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" id="navbarDropdown1"
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle {{ $class }}" id="navbarDropdown1"
                 {{- range $k, $v := $attrs }}
                   {{- with $v }}
                     {{- printf " %s=%q" $k $v | safeHTMLAttr }}
@@ -48,7 +55,7 @@
           {{- else}}
           {{/*  Simple Menus  */}}
           <li class="nav-item">
-            <a class="nav-link"
+            <a class="nav-link {{ $class }}"
               {{- range $k, $v := $attrs }}
                 {{- with $v }}
                   {{- printf " %s=%q" $k $v | safeHTMLAttr }}
@@ -61,6 +68,6 @@
     </div>
     
     {{/*  Call to Action  */}}
-    <a target="_blank" href="https://discord.gg/hSPKsyACfG" class="btn_1 d-none d-sm-block">Discord</a>
+    {{/*  <a target="_blank" href="https://discord.gg/hSPKsyACfG" class="btn_1 d-none d-xl-block">Discord</a>  */}}
   </nav>
 {{- end }}

@@ -1,4 +1,4 @@
-header.animated nav a.btn_1{
+header nav a.btn_1{
     border: 1px solid; 
 }
 
@@ -480,4 +480,119 @@ fieldset:disabled{
 
 #username{
     margin-bottom: 0.5rem;
+}
+.main_menu .main-menu-item ul li .nav-link {
+    color: #fff;
+    font-size: 15px;
+    padding: 20px 20px;
+    font-family: "Poppins", sans-serif;
+    text-transform: capitalize;
+    line-height: 12px;
+    font-weight: 400;
+}
+
+.main_menu{
+    /* background-color: red; */
+    height: 70px;
+}
+.main_menu .navbar{
+    padding: .5rem 1rem;
+}
+
+@media (max-width: 991px) {
+    .main_menu {
+        padding: 0px 0px;
+    }
+}
+@media (max-width: 991px) {
+    .navbar-brand img {
+        max-width: 100%;
+    }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .navbar-brand img {
+        left: 0;
+        right: 0;
+    }
+}
+
+@media (max-width: 991px) {
+    .main_menu .main-menu-item {
+      text-align: left !important;
+    }
+    .navbar-collapse {
+      z-index: 9999 !important;
+      text-align: center !important;
+    }
+    .dropdown .dropdown-menu {
+      transform: scale(1, 0);
+      display: none;
+      margin-top: 10px;
+    }
+    .dropdown:hover .dropdown-menu {
+      transform: scale(1);
+      display: block;
+      color: #ff0000;
+    }
+    .dropdown .dropdown-item:hover {
+      color: #ff0000 !important;
+    }
+    .navbar-brand img {
+      max-width: 100%;
+    }
+    .navbar-light .navbar-toggler {
+      border-color: transparent;
+    }
+    .menu_icon i {
+      color: #fff;
+    }
+  }
+  @media (max-width: 991px) {
+    .main_menu .main-menu-item .nav-item {
+        padding: 10px 10px;
+    }
+}
+  @media only screen and (min-width: 576px) and (max-width: 767px) {
+    .navbar-collapse {
+      z-index: 9999 !important;
+      text-align: center !important;
+    }
+    .navbar-light .navbar-toggler {
+      border-color: transparent;
+      }
+    .btn_1 {
+      margin-top: 0;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .navbar-collapse {
+      z-index: 9999 !important;
+       text-align: center !important;
+    }
+    .navbar-light .navbar-toggler {
+      border-color: transparent;
+    }
+    .btn_1 {
+      margin-top: 0;
+    }
+  }
+  @media (max-width: 991px) {
+    .main_menu .main-menu-item .nav-item .nav-link {
+        padding: 15px 15px !important;
+    }
+}
+.dropdown-menu .nav-item{
+    padding: 10px 0;
+}
+@media (max-width: 576px) {
+    .nav-link.btn_1 {
+        margin-top: 0px;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .banner_part .banner_text {
+        height: 1020px;
+    }
 }
