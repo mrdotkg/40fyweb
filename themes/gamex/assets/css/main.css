@@ -1,7 +1,3 @@
-header nav a.btn_1{
-    border: 1px solid; 
-}
-
 .blog_item {
     margin-bottom: 100px;
 }
@@ -595,4 +591,8 @@ fieldset:disabled{
     .banner_part .banner_text {
         height: 1020px;
     }
+}
+header nav a.btn_1{
+    border: 1px solid;
+    font-family: "Aclonica", sans-serif !important;
 }
