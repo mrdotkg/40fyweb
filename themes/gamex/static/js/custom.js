@@ -57,13 +57,13 @@
   var review = $('.live_stareams_slide');
   if (review.length) {
     review.owlCarousel({
-      items: 3,
+      items: 2,
       loop: true,
       dots: false,
-      autoplay: false,
+      autoplay: true,
       autoplayHoverPause: true,
       autoplayTimeout: 5000,
-      nav: true,
+      nav: false,
       navText: [
         '<i class="fas fa-caret-left"></i>',
         '<i class="fas fa-caret-right"></i>'

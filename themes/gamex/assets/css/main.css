@@ -166,6 +166,7 @@ display: -webkit-box;
     width: 30%;
 }
 .progress-table-wrap{
+    font-family: "Poppins", sans-serif;
     overflow-x: auto;
 }
 
@@ -406,6 +407,9 @@ table tr:nth-child(2n) {
 .blog_right_sidebar .widget_title {
     margin-bottom: 20px;
 }
+.fa-envelope{
+    color: white !important;
+}
 
 .fa-whatsapp{
     color: greenyellow !important;
@@ -602,25 +606,18 @@ header nav a.btn_1{
 @import url("https://fonts.googleapis.com/css2?family=Jura:wght@500;600;900&display=swap");
 
 
-.halloffame h1 {
-    text-align: center;
-}
-
-    .halloffame ul {
+.halloffame ul {
     --col-gap: 1rem;
     --barH: 1rem;
     --roleH: 2rem;
     --flapH: 2rem;
 
-    width: min(60rem, 90%);
-    margin-inline: auto;
-
+    
     display: flex;
     flex-wrap: wrap;
 
     gap: var(--col-gap);
-    padding-inline: calc(var(--col-gap) / 2);
-
+    
     justify-content: center;
     align-items: flex-start;
     list-style: none;
@@ -733,4 +730,20 @@ video{
 .live_stareams .live_stareams_slide .live_stareams_slide_img {
     width: 90%;
     height: 90%;
+}
+.live_stareams{
+    padding: 0;
+}
+@media (max-width: 576px) {
+    .banner_part .banner_text h1 {
+        font-size: 50px;
+    }
+}
+.banner_part .banner_text p {
+    padding-right: 0px;
+}
+@media (max-width: 991px) {
+    .live_stareams .live_stareams_slide {
+        margin: 0 20px;
+    }
 }
