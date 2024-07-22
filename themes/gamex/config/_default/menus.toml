@@ -1,68 +1,44 @@
-baseURL = 'https://example.org/'
-enableEmoji = true
-languageCode = 'en-US'
-paginate = 3
-title = 'My New Gaming Site'
-
-[taxonomies]
-author = "authors"
-category = "categories"
-tag = "tags"
-
-# [[menus.main]]
-# name = 'Home'
-# pageRef = '/'
-# weight = 1
-
-[[menus.main]]
+[[main]]
 name = 'Clan'
 pageRef = '/about'
 weight = 10
 
-[[menus.main]]
+[[main]]
 class = "btn_1"
 name = "Match & Play"
 pageRef = '/play'
-weight = 40
+weight = 1
 
-[[menus.main]]
+[[main]]
 name = 'Blogs'
 pageRef = '/posts'
 weight = 50
 
-[[menus.main]]
+[[main]]
 name = 'Gamers'
 pageRef = '/authors'
 weight = 30
 
-# [[menus.main]]
+# [[main]]
 # name = 'Collection'
 # pageRef = '/collections'
 # weight = 40
 
-[[menus.main]]
+[[main]]
 name = 'Free Goodies'
 pageRef = ''
 weight = 90
 
-[[menus.main]]
+[[main]]
 name = 'Free Website Theme'
 pageRef = 'https://github.com/mrdotkg/40fyweb'
 parent = 'Free Goodies'
 target = '_blank'
 weight = 1
 
-[[menus.main]]
+[[main]]
 name = 'Game Dev Community'
 pageRef = 'https://butterops.dotkg.in'
 parent = 'Free Goodies'
 target = '_blank'
 weight = 2
-
-[module]
-[module.hugoVersion]
-extended = false
-min = "0.116.0"
-
-[markup.goldmark.renderer]
-unsafe = true

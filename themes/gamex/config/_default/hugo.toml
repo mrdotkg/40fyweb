@@ -1,0 +1,23 @@
+baseURL = 'https://example.org/'
+enableEmoji = true
+languageCode = 'en-US'
+paginate = 3
+title = 'My New Gaming Site'
+
+[taxonomies]
+author = "authors"
+category = "categories"
+tag = "tags"
+
+# [[menus.main]]
+# name = 'Home'
+# pageRef = '/'
+# weight = 1
+
+[module]
+[module.hugoVersion]
+extended = false
+min = "0.116.0"
+
+[markup.goldmark.renderer]
+unsafe = true
