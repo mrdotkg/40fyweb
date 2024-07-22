@@ -163,7 +163,7 @@ display: -webkit-box;
     color: white;
 }
 .progress-table .visit{
-    width: 30%;
+    /* width: 30%; */
 }
 .progress-table-wrap{
     font-family: "Poppins", sans-serif;
@@ -651,22 +651,22 @@ clip-path: polygon(
 
 /* bar */
 .halloffame ul li::before {
-content: "";
-grid-area: role;
-height: var(--barH);
-width: calc(100% + var(--col-gap));
-margin-left: calc(var(--col-gap) / -2);
-margin-top: calc(var(--roleH) / 2 - var(--barH) / 2);
-background: grey;
-z-index: -1;
-background-image: linear-gradient(
-    rgba(255, 255, 255, 0.4),
-    rgba(255, 255, 255, 0.2) 30%,
-    rgba(255, 255, 255, 0.1) 40%,
-    rgba(0, 0, 0, 0.1) 60%,
-    rgba(0, 0, 0, 0.2) 70%,
-    rgba(0, 0, 0, 0.4)
-);
+    content: "";
+    grid-area: role;
+    height: var(--barH);
+    width: calc(100% + var(--col-gap));
+    margin-left: calc(var(--col-gap) / -2);
+    margin-top: calc(var(--roleH) / 2 - var(--barH) / 2);
+    background: grey;
+    z-index: -2;
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0.4),
+        rgba(255, 255, 255, 0.2) 30%,
+        rgba(255, 255, 255, 0.1) 40%,
+        rgba(0, 0, 0, 0.1) 60%,
+        rgba(0, 0, 0, 0.2) 70%,
+        rgba(0, 0, 0, 0.4)
+    );
 }
 
 /* role */

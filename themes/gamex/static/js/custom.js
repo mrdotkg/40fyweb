@@ -18,30 +18,34 @@
   var client_logo = $('.client_logo_slider')
   if (client_logo.length) {
     client_logo.owlCarousel({
-      items: 5,
+      items: 4,
+      // autoWidth:true,
+      stagePadding: 10,
       loop: true,
       autoplay: true,
-      // autoplayTimeout:1000,
       slideTransition: 'linear',
-      autoplayTimeout: 6000,
-      autoplaySpeed: 6000,
+      autoplayTimeout: 3000,
+      autoplaySpeed: 3000,
       autoplayHoverPause: true,
       margin: 10,
       responsive: {
         0: {
-          items: 2,
+          items: 2,margin: 0,
         },
-        600: {
-          items: 4,
+        540: {
+          items: 3,margin: 0,
+        },
+        768: {
+          items: 4,margin: 0,
         },
         991: {
-          items: 5,
+          items: 5,margin: 0,
         },
         1200: {
-          items: 5,
+          items: 7,margin: 0,
         }
       }
-    });
+    }, 3);
   }
 
 
