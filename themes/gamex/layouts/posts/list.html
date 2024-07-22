@@ -8,24 +8,7 @@
                 <div class="blog_left_sidebar">
                     {{ range .Paginator.Pages }}
                     <a href="{{ .RelPermalink }}">
-                        <article class="blog_item">
-                            <div class="blog_item_img">
-                                {{ if .Params.image }}
-                                    <img class="card-img rounded-0  img-fluid" src="{{ .RelPermalink }}{{ .Params.image }}" alt="">
-                                {{ end }}
-                                <p class="blog_item_date pull-sm-1">
-                                    {{.Date| time.Format ":date_medium"}}</p>
-                                </p>
-                            </div>
-  
-                            <div class="blog_details">
-                                <h3> {{ .LinkTitle }}</h3>
-                                <p class="summary">{{ .Summary }}</p>
-                                <ul class="blog-info-link">
-                                    <li><a href="#"><i class="far fa-bookmark"></i> Tags: {{ partial "taxonomy-terms-list.html" (dict "taxonomy" "tags" "page" .) }}</a></li>
-                                </ul>
-                            </div>
-                        </article>
+                        {{ partial "article" . }}
                     </a>
                     {{ end }}   
                     
@@ -44,7 +27,5 @@
     </div>
 </section>
 <!--================Blog Area =================-->
-
-{{/*  {{ template "_internal/pagination.html" . }}  */}}
 
 {{ end }}

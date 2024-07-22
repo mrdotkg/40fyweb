@@ -2,7 +2,7 @@
 title = 'Hugo Markdown Elements'
 date = 2024-07-09T11:00:00-07:00
 draft = false
-tags = ['red','green','blue']
+tags = ['red']
 categories = ['battleground','rpg']
 authors =['Kr Gaurav']
 +++

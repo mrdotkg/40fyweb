@@ -1,0 +1,36 @@
+<aside class="single_sidebar_widget popular_post_widget">
+                  
+    <h3 class="widget_title">About This Post</h3>
+    
+    {{/*  Breadcrumbs  */}}
+    <nav aria-label="breadcrumb">
+       <ol class="breadcrumb" style="background-color: transparent;">
+          <li class="breadcrumb-item"><a href="/">Home</a></li>
+          {{- range .Ancestors.Reverse }}
+             {{- if not .IsHome}}   
+                <li class="breadcrumb-item"><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+             {{- end }}
+          {{- end }}
+          <li class="breadcrumb-item active" aria-current="page"> This Post</a></li>
+       </ol>
+    </nav>
+    
+    {{/*  Publish date  */}}
+    <h5> {{.Date| time.Format ":date_medium"}}</h5>
+    
+    
+    {{/*  Tags  */}}
+    <p>Tagged as<a href="#">{{ partial "taxonomy-terms-list.html" (dict "taxonomy" "tags" "page" .) }}</a></p>
+    <p>Post Category <a href="#">{{ partial "taxonomy-terms-list.html" (dict "taxonomy" "categories" "page" .) }}</a></p>
+                      
+    {{/*  Social Share   */}}
+    <div class="navigation-top d-flex justify-content-between text-center">
+       <h5>Share </h5>
+       <ul class="social-icons">
+          <li><a target="_blank" href="https://reddit.com/submit/?url={{ .Page.Permalink  }}&resubmit=true&title={{ .Page.Title  }}"><i class="fab fa-reddit"></i></a></li>
+          <li><a target="_blank" href="whatsapp://send?text={{ .Page.Title  }}%20u={{ .Page.Permalink  }}"><i class="fab fa-whatsapp"></i></a></li>
+          <li><a target="_blank" href="https://facebook.com/sharer/sharer.php?u={{ .Page.Permalink  }}"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a target="_blank" href="https://twitter.com/intent/tweet/?text={{ .Page.Title  }}&url={{ .Page.Permalink  }}"><i class="fab fa-twitter"></i></a></li>
+       </ul>
+    </div>
+ </aside>

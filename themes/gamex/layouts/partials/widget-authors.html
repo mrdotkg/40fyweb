@@ -1,0 +1,48 @@
+<aside class="single_sidebar_widget popular_post_widget">
+    {{/*  Author  */}}
+    <h3 class="widget_title">Author(s)</h3>
+    {{- range .Params.authors }}
+    {{- with $.Site.GetPage "taxonomyTerm" (printf "authors/%s" (urlize .)) }}
+    <a href="{{ .Permalink }}">
+       <div class="blog-author media align-items-center">
+          <img src="{{ .Params.photo }}" alt="">
+          <div class="media-body">
+             <h4>{{ .Params.title }}</h4>
+             <p>{{ .Params.subtitle }} </p>
+          </div>
+       </div>
+       <p class="summary">{{ .Summary}}</p>
+       <div class="navigation-top d-flex justify-content-between text-center">
+          <h5>Follow </h5>
+          <ul class="social-icons">
+             <li><a target="_blank" href="https://steamcommunity.com/id/mrdotkg/"><i class="fab fa-steam"></i></a></li>
+             <li><a target="_blank" href="https://www.linkedin.com/in/mrdotkg"><i class="fab fa-linkedin"></i></a></li>
+             <li><a target="_blank" href="https://github.com/mrdotkg"><i class="fab fa-github"></i></a></li>
+             <li><a target="_blank" href="https://www.instagram.com/mrdotkg"><i class="fab fa-instagram"></i></a></li>
+             <li><a target="_blank" href="https://www.youtube.com/@mrdotkg"><i class="fab fa-youtube"></i></a></li>
+          </ul>
+       </div>
+    </a>
+    {{ else }}
+       <a>
+          <div class="blog-author media align-items-center">
+             <img src="" alt="">
+             <div class="media-body">
+                <h4>{{ . }}</h4>
+                <p>Bio missing.</p>
+             </div>
+          </div>
+          <p>Summary is not available</p>
+          <div class="navigation-top d-flex justify-content-between text-center">
+             <h5>Follow </h5> 
+             <ul class="social-icons">
+                <li><p>No social links</p></li>
+             </ul>
+          </div>
+             
+       </a> 
+       {{ end }}
+    {{ end }}
+
+ </aside>
+ 

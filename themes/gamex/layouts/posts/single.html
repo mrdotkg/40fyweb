@@ -66,91 +66,11 @@
           </div>
           <div class="col-lg-4">
              <div class="blog_right_sidebar">
-                <aside class="single_sidebar_widget popular_post_widget">
-                  
-                  <h3 class="widget_title">About This Post</h3>
-                  
-                  {{/*  Breadcrumbs  */}}
-                  <nav aria-label="breadcrumb">
-                     <ol class="breadcrumb" style="background-color: transparent;">
-                        <li class="breadcrumb-item"><a href="/">Home</a></li>
-                        {{- range .Ancestors.Reverse }}
-                           {{- if not .IsHome}}   
-                              <li class="breadcrumb-item"><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
-                           {{- end }}
-                        {{- end }}
-                        <li class="breadcrumb-item active" aria-current="page"> This Post</a></li>
-                     </ol>
-                  </nav>
-                  
-                  {{/*  Publish date  */}}
-                  <h5> {{.Date| time.Format ":date_medium"}}</h5>
-                  
-                  
-                  {{/*  Tags  */}}
-                  <p>Tagged as<a href="#">{{ partial "taxonomy-terms-list.html" (dict "taxonomy" "tags" "page" .) }}</a></p>
-                  <p>Post Category <a href="#">{{ partial "taxonomy-terms-list.html" (dict "taxonomy" "categories" "page" .) }}</a></p>
-                                    
-                  {{/*  Social Share   */}}
-                  <div class="navigation-top d-flex justify-content-between text-center">
-                     <h5>Share </h5>
-                     <ul class="social-icons">
-                        <li><a target="_blank" href="https://reddit.com/submit/?url={{ .Page.Permalink  }}&resubmit=true&title={{ .Page.Title  }}"><i class="fab fa-reddit"></i></a></li>
-                        <li><a target="_blank" href="whatsapp://send?text={{ .Page.Title  }}%20u={{ .Page.Permalink  }}"><i class="fab fa-whatsapp"></i></a></li>
-                        <li><a target="_blank" href="https://facebook.com/sharer/sharer.php?u={{ .Page.Permalink  }}"><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a target="_blank" href="https://twitter.com/intent/tweet/?text={{ .Page.Title  }}&url={{ .Page.Permalink  }}"><i class="fab fa-twitter"></i></a></li>
-                     </ul>
-                  </div>
-               </aside>
+               {{ partial "widget-aboutpost" . }}
                {{ if .Params.authors }}
-               <aside class="single_sidebar_widget popular_post_widget">
-                  {{/*  Author  */}}
-                  <h3 class="widget_title">Author(s)</h3>
-                  {{- range .Params.authors }}
-                  {{- with $.Site.GetPage "taxonomyTerm" (printf "authors/%s" (urlize .)) }}
-                  <a href="{{ .Permalink }}">
-                     <div class="blog-author media align-items-center">
-                        <img src="{{ .Params.photo }}" alt="">
-                        <div class="media-body">
-                           <h4>{{ .Params.title }}</h4>
-                           <p>{{ .Params.subtitle }} </p>
-                        </div>
-                     </div>
-                     <p class="summary">{{ .Summary}}</p>
-                     <div class="navigation-top d-flex justify-content-between text-center">
-                        <h5>Follow </h5>
-                        <ul class="social-icons">
-                           <li><a target="_blank" href="https://steamcommunity.com/id/mrdotkg/"><i class="fab fa-steam"></i></a></li>
-                           <li><a target="_blank" href="https://www.linkedin.com/in/mrdotkg"><i class="fab fa-linkedin"></i></a></li>
-                           <li><a target="_blank" href="https://github.com/mrdotkg"><i class="fab fa-github"></i></a></li>
-                           <li><a target="_blank" href="https://www.instagram.com/mrdotkg"><i class="fab fa-instagram"></i></a></li>
-                           <li><a target="_blank" href="https://www.youtube.com/@mrdotkg"><i class="fab fa-youtube"></i></a></li>
-                        </ul>
-                     </div>
-                  </a>
-                  {{ else }}
-                     <a>
-                        <div class="blog-author media align-items-center">
-                           <img src="" alt="">
-                           <div class="media-body">
-                              <h4>{{ . }}</h4>
-                              <p>Bio missing.</p>
-                           </div>
-                        </div>
-                        <p>Summary is not available</p>
-                        <div class="navigation-top d-flex justify-content-between text-center">
-                           <h5>Follow </h5> 
-                           <ul class="social-icons">
-                              <li><p>No social links</p></li>
-                           </ul>
-                        </div>
-                           
-                     </a> 
-                     {{ end }}
-                  {{ end }}
-         
-               </aside>
+                  {{ partial "widget-authors" . }} 
                {{ end }}
+               {{ partial "widget-recentposts" . }}
 
              </div>
           </div>
