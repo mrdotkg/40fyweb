@@ -1,4 +1,4 @@
 ---
-title: 'Authors'
-subtitle: 'People who write here, on this platform.'
+title: 'Gamers'
+subtitle: 'Players also write here too, on this platform.'
 ---
