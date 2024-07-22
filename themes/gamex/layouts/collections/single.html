@@ -11,29 +11,8 @@
             </div>
             <div class="col-lg-4">
                 <div class="blog_right_sidebar">
-                    <aside class="single_sidebar_widget tag_cloud_widget">
-                        <h4 class="widget_title">By Categories</h4>
-                        <ul class="list">
-                            {{ range $key, $value := .Site.Taxonomies.categories }}
-                                <li>
-                                    <a href="/categories/{{ $key | urlize  }}">
-                                        {{ $key | humanize }}({{ len $value }})
-                                    </a>
-                                </li>
-                            {{ end }}
-                        </ul>
-                    </aside>
-                    <aside class="single_sidebar_widget tag_cloud_widget">
-                        <h4 class="widget_title">By Tags</h4>
-                        <ul class="list">
-                        {{ range $key, $value := .Site.Taxonomies.tags }}
-                           <li>
-                              <a href="/tags/{{ $key | urlize  }}">#{{ $key | humanize }} ({{ len $value }})</a>
-                           </li>
-                        {{ end }}
-                        </ul>
-                    </aside>
-                   
+                    {{ partial "widget-categories" . }}
+                    {{ partial "widget-tags" . }}
                 </div>
             </div>
         </div>

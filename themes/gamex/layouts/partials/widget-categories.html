@@ -1,0 +1,13 @@
+<aside class="single_sidebar_widget post_category_widget">
+    <h4 class="widget_title">All Categories</h4>
+    <ul class="list cat-list">
+        {{ range $key, $value := .Site.Taxonomies.categories }}
+            <li>
+                <a class="d-flex" href="/categories/{{ $key | urlize  }}">
+                    <p>{{ $key | humanize }}</p>
+                    <p>({{ len $value }})</p>
+                </a>
+            </li>
+        {{ end }}
+    </ul>
+</aside>
