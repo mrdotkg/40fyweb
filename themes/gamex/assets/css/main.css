@@ -685,6 +685,15 @@ background-image: linear-gradient(
 height: var(--roleH);
 }
 
+/* Flag Linen Texture: TableCloth */
+.halloffame ul li
+{
+    background: white;
+    background-image: linear-gradient(90deg, var(--accent-color) 50%, transparent 0),
+                      linear-gradient(var(--accent-color) 50%, transparent 0);
+    background-size: 1.5px 1.5px;
+}
+
 .halloffame ul li .icon,
 .halloffame ul li .title,
 .halloffame ul li .descr {
