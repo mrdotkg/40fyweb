@@ -167,7 +167,7 @@ display: -webkit-box;
 }
 .progress-table-wrap{
     font-family: "Poppins", sans-serif;
-    overflow-x: auto;
+    overflow-x: hidden;
 }
 
 .progress-table .table-row {
@@ -750,3 +750,26 @@ video{
 .footer_part img {
     margin-bottom: 10px;
 }
+.video-container {
+    min-height: 250px;
+    /* width: 300px; */
+    position: relative;
+}
+
+.video-container video {
+    width: 93%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    z-index: 0;
+}
+
+/* Just styling the content of the div, the *magic* in the previous rules */
+.video-container .caption {
+  z-index: 1;
+  position: relative;
+  text-align: center;
+  color: #dc0000;
+  padding: 40px;
+}
+  
