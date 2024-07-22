@@ -63,11 +63,13 @@
   if (review.length) {
     review.owlCarousel({
       items: 2,
-      // loop: true,
+      loop: true,
       dots: false,
       autoplay: true,
+      slideTransition: 'linear',
+      autoplayTimeout: 3000,
+      autoplaySpeed: 3000,
       autoplayHoverPause: true,
-      autoplayTimeout: 5000,
       nav: false,
       navText: [
         '<i class="fas fa-caret-left"></i>',
@@ -80,15 +82,15 @@
           margin: 15,
         },
         600: {
-          items: 1,
+          items: 2,
           margin: 15,
         },
         991: {
-          items: 1,
+          items: 3,
           margin: 15,
         },
         1200: {
-          items: 2,
+          items: 3,
           margin: 15,
         }
       }
