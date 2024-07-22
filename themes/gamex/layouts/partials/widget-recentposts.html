@@ -1,14 +1,21 @@
-<aside class="single_sidebar_widget popular_post_widget">
-    <h3 class="widget_title">Recent Posts</h3>
-    {{ range ( where .Site.RegularPages "Type" "posts" | first 5 ) }}
-       <div class="post_item">
-          {{/*  <img src="/img/post/preview.png" alt="post">  */}}
-          <div class="media-body">
-             <a href="{{ .Permalink }}">
-                <h3>{{ .Title }}</h3>
-             </a>
-             <p>{{.Date| time.Format ":date_medium"}}</p>
+<aside class="single_sidebar_widget post_category_widget">
+    <h4 class="widget_title">Recent Posts</h4>
+    <ul class="list cat-list">
+      {{ range ( where .Site.RegularPages "Type" "posts" | first 5 ) }}
+      <li class="flex-row d-flex justify-content-start align-items-center">
+          {{/*  <div class="thumb">
+              <a href="{{ .Permalink }}">
+                 <img class="/img-fluid" src="/img/post/preview.png" alt="">
+              </a>
+          </div>  */}}
+          <div class="detials">
+              <a href="{{ .Params.externalLink | default .RelPermalink }}">
+                  <p>{{ .Date.Format (.Site.Params.dateFormat | default "Jan 2, 2006" ) }}</p>
+                  <h4>{{ .Title }}</h4>
+              </a> 
           </div>
-       </div>
-    {{end}}
+         
+      </li>
+      {{- end -}}
+  </ul>
 </aside>
