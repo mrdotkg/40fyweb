@@ -1,5 +1,6 @@
 (function ($) {
   "use strict";
+  
   // menu fixed js code
   var prevScrollpos = window.scrollY;
   $(window).scroll(function () {
@@ -15,6 +16,7 @@
   });
 
 
+  // Flags hall of fame slider
   var client_logo = $('.client_logo_slider')
   if (client_logo.length) {
     client_logo.owlCarousel({
@@ -48,13 +50,6 @@
     }, 3);
   }
 
-
-  $('.img-gal, .popup-youtube').magnificPopup({
-    type: 'image',
-    gallery: {
-      enabled: true
-    }
-  });
   $('.popup-youtube').magnificPopup({
     type: 'iframe',
   });
@@ -102,6 +97,5 @@
     $('#mc_embed_signup').find('form').ajaxChimp();
   }
   mailChimp();
-
 
 }(jQuery));
