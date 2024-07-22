@@ -1,10 +1,11 @@
 {{ define "main" }}
 <!--================Blog Area =================-->
-   <section class="blog_area single-post-area section_padding">
-    <div class="container">
-       <div class="row">
-          <div class="col-lg-8 posts-list">
-             <div class="single-post">
+<section class="blog_area single-post-area section_padding">
+   <div class="container">
+      <div class="row">
+         <div class="col-lg-8">
+            {{/*  Post  */}}
+            <div class="single-post">
                {{ with .Params.image }}
                <div class="feature-img">
                   <div class="blog_item_img">
@@ -13,14 +14,16 @@
                </div>
                {{ end }}
                <div class="blog_details">
-                   {{ .Content }}
-                </div>
-             </div>
-             <div class="navigation-top">
-                <div class="navigation-area">
-                   <div class="row">
-                     
-                     <div class="col-lg-6 col-md-6 col-12 nav-left flex-row d-flex justify-content-start align-items-center">
+                  {{ .Content }}
+               </div>
+            </div>
+            
+            {{/* Next/Prev Pst    */}}
+            <div class="navigation-top">
+               <div class="navigation-area">
+                  <div class="row">
+                  
+                     <div class="nav-left col-lg-6 col-md-6 col-12 flex-row d-flex justify-content-start align-items-center">
                         {{ with .PrevInSection }} 
                            <div class="detials">
                            <p>Previous  </p>
@@ -29,25 +32,23 @@
                            </a>
                         </div>
                         {{ end }}
-
-                      </div>
-                      
-                      <div class="col-lg-6 col-md-6 col-12 nav-right flex-row d-flex justify-content-end align-items-center">
+                     </div>
+                        
+                     <div class="nav-right col-lg-6 col-md-6 col-12 flex-row d-flex justify-content-end align-items-center">
                         {{ with .NextInSection }}
                         <div class="detials">
                            <p>Next </p>
                            <a href="{{ .Permalink }}">
-                               <h4>{{ .Title }}</h4>
+                              <h4>{{ .Title }}</h4>
                            </a>
-                         </div>
-
-                         {{ end }}
-
-                      </div>
+                        </div>
+                        {{ end }}
                      </div>
-                </div>
-             </div>
+                  </div>
+               </div>
+            </div>
 
+            {{/*  Giscus Comments  */}}
             <script src="https://giscus.app/client.js"
                   data-repo="mrdotkg/40fyweb"
                   data-repo-id="R_kgDOMT7UrQ"
@@ -63,20 +64,21 @@
                   crossorigin="anonymous"
                   async>
             </script>
-          </div>
-          <div class="col-lg-4">
-             <div class="blog_right_sidebar">
+         </div>
+         
+         <div class="col-lg-4">
+            <div class="blog_right_sidebar">
                {{ partial "widget-aboutpost" . }}
                {{ if .Params.authors }}
                   {{ partial "widget-authors" . }} 
                {{ end }}
                {{ partial "widget-recentposts" . }}
-
-             </div>
-          </div>
-       </div>
-    </div>
- </section>
+            </div>
+         </div>
+      
+      </div>
+   </div>
+</section>
  <!--================Blog Area end =================-->
 
 {{ end }}
