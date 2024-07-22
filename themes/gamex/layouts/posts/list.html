@@ -10,7 +10,9 @@
                     <a href="{{ .RelPermalink }}">
                         <article class="blog_item">
                             <div class="blog_item_img">
-                                <img class="card-img rounded-0  img-fluid" src="{{ .RelPermalink }}{{ .Params.image }}" alt="">
+                                {{ if .Params.image }}
+                                    <img class="card-img rounded-0  img-fluid" src="{{ .RelPermalink }}{{ .Params.image }}" alt="">
+                                {{ end }}
                                 <p class="blog_item_date pull-sm-1">
                                     {{.Date| time.Format ":date_medium"}}</p>
                                 </p>
