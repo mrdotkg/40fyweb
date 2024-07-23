@@ -817,6 +817,7 @@ video{
         margin-top: 5px;
     }
 }
-.live_stareams_slide_img img{
+.live_stareams_slide_img img,
+video{
  border: white 2px solid;
 }

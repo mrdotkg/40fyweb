@@ -1,0 +1,14 @@
+headline: 'STUNNING & MINDFUL'
+text: 'We Value Team Strategy And Comradary Above All. And Then The Rest Is For Fun.'
+buttons:
+  - link: 'https://www.youtube.com/@40fygaming'
+    text: 'Subscribe'
+  - link: 'https://youtu.be/DHoZwt50BWs'
+    text: 'More..'
+links:
+  - url: 'https://www.youtube.com/watch?v=DHoZwt50BWs'
+    thumbnail: 'img/tb1.png'
+  - url: 'https://www.youtube.com/watch?v=nDUXs4f7tiY'
+    thumbnail: 'img/tb2.png'
+  - url: 'https://www.youtube.com/watch?v=XgdTylhlo-Q'
+    thumbnail: 'img/tb3.png'

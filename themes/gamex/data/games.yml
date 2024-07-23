@@ -2,31 +2,43 @@
 # Home Page
 - coc:
   title: 'Clash of Clan'
+  shorttitle: 'COC'
   logo: '/img/coc.png'
   type: 'Clan War'
   frequency: 'Everyday'
+  accentcolor: '#0B374D' 
 - cs2:
   title: 'Counter Strike 2'
+  shorttitle: 'CS2'
   logo: '/img/cs2.ico'
   type: 'Squad, Dethmatch'
   frequency: 'Everyday'
+  accentcolor: '#1286A8'
 - aoe4:
   title: 'Age of Empires IV'
+  shorttitle: 'AOE IV'
   logo: '/img/aoe4.ico'
   type: 'Online Multiplayer'
   frequency: 'Only on Sunday'
+  accentcolor: '#D2B53B'
 - codm:
   title: 'Call of Duty Mobile'
+  shorttitle: 'COD'
   logo: '/img/cod.jpg'
   type: 'Frontline TDM'
   frequency: 'Everyday'
+  accentcolor: '#DA611E'
 - bgmi:
   title: 'Battleground Mobile India'
+  shorttitle: 'BGMI' 
   logo: '/img/bgmi.jpg'
   type: 'Classic, Custom Rooms'
   frequency: 'Everyday'
+  accentcolor: '#AC2A1A'
 - dota2:
   title: 'Dota 2'
+  shorttitle: 'DOTA 2'
   logo: '/img/dota2.jpg'
   type: 'Clan War'
   frequency: 'Everyday'
+  accentcolor: '#0c4d35'

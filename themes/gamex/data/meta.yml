@@ -3,11 +3,14 @@ title: 'Hare Ram'
 
 # Home Page
 banner:
+  logo: '/img/logo.png'
   headline: 'The 40FY Gaming'
   text: 'We at 40FY (as in FORTIFY) Gaming are enthusiast about Anime, Video Games and Movies. Come be part of our family to play and watch together and share stories.'
-  call-to-action:
-    link: 
-    text: Join Us on Discord
+  links:
+    - url: '/aboutus'
+      text: About Us
+    - url: '/posts'
+      text: Blogs
   games-logo:
     - ''
     - ''
@@ -21,16 +24,6 @@ about:
     link: 
     text: 
 
-videos:
-  headline:
-  text:
-  call-to-action:
-    link:
-    text:
-  video-links:
-    - ''
-    - ''
-    - ''
 
 lfg:
   headline:

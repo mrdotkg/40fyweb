@@ -1,15 +1,10 @@
 {{- $page := .page }}
 {{- $menuID := .menuID }}
-{{- $meta := site.Data.sitemeta }}
 
 {{- with index site.Menus $menuID }}
   <nav class="navbar justify-content-center navbar-light navbar-expand-lg">
-    {{/*  logo   */}}
-    {{/*  <a class="navbar-brand" href="/"> 
-      <img src="{{ $meta.logo }}" height="55px" alt="logo"> 
-    </a>
-    */}}
-    {{/*  hamburger menu  */}}
+
+    {{/*  website menu  */}}
     <button style="font-size:2.5rem;" class="navbar-toggler" type="button" data-toggle="collapse"
       data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
       aria-expanded="false" aria-label="Toggle navigation">
@@ -20,13 +15,7 @@
       </button>
     <div class="collapse navbar-collapse main-menu-item" id="navbarSupportedContent">
       <ul class="navbar-nav">
-        {{/*  <li class="nav-item" style="padding-top: 13.5px;padding-left: 20px;padding-right: 20px;">
-          <a class="github-button nav-link"
-          href="https://github.com/mrdotkg/40fyweb"
-          data-icon="octicon-github"
-          data-size="large"
-          data-show-count="true" 
-          aria-label="Star This Project on GitHub">Star</a></li>  */}}
+        
         {{- range . }}
           {{- $name := .Name }}
           {{- $attrs := dict "href" .URL }}
@@ -80,8 +69,5 @@
         {{- end }}
         </ul>
     </div>
-    
-    {{/*  Call to Action  */}}
-    {{/*  <a target="_blank" href="https://discord.gg/hSPKsyACfG" class="btn_1 d-none d-xl-block">Discord</a>  */}}
   </nav>
 {{- end }}
