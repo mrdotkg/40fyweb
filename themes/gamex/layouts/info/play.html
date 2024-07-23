@@ -65,7 +65,7 @@
                         </fieldset>
                         <p></p>
                         <fieldset disabled>
-                            <legend>Message </legend>
+                            <legend>Message</legend>
                             <textarea 
                                 id="game_request_message" 
                                 value="Hey Guys! I would like to reserve a game request with you. I play -"
@@ -222,8 +222,13 @@
                 </div>
             </div>
         </div>
-        {{ partial "widget-discord.html" . }}
+        <div class="col-lg-4">
+            <div class="blog_right_sidebar ">
+            {{ partial "widget-help.html" . }}
+            {{ partial "widget-discord.html" . }}
+            </div>
         </div>
+    </div>
        
     </div>
 </section>
