@@ -1,6 +1,6 @@
 ---
-title: 'Kr Gaurav'
-subtitle: 'Software Engineer and father.'
+title: 'Gol Bhanta'
+subtitle: 'Jack of all trades.'
 photo: '/img/author.png'
 twitter: '@dotkrg'
 ---

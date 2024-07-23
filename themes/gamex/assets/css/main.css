@@ -142,8 +142,7 @@
     background: #000;
 }
 .single-post-area .blog_details {
-    padding: 30px;
-
+    padding: 0px;
 }
 .navigation-top{
     margin-top: 40px;
@@ -189,7 +188,7 @@ display: -webkit-box;
   .progress-table {
     background: #f9f9ff;
     padding: 15px 0px 30px 0px;
-    min-width: 800px;
+    max-width: 300px;
   }
   
   /* line 361, ../../01 cl html template/03_jun 2019/186_Gaiming_html/sass/_elements.scss */
@@ -565,6 +564,18 @@ table tr:nth-child(2n) {
         height: 90px;
     }
 }
+fieldset {
+    padding: 20px;
+}
+fieldset legend{
+    padding-top: 20px;
+}
+fieldset textarea.single-textarea{
+    line-height: 30px;
+    padding: 5px;
+    height: 150px;
+}
+
 fieldset:disabled{
     display: none;
 }
@@ -889,4 +900,7 @@ video{
     .btn_1 {
         margin-top: 5px;
     }
-}  
+}
+.live_stareams_slide_img img{
+ border: white 2px solid;
+}

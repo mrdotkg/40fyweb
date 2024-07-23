@@ -1,6 +1,6 @@
 ---
-title: 'Kr Gaurav'
-subtitle: 'Software Engineer and father.'
+title: 'Bandar Chacha'
+subtitle: 'Kon Mortal?'
 photo: '/img/author.png'
 twitter: '@dotkrg'
 ---

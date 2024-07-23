@@ -2593,7 +2593,7 @@ ul {
 @media (max-width: 991px) {
   /* line 2, ../../01 cl html template/03_jun 2019/186_Gaiming_html/sass/_live_stareams.scss */
   .live_stareams {
-    padding: 70px 0 115px 15px;
+    padding: 70px 15px 115px 15px;
   }
 }
 

@@ -67,54 +67,33 @@
                 <div class=" text-center section_tittle">
                     <h1>COMMITMENT & COMRADARY</h1>
                     <p>Participate in the competetives with skilled & serious gamers with committment & comradary.</p>
+                    <p>Looking for a group? #LFG</p>
+                    <br>
+                    <a href="/guidelines" class="btn_1">Guidelines</a> 
+                    <a href="/guidelines" class="btn_1">Match & Play</a> 
                 </div>
             </div>
-        </div>
-        <div class="row align-items-center">
-            <div class="col-md-5 container text-center">
-                <h3>#LFG</h3>
-                <p>Looking for a group?</p>
-                <a href="/guidelines" class="btn_1">Guidelines</a> 
-                <a href="/guidelines" class="btn_1">Match & Play</a> 
+
+            <div class="col-md-12 align-items-center">
+                <div class="row">
+                    {{ range site.Data.games }}
+                    <div class="col-lg-6">
+                        <div class="blog_right_sidebar">
+                            <article class="single_sidebar_widget">
+                                <div class="blog-author media align-items-center">
+                                    <img class="author-image" src="{{ .logo }}" alt="">
+                                    <div class="media-body">
+                                        <h3>{{ .title }}</h3>
+                                        <h4>{{ .type }}</h4>
+                                        <p>{{ .frequency }}</p>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    {{ end }}
+                </div>  
             </div>
-            <div class="col-md-7">
-                <div class="progress-table-wrap">
-                    <div class="progress-table">
-                        <div class="table-row">
-                            <div class="country"> <img src="/img/bgmi.jpg" alt="flag">Custom Rooms</div>
-                            <div class="visit">Everyday</div>
-
-                        </div>
-                        <div class="table-row">
-                            <div class="country"> <img src="/img/cod.jpg" alt="flag">Frontline</div>
-                            <div class="visit">Everyday</div>
-
-                        </div>
-                        <div class="table-row">
-                            <div class="country"> <img src="/img/dota2.jpg" alt="flag">Multiplayer</div>
-                            <div class="visit">Everyday</div>
-
-                        </div>
-                        <div class="table-row">
-                            <div class="country"> <img src="/img/cs2.ico" alt="flag">Competetives</div>
-                            <div class="visit">Only on Saturday | Sunday</div>
-
-                        </div>
-                        <div class="table-row">
-                            <div class="country"> <img src="/img/aoe4.ico" alt="flag">Multiplayer</div>
-                            <div class="visit">Only on Sundays</div>
-
-                        </div>
-                        <div class="table-row">
-                            <div class="country"> <img src="/img/coc.png" alt="flag">Clan Wars</div>
-                            <div class="visit">Only on Sundays</div>
-                        
-                        </div>
-                        
-                </div>
-                </div>
-            </div>
-            
         </div>
     </div>
 </section>
@@ -163,7 +142,7 @@
 <!--::live part end::-->
 
 <!-- about_us part start-->
-<section class="about_us">
+<section class="section_padding">
     <div class="container">
         <div class=" text-center section_tittle">
             <h1>PLAY, WRITE & SHARE</h1>

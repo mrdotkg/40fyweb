@@ -1,6 +1,6 @@
 ---
-title: 'Kr Gaurav'
-subtitle: 'Software Engineer and father.'
+title: 'Shan E Nerwa'
+subtitle: 'Lawyer and sucker.'
 photo: '/img/author.png'
 twitter: '@dotkrg'
 ---
