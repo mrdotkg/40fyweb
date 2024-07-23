@@ -4,14 +4,22 @@
   font-weight: 500;
   font-style: normal;
 }
-
+.josefin-sans-700 {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
 .blog_item {
     margin-bottom: 100px;
 }
 .brand img{
     margin-bottom: 50px;
     padding: 10px;
-
+}
+.navbar-nav{
+    background: red;
 }
 /* .main_menu .main-menu-item {
     justify-content: right;
@@ -503,11 +511,11 @@ fieldset:disabled{
 }
 
 .main_menu{
-    /* background-color: red; */
-    height: 70px;
+    background-color: transparent;
+    /* height: 70px; */
 }
 .main_menu .navbar{
-    padding: .5rem 1rem;
+    padding: 1.5rem;
 }
 
 @media (max-width: 991px) {

@@ -7,7 +7,7 @@ weight = 10
 class = "btn_1"
 name = "Match & Play"
 pageRef = '/play'
-weight = 1
+weight = 40
 
 [[main]]
 name = 'Blogs'
