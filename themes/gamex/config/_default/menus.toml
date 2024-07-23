@@ -15,7 +15,7 @@ pageRef = '/posts'
 weight = 50
 
 [[main]]
-name = 'Gamers'
+name = 'Players'
 pageRef = '/authors'
 weight = 30
 

@@ -3,17 +3,18 @@
 {{- $meta := site.Data.sitemeta }}
 
 {{- with index site.Menus $menuID }}
-  <nav class="navbar navbar-light navbar-expand-lg">
+  <nav class="navbar justify-content-center navbar-light navbar-expand-lg">
     {{/*  logo   */}}
-    <a class="navbar-brand" href="/"> 
+    {{/*  <a class="navbar-brand" href="/"> 
       <img src="{{ $meta.logo }}" height="55px" alt="logo"> 
     </a>
-  
+    */}}
     {{/*  hamburger menu  */}}
-    <button class="navbar-toggler" type="button" data-toggle="collapse"
+    <button style="color: white; font-family:Poppins;" class="navbar-toggler" type="button" data-toggle="collapse"
       data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
       aria-expanded="false" aria-label="Toggle navigation">
-      <span class="menu_icon"><i class="fas fa-bars"></i></span>
+      <span class="menu_icon"><i class="fas fa-gamepad"></i></span>
+      OPEN
     </button>
     <div class="collapse navbar-collapse main-menu-item" id="navbarSupportedContent">
       <ul class="navbar-nav">

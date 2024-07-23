@@ -1,10 +1,21 @@
+.josefin-sans-500 {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
 .blog_item {
     margin-bottom: 100px;
 }
+.brand img{
+    margin-bottom: 50px;
+    padding: 10px;
 
-.main_menu .main-menu-item {
-    justify-content: right;
 }
+/* .main_menu .main-menu-item {
+    justify-content: right;
+} */
 
 .blog_right_sidebar .single_sidebar_widget {
     background: currentColor;
@@ -726,7 +737,7 @@ font-size: 0.9rem;
     /* background-image: none; */
 }
 .halloffame{
-    margin-top: 100px;
+    /* margin-top: 100px; */
     padding: 50px 0;
     /* box-shadow: 0px 10px 20px 0px rgba(221, 221, 221, 0.3); */
 
