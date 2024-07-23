@@ -35,7 +35,7 @@
             {{- $attrs = merge $attrs (dict "class" "ancestor" "aria-current" "true") }}
           {{- end }}
           {{- $name := .Name }}
-          {{- $class := "" }}
+          {{- $class :=  (print $attrs.class " ") }}
           {{- if strings.Contains .URL $.cta }}
             {{- $class = "btn_1 d-block" }}
           {{- end }}

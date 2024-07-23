@@ -65,9 +65,12 @@
 .breadcrumb .breadcrumb_iner {
     height: 300px;
 }
+.breadcrumb .breadcrumb_iner_item {
+    padding: 60px 0;
+}
 .breadcrumb .breadcrumb_iner h2{
     font-size: 35px !important;
-    margin-top: 50px;
+    /* margin-top: 50px; */
 }
 .single-post-area .quotes {
     background: transparent;
