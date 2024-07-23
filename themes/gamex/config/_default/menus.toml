@@ -1,28 +1,28 @@
 [[main]]
-name = 'Clan'
+name = 'CLAN'
 pageRef = '/about'
 weight = 10
 
 [[main]]
 class = "btn_1"
-name = "Match & Play"
+name = "MATCH & PLAY"
 pageRef = '/play'
-weight = 40
+weight = 80
 
 [[main]]
-name = 'Blogs'
+name = 'BLOGS'
 pageRef = '/posts'
 weight = 50
 
 [[main]]
-name = 'Players'
+name = 'PLAYERS'
 pageRef = '/authors'
 weight = 30
 
-# [[main]]
-# name = 'Collection'
-# pageRef = '/collections'
-# weight = 40
+[[main]]
+name = 'HOME'
+pageRef = '/'
+weight = 1
 
 [[main]]
 name = 'Free Goodies'

@@ -22,9 +22,10 @@
     border-radius: 10px;
     background: red;
 }
-/* .main_menu .main-menu-item {
-    justify-content: right;
-} */
+.main_menu .main-menu-item {
+    /* justify-content: right; */
+    border-radius: 10px;
+}
 
 .blog_right_sidebar .single_sidebar_widget {
     background: currentColor;
@@ -617,8 +618,10 @@ fieldset:disabled{
     }
 }
 header nav a.btn_1{
-    border: 1px solid;
-    font-family: "Aclonica", sans-serif !important;
+    /* border: 1px solid; */
+    /* font-family: "Aclonica", sans-serif !important; */
+    border-radius: 10px;
+    background-position: center;
 }
 
 /* Hall of Fame */
