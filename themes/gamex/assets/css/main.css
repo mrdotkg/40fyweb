@@ -84,7 +84,7 @@
     max-width: 75px !important;
 }
 .main_menu .main-menu-item ul li .nav-link:hover {
-    color: white !important;
+    color: rgb(0,0,0, 0.7) !important;
 }
 .single_page_menu .main-menu-item .nav-item a:hover:before {
     width: 0;

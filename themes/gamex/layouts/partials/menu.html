@@ -28,18 +28,22 @@
           data-show-count="true" 
           aria-label="Star This Project on GitHub">Star</a></li>  */}}
         {{- range . }}
+          {{- $name := .Name }}
           {{- $attrs := dict "href" .URL }}
+          
+          {{/*  Menu link attributes  */}}
           {{- if $page.IsMenuCurrent .Menu . }}
             {{- $attrs = merge $attrs (dict "class" "active" "aria-current" "page") }}
           {{- else if $page.HasMenuCurrent .Menu .}}
             {{- $attrs = merge $attrs (dict "class" "ancestor" "aria-current" "true") }}
           {{- end }}
-          {{- $name := .Name }}
-          {{- $class :=  (print $attrs.class " ") }}
+          
+          {{/* Menu link classes   */}}
+          {{- $class := " " }}
           {{- if strings.Contains .URL $.cta }}
             {{- $class = "btn_1 d-block" }}
           {{- end }}
-          
+
           {{- with .Identifier }}
             {{- with T . }}
               {{- $name = . }}
@@ -49,7 +53,7 @@
           {{- if .HasChildren }}
           {{/* Dropdown Menus    */}}
           <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle {{ $class }}" id="navbarDropdown1"
+              <a class="nav-link dropdown-toggle {{ $class }} {{ $attrs.class }}" id="navbarDropdown1"
                 {{- range $k, $v := $attrs }}
                   {{- with $v }}
                     {{- printf " %s=%q" $k $v | safeHTMLAttr }}
@@ -65,7 +69,7 @@
           {{- else}}
           {{/*  Simple Menus  */}}
           <li class="nav-item">
-            <a class="nav-link {{ $class }}"
+            <a class="nav-link {{ $class }}  {{ $attrs.class }}"
               {{- range $k, $v := $attrs }}
                 {{- with $v }}
                   {{- printf " %s=%q" $k $v | safeHTMLAttr }}
