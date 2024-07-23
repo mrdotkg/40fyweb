@@ -5,85 +5,83 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mb-5 mb-lg-0">
-            <div class="blog_left_sidebar">
+            <div class="blog_item">
                 <div class="single-post single-post-area">
                     <div class="blog_details">
                         {{ .Content }}
-                        <div class="single_sidebar_widget">
-                            {{/*  <h3 class="widget_title">Select Game(s)</h3>  */}}
-                            <fieldset>
-                                <legend>Welcome!</legend>
-                                <div id="banner" class="blog-author media align-items-center">
-                                    <img id="avatar" class="" src="/img/author.png" alt="avatar">
-                                    <div class="media-body">
-                                    <h3 id="name">Xxxxx</h3>
-                                    <p id="username">@xxxxx</p>
-                                        <a 
-                                        href="https://discord.com/oauth2/authorize?client_id=820665887513247794&response_type=token&redirect_uri=https%3A%2F%2F40fy.dotkg.in%2Fplay&scope=identify"
-                                        href-alt="https://discord.com/oauth2/authorize?client_id=820665887513247794&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A1313%2Fplay%2F&scope=identify"
-                                        id="login"
-                                        class="btn_1">
-                                        Log In To Proceed
-                                    </a>
-                                        <button 
-                                        id="logout"
-                                        onclick="logout();"
-                                        style="display: none;"
-                                        class="btn_1">Log out</button>
-                                    
-                                    </div>
-                                </div>
-                            </fieldset>
-                            <p></p>
-                            
-                            <fieldset disabled>
-                                <legend>Games </legend>
-                                <div class="checkbox-lable">
-                                    <input onclick="selectGames();" class="selected_games" type="checkbox" value="Age of Empires" id="aoe" />
-                                    <label for="aoe">Age of Empires</label>
-                                </div>
+                        {{/*  <h3 class="widget_title">Select Game(s)</h3>  */}}
+                        <fieldset>
+                            <legend>Welcome!</legend>
+                            <div id="banner" class="blog-author media align-items-center">
+                                <img id="avatar" class="" src="/img/author.png" alt="avatar">
+                                <div class="media-body">
+                                <h3 id="name">Xxxxx</h3>
+                                <p id="username">@xxxxx</p>
+                                    <a 
+                                    href="https://discord.com/oauth2/authorize?client_id=820665887513247794&response_type=token&redirect_uri=https%3A%2F%2F40fy.dotkg.in%2Fplay&scope=identify"
+                                    href-alt="https://discord.com/oauth2/authorize?client_id=820665887513247794&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A1313%2Fplay%2F&scope=identify"
+                                    id="login"
+                                    class="btn_1">
+                                    Log In To Proceed
+                                </a>
+                                    <button 
+                                    id="logout"
+                                    onclick="logout();"
+                                    style="display: none;"
+                                    class="btn_1">Log out</button>
                                 
-                                <div class="checkbox-lable">
-                                    <input onclick="selectGames();" class="selected_games" type="checkbox" value="Counter Strike 2" id="cs2" />
-                                    <label for="cs2">Counter Strike 2</label>
                                 </div>
-                                <div class="checkbox-lable">
-                                    <input onclick="selectGames();" class="selected_games" type="checkbox" value="Battleground Mobile India" id="bgmi" />
-                                    <label for="bgmi">Battleground Mobile India</label>
-                                 </div>
-                                <div class="checkbox-lable">
-                                    <input onclick="selectGames();" class="selected_games" type="checkbox" value="Clash of clans" id="coc" />
-                                    <label for="coc">Clash of clans</label>
+                            </div>
+                        </fieldset>
+                        <p></p>
+                        
+                        <fieldset disabled>
+                            <legend>Games </legend>
+                            <div class="checkbox-lable">
+                                <input onclick="selectGames();" class="selected_games" type="checkbox" value="Age of Empires" id="aoe" />
+                                <label for="aoe">Age of Empires</label>
+                            </div>
+                            
+                            <div class="checkbox-lable">
+                                <input onclick="selectGames();" class="selected_games" type="checkbox" value="Counter Strike 2" id="cs2" />
+                                <label for="cs2">Counter Strike 2</label>
+                            </div>
+                            <div class="checkbox-lable">
+                                <input onclick="selectGames();" class="selected_games" type="checkbox" value="Battleground Mobile India" id="bgmi" />
+                                <label for="bgmi">Battleground Mobile India</label>
                                 </div>
-                                <div class="checkbox-lable">
-                                    <input onclick="selectGames();" class="selected_games" type="checkbox" value="DOTA 2" id="dota" />
-                                    <label for="dota">DOTA 2</label>
-                                </div>
-                                <div class="checkbox-lable">
-                                    <input onclick="selectGames();" class="selected_games" type="checkbox" value="Call of Duty Mobile" id="cod" />
-                                    <label for="cod">Call of Duty Mobile</label>
-                                </div> 
-                            </fieldset>
+                            <div class="checkbox-lable">
+                                <input onclick="selectGames();" class="selected_games" type="checkbox" value="Clash of clans" id="coc" />
+                                <label for="coc">Clash of clans</label>
+                            </div>
+                            <div class="checkbox-lable">
+                                <input onclick="selectGames();" class="selected_games" type="checkbox" value="DOTA 2" id="dota" />
+                                <label for="dota">DOTA 2</label>
+                            </div>
+                            <div class="checkbox-lable">
+                                <input onclick="selectGames();" class="selected_games" type="checkbox" value="Call of Duty Mobile" id="cod" />
+                                <label for="cod">Call of Duty Mobile</label>
+                            </div> 
+                        </fieldset>
+                        <p></p>
+                        <fieldset disabled>
+                            <legend>Message </legend>
+                            <textarea 
+                                id="game_request_message" 
+                                value="Hey Guys! I would like to reserve a game request with you. I play -"
+                                class="single-textarea" 
+                                placeholder="Message" 
+                                onfocus="this.placeholder = ''" 
+                                onblur="this.placeholder = 'Message'" 
+                                required></textarea>
                             <p></p>
-                            <fieldset disabled>
-                                <legend>Message </legend>
-                                <textarea 
-                                    id="game_request_message" 
-                                    value="Hey Guys! I would like to reserve a game request with you. I play -"
-                                    class="single-textarea" 
-                                    placeholder="Message" 
-                                    onfocus="this.placeholder = ''" 
-                                    onblur="this.placeholder = 'Message'" 
-                                    required></textarea>
-                                <p></p>
-                                <button 
-                                    href="https://discord.com/api/webhooks/1264120016165670914/969O6hvEaf4Xhf8zlnhmcMf2Rhzxs7nbkWu9kyTT7IXt8hR7u4WnUwJv8fxSOE8IUH9r"
-                                    id="send"
-                                    class="btn_1"
-                                    onclick="sendMessage();">
-                                    Send to Our Discord Gaming Server</button>                             
-                            </fieldset>
-                        </div>
+                            <button 
+                                href="https://discord.com/api/webhooks/1264120016165670914/969O6hvEaf4Xhf8zlnhmcMf2Rhzxs7nbkWu9kyTT7IXt8hR7u4WnUwJv8fxSOE8IUH9r"
+                                id="send"
+                                class="btn_1"
+                                onclick="sendMessage();">
+                                Send to Our Discord Gaming Server</button>                             
+                        </fieldset>
                         
                     </div>
     

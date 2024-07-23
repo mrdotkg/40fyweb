@@ -142,7 +142,8 @@
     background: #000;
 }
 .single-post-area .blog_details {
-    padding-top: 0px;
+    padding: 30px;
+
 }
 .navigation-top{
     margin-top: 40px;
