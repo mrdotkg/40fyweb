@@ -1,7 +1,7 @@
 ---
 title: 'Kr Gaurav'
 subtitle: 'Software Engineer and father.'
-photo: '/img/author/author-1.jpeg'
+photo: '/img/author.png'
 twitter: '@dotkrg'
 ---
 

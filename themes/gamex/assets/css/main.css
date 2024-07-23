@@ -28,7 +28,9 @@
 }
 
 .blog_right_sidebar .single_sidebar_widget {
-    background: currentColor;
+    background: transparent;
+    box-shadow: 0px 10px 20px 0px rgba(221, 221, 221, 0.3);
+
 }
 
 .blog_area h1, .blog_area h2, .blog_area h3, .blog_area h4, .blog_area h5, .blog_area h6, .blog_area p, .blog_area a {
@@ -174,7 +176,83 @@ display: -webkit-box;
     background-size: cover;
     /* background-color: purple; */
 }
+/* LFG Table */
+
+/* line 353, ../../01 cl html template/03_jun 2019/186_Gaiming_html/sass/_elements.scss */
+.progress-table-wrap {
+    overflow-x: scroll;
+  }
+  
+  /* line 357, ../../01 cl html template/03_jun 2019/186_Gaiming_html/sass/_elements.scss */
+  .progress-table {
+    background: #f9f9ff;
+    padding: 15px 0px 30px 0px;
+    min-width: 800px;
+  }
+  
+  /* line 361, ../../01 cl html template/03_jun 2019/186_Gaiming_html/sass/_elements.scss */
+  .progress-table .serial {
+    width: 11.83%;
+    padding-left: 30px;
+  }
+  
+  /* line 365, ../../01 cl html template/03_jun 2019/186_Gaiming_html/sass/_elements.scss */
+  .progress-table .country {
+    width: 28.07%;
+  }
+  
+  /* line 368, ../../01 cl html template/03_jun 2019/186_Gaiming_html/sass/_elements.scss */
+  .progress-table .visit {
+    width: 19.74%;
+  }
+  
+  /* line 371, ../../01 cl html template/03_jun 2019/186_Gaiming_html/sass/_elements.scss */
+  .progress-table .percentage {
+    width: 40.36%;
+    padding-right: 50px;
+  }
+  
+  /* line 375, ../../01 cl html template/03_jun 2019/186_Gaiming_html/sass/_elements.scss */
+  .progress-table .table-head {
+    display: flex;
+  }
+  
+  /* line 377, ../../01 cl html template/03_jun 2019/186_Gaiming_html/sass/_elements.scss */
+  .progress-table .table-head .serial,
+  .progress-table .table-head .country,
+  .progress-table .table-head .visit,
+  .progress-table .table-head .percentage {
+    color: #415094;
+    line-height: 40px;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  
+  /* line 387, ../../01 cl html template/03_jun 2019/186_Gaiming_html/sass/_elements.scss */
+  .progress-table .table-row {
+    padding: 15px 0;
+    border-top: 1px solid #edf3fd;
+    display: flex;
+  }
+  
+  /* line 391, ../../01 cl html template/03_jun 2019/186_Gaiming_html/sass/_elements.scss */
+  .progress-table .table-row .serial,
+  .progress-table .table-row .country,
+  .progress-table .table-row .visit,
+  .progress-table .table-row .percentage {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* line 399, ../../01 cl html template/03_jun 2019/186_Gaiming_html/sass/_elements.scss */
+  .progress-table .table-row .country img {
+    margin-right: 15px;
+  }
+ 
+
 .progress-table .table-row .country img {
+    width: 100px;
+    border-radius: 50%;
     margin-right: 15px;
     width: inherit;
 }
@@ -725,9 +803,12 @@ color: white;
 text-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
 }
 
-.halloffame ul li .icon {
-font-size: 1rem;
+.halloffame ul li .icon img {
+    font-size: 1rem;
+    border-radius: 50%;
+    width: 100px;
 }
+
 .halloffame ul li .title {
 font-size: 1.25rem;
 font-weight: 700;
