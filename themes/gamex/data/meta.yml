@@ -1,57 +1,30 @@
 logo: '/img/logo.png'
-title: 'Hare Ram'
 
-# Home Page
 banner:
   logo: '/img/logo.png'
   headline: 'The 40FY Gaming'
   text: 'We at 40FY (as in FORTIFY) Gaming are enthusiast about Anime, Video Games and Movies. Come be part of our family to play and watch together and share stories.'
-  links:
+  buttons:
     - url: '/aboutus'
       text: About Us
     - url: '/posts'
       text: Blogs
-  games-logo:
-    - ''
-    - ''
-    - ''
-
-about:
-  video:
-  headline: 'Breathtaking Gameplay & Mindful Strategies'
-  text: 'Multiplayer Team Games push the adranaline level, in situations. Bring your squad to power up competetion and challenges.'
-  call-to-action:
-    link: 
-    text: 
-
 
 lfg:
-  headline:
-  sub-headline:
-  text:
-  call-to-action:
-    link:
-    text:
-  video-links:
-    - ''
-    - ''
-    - ''
-  table:
-    - game: ''
-      match-type:
-      frequency:
-    - game: ''
-      match-type:
-      frequency:
-    - game: ''
-      match-type:
-      frequency:
-    - game: ''
-      match-type:
-      frequency:
+  headline: 'COMMITMENT & COMRADARY'
+  text: 'Participate In The Competetives With Skilled & Serious Gamers With Committment & Comradary. Looking For A Group? #LFG'
+  buttons:
+    - url: '/guidelines'
+      text: Guidelines
+    - url: '/play'
+      text: Match & Play
 
-footer:
-  links:
-    - ''
-    - ''
-    - ''
+last:
+  headline: 'PLAY, WRITE & SHARE'
+  text: 'Multiplayer Team Games push the adranaline level. Bring your squad.'
+  videobg: '/img/cs2-gp.webm'
+  buttons:
+    - url: '/guidelines'
+      text: Guidelines
+    - url: '/play'
+      text: Match & Play
