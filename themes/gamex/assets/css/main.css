@@ -549,9 +549,7 @@ table tr:nth-child(2n) {
 .blog_right_sidebar .blog-author img {
     margin: 0 10px;
 }
-.blog_details {
-    box-shadow: 0px 10px 20px 0px rgba(221, 221, 221, 0.3);
-}
+
 .summary {
     overflow: hidden;
     text-overflow: ellipsis;
