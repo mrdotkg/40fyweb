@@ -475,8 +475,13 @@ fieldset legend{
 }
 fieldset textarea.single-textarea{
     line-height: 30px;
+    font-family: Poppins;
     padding: 5px;
+    font-size: 18px;
     height: 150px;
+    background: rgb(0,0,0,0.0);
+    color: wheat;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.7);
 }
 
 fieldset:disabled{
