@@ -5,7 +5,7 @@ banner:
   headline: '40FY GAMING CLAN'
   text: 'We at 40FY (as in FORTIFY) Gaming are enthusiast about Anime, Video Games and Movies. Come be part of our family to play and watch together and share stories.'
   buttons:
-    - url: '/aboutus'
+    - url: '/about'
       text: About Us
     - url: '/posts'
       text: Blogs
