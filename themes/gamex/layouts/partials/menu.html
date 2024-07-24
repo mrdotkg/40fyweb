@@ -41,6 +41,13 @@
           
           {{- if .HasChildren }}
           {{/* Dropdown Menus    */}}
+          <li class="nav-item" style="padding: 10px;">
+            <input id="" 
+            class="form-control mr-sm-2" 
+            type="search" 
+            placeholder="Search" 
+            aria-label="Search">
+          </li>
           <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle {{ $class }} {{ $attrs.class }}" id="navbarDropdown1"
                 {{- range $k, $v := $attrs }}
@@ -65,6 +72,7 @@
                 {{- end }}
               {{- end -}}
             >{{ $name }}</a> 
+          </li>
           {{- end}}
         {{- end }}
         </ul>
