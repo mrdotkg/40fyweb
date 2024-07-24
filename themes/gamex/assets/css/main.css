@@ -144,9 +144,6 @@
     margin-right: 20px;
     background: #000;
 }
-.single-post-area .blog_details {
-    padding: 0px;
-}
 
 .single-post-area .navigation-top{
     margin: 50px 0;
@@ -482,6 +479,7 @@ fieldset legend{
     padding-top: 20px;
 }
 fieldset textarea.single-textarea{
+    
     line-height: 30px;
     font-family: Poppins;
     padding: 10px;
@@ -490,6 +488,15 @@ fieldset textarea.single-textarea{
     background: rgb(0,0,0,0.0);
     color: wheat;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.7);
+    display: block;
+    width: 100%;
+    border: none;
+    outline: none;
+    resize: none;
+}
+
+.single-textarea:focus {
+    outline: none;
 }
 
 fieldset:disabled{
