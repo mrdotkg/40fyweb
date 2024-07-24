@@ -5,6 +5,7 @@
 
 <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
 <link rel="icon" href="/img/favicon.png">
+<script async defer src="https://buttons.github.io/buttons.js"></script>
 
 <link rel="stylesheet" href="/css/bootstrap.min.css">
 <link rel="stylesheet" href="/css/owl.carousel.min.css">
@@ -12,6 +13,6 @@
 <link rel="stylesheet" href="/css/magnific-popup.css">
 <link rel="stylesheet" href="/css/style.css">
 
-<script async defer src="https://buttons.github.io/buttons.js"></script>
+{{/*  {{ partialCached "head/sass.html" . }}  */}}
 {{ partialCached "head/css.html" . }}
 {{ partialCached "head/js.html" . }}
