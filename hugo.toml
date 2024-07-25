@@ -1,4 +1,3 @@
-_merge = 'shallow'
 baseURL = '40fy.dotkg.in/'
 languageCode = 'en-us'
 theme = "gamex"
