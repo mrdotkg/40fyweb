@@ -1,6 +1,6 @@
 [[main]]
 name = 'CLAN'
-pageRef = '/about'
+pageRef = '/clan'
 weight = 10
 
 [[main]]

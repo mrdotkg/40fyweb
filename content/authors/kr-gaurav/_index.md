@@ -1,8 +1,17 @@
 ---
 title: 'Kr Gaurav'
-subtitle: 'Software Engineer and father.'
+subtitle: "Into Software, Pets and Places."
 photo: '/img/author.png'
-twitter: '@dotkrg'
+social: 
+    - steam: '@mrdotkg'
+    - linkedin: '@mrdotkg'
+    - github: '@mrdotkg'
+    - instagram: '@mrdotkg'
+    - youtube: '@mrdotkg'
+games:
+    - cs2
+    - aoe4
+    - bgmi
 ---
 
 ### Free Time Gamer | Full Time Developer
