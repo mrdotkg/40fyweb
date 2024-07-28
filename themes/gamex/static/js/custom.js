@@ -54,7 +54,7 @@
     type: 'iframe',
   });
 
-  var review = $('.live_stareams_slide');
+  var review = $('.live_streams_slide');
   if (review.length) {
     review.owlCarousel({
       items: 2,

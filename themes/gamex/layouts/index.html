@@ -16,8 +16,8 @@
             </div>
             <div class="col-md-3"></div>
             {{ with site.Data.meta.banner }}
-            <div class="col-lg-6 text-center">
-                <a class="brand" href="/"> 
+            <div class="brand col-lg-6 text-center">
+                <a href="/"> 
                     <img src="{{ .logo }}" height="155px" alt="#">
                 </a>
             
@@ -84,7 +84,7 @@
 {{ end }}
 
 {{ with site.Data.videos }}
-<section class="live_stareams section_padding">
+<section class="live_streams section_padding">
     <div class="container-fluid">
         <div class=" text-center section_tittle">
             <h1>{{ .headline }}</h1>
@@ -96,9 +96,9 @@
         </div>
         <div class="row align-items-center justify-content-between">
             <div class="col-md-10 offset-sm-1">
-                <div class="live_stareams_slide owl-carousel">
+                <div class="live_streams_slide owl-carousel">
                     {{ range .links }}
-                    <div class="live_stareams_slide_img">
+                    <div class="live_streams_slide_img">
                         <img src="{{ .thumbnail }}" alt="">
                         <a class="video-play-button popup-youtube" 
                            target="_blank"
@@ -114,7 +114,7 @@
 {{ end }}
 
 {{ with site.Data.meta.last}}
-<section class="section_padding">
+<section class="live_streams section_padding">
     <div class="container">
         <div class=" text-center section_tittle">
             <h1>{{ .headline }}</h1>

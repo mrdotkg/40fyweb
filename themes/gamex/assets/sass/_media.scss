@@ -1,0 +1,136 @@
+@media only screen and (max-width: 991px) {
+    .navbar-collapse {
+        background-color: transparent;
+     }
+}
+@media (max-width: 600px) {
+    .single-post-area .blog-author img {
+        width: 90px;
+        height: 90px;
+    }
+}
+
+@media (max-width: 991px) {
+    .main_menu {
+        padding: 0px 0px;
+    }
+
+    .menu_icon i {
+        color: #fff;
+    }
+    
+    .navbar-brand img {
+        max-width: 100%;
+    }
+    .main_menu .main-menu-item {
+      text-align: center !important;
+    }
+
+    .main_menu .main-menu-item .nav-item {
+        padding: 10px 10px;
+    }
+    .main_menu .main-menu-item .nav-item .nav-link {
+        padding: 15px 15px;
+        color: #fff;
+    }
+
+    .navbar-collapse {
+      z-index: 9999 !important;
+    }
+
+    .dropdown .dropdown-menu {
+      transform: scale(1, 0);
+      display: none;
+      margin-top: 10px;
+      text-align: center;
+    }
+    .dropdown:hover .dropdown-menu {
+      transform: scale(1);
+      display: block;
+    }
+
+    .navbar-light .navbar-toggler {
+      border-color: transparent;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .banner_part .banner_text h1 {
+        font-size: 40px;
+    }    
+    .navbar-brand img {
+        left: 0;
+        right: 0;
+    }
+    .navbar-collapse {
+      z-index: 9999 !important;
+      text-align: center !important;
+    }
+    .navbar-light .navbar-toggler {
+      border-color: transparent;
+      }
+    .btn_1 {
+      margin-top: 0;
+    }
+}
+  
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .navbar-collapse {
+      z-index: 9999 !important;
+       text-align: center !important;
+    }
+    .navbar-light .navbar-toggler {
+      border-color: transparent;
+    }
+    .btn_1 {
+      margin-top: 5;
+    }
+}
+
+@media (max-width: 576px) {
+    .nav-link.btn_1 {
+        margin-top: 0px;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .banner_part .banner_text {
+        height: 1020px;
+    }
+}
+
+@media (max-width: 576px) {
+    .banner_part .banner_text h1 {
+        font-size: 50px;
+    }
+}
+@media (max-width: 991px) {
+    .live_stareams .live_stareams_slide {
+        margin: 0 20px;
+    }
+}
+@media (max-width: 399.98px) {
+    .pagination {
+        font-size: 0.7rem;
+    }
+}
+@media (max-width: 767px) {
+    .single-post-area .navigation-area .nav-left {
+        margin-bottom: 0px;
+    }
+}
+@media (max-width: 549.98px) {
+    .pagination {
+        li:first-child,
+        li:nth-child(2),
+        li:last-child,
+        li:nth-last-child(2) {
+        display: none;
+        }
+    }
+    .pagination {
+        li:nth-child(3) {  
+        margin-left: 0;
+        }
+    }
+}

@@ -1,25 +1,31 @@
 .breadcrumb_bg {
 	@include background("../img/banner.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .breadcrumb {
 	position: relative;
 	z-index: 1;
 	text-align: center;
-
+	padding: 1rem 0rem;
+	margin-bottom: 0px !important;
 	.breadcrumb_iner {
-		height: 475px;
+		height: 300px;
 		width: 100%;
 		display: table;
 		.breadcrumb_iner_item {
+			padding: 60px 0;
 			display: table-cell;
 			vertical-align: middle;
+
 			h2 {
 				color: $white_color;
-				font-size: 90px;
+				font-size: 35px;
 				font-weight: 500;
 				margin-bottom: 10px;
-				text-transform: capitalize;
+				text-transform: none;
 				@media #{$small_mobile} {
 					font-size: 35px;
 				}
@@ -36,18 +42,16 @@
 					font-size: 50px;
 				}
 			}
+
 			p {
 				font-size: 15px;
 				color: $white_color;
 			}
+
 			span {
 				margin: 0px 5px;
 				font-size: 12px;
 			}
 		}
 	}
-}
-
-.breadcrumb {
-	margin-bottom: 0px !important;
 }

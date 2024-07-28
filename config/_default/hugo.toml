@@ -1,10 +1,10 @@
 baseURL = '40fy.dotkg.in/'
+enableEmoji = true
 languageCode = 'en-us'
+paginate = 3
 theme = "gamex"
 themesDir = "./themes/"
-
-enableEmoji = true
-paginate = 3
+title = "40FY Gaming"
 
 [taxonomies]
 author = "authors"

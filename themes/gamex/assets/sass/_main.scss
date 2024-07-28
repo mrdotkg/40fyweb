@@ -1,0 +1,220 @@
+.josefin-sans-500 {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+.josefin-sans-700 {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+.brand {
+  img {
+    margin-bottom: 50px;
+    padding: 10px;
+  }
+}
+
+.blog_area h1,
+.blog_area h2,
+.blog_area h3,
+.blog_area h4,
+.blog_area h5,
+.blog_area h6,
+.blog_area p,
+.blog_area a {
+  color: white !important;
+}
+
+.pagination {
+  justify-content: center;
+  li:nth-child(3) {
+    margin-left: 1rem;
+  }
+  li {
+    &:nth-last-child(2) {
+      margin-left: 1rem;
+    }
+  }
+  .page-item {
+    a {
+      background: transparent;
+    }
+    &.active {
+      .page-link {
+        z-index: 1;
+        color: #fff !important;
+        background-color: #ff0000 !important;
+        border-color: #ff0000 !important;
+      }
+    }
+    &.disabled {
+      .page-link {
+        background-color: transparent;
+        opacity: 0.2;
+      }
+    }
+  }
+} 
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+
+.animated {
+-webkit-animation-duration: 1s;
+animation-duration: 1s;
+-webkit-animation-fill-mode: both;
+animation-fill-mode: both;
+}
+
+@keyframes fadeInDown {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -100%, 0);
+      transform: translate3d(0, -100%, 0);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+}
+
+@-webkit-keyframes fadeInDown {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -100%, 0);
+      transform: translate3d(0, -100%, 0);
+    }
+  
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+.author-image {
+  border-radius: 50%;
+  max-width: 100px;
+}
+body {
+  height: unset;
+  max-height: 100% !important;
+}
+
+.single-post .blog_details li,
+.single-post .blog_details table,
+.single-post .blog_details label,
+.single-post .blog_details dt {
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+.blog_right_sidebar hr,
+.single-post hr {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.fa-envelope {
+  color: white !important;
+}
+.fa-whatsapp {
+  color: greenyellow !important;
+}
+.fa-youtube {
+  color: red !important;
+}
+.fa-reddit {
+  color: rgb(245, 88, 31) !important;
+}
+.fa-facebook-f {
+  color: lightblue !important;
+}
+.fa-steam {
+  color: rgb(182, 210, 238) !important;
+}
+.fa-linkedin {
+  color: skyblue !important;
+}
+.fa-github {
+  color: White !important;
+}
+.fa-instagram {
+  color: rgb(236, 8, 236) !important;
+}
+.fa-discord {
+  color: rgb(2, 186, 186) !important;
+}
+.fa-twitter {
+  color: skyblue !important;
+}
+.summary {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+fieldset {
+  padding: 20px;
+  legend {
+    padding-top: 20px;
+  }
+  textarea {
+    &.single-textarea {
+      &:focus {
+        outline: none;
+      }
+      line-height: 30px;
+      font-family: Poppins;
+      padding: 10px;
+      font-size: 18px;
+      height: 150px;
+      background: rgba(0, 0, 0, 0);
+      color: wheat;
+      box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.7);
+      display: block;
+      width: 100%;
+      border: none;
+      outline: none;
+      resize: none;
+    }
+  }
+  &:disabled {
+    display: none;
+  }
+}
+
+#avatar {
+  width: 150px;
+  height: 150px;
+}
+#name {
+  margin-bottom: 0;
+}
+#username {
+  margin-bottom: 0.5rem;
+}
+header {
+  nav {
+    a {
+      &.btn_1 {
+        border-radius: 10px;
+        background-position: center;
+      }
+    }
+  }
+}
+.credits {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  a {
+    color: var(--color);
+  }
+}
