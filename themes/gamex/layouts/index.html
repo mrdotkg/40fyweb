@@ -16,17 +16,19 @@
             </div>
             <div class="col-md-3"></div>
             {{ with site.Data.meta.banner }}
-            <div class="brand col-lg-6 text-center">
+            <div class="brand col-lg-6 text-center p-3">
                 <a href="/"> 
                     <img src="{{ .logo }}" height="155px" alt="#">
                 </a>
             
                 <h1 class="josefin-sans-700 ">{{ .headline }} </h1>
                 <p>{{ .text }}</p> 
-                <br>
                 
                 {{ range .buttons }}
-                <a href="{{ .url }}" class="btn_1">{{ .text }}</a>
+                <a href="{{ .url }}" style="background: {{ .bg }};" class="m-3 button">
+                    <i style="padding:10px;font-weight: 700;" class="fab fa-{{ .icon }}"></i>
+                    {{ .text }}
+                </a>
                 {{ end }}
                 
                 <p style="margin-top: 20px;"><a  class="github-button nav-link"
@@ -38,13 +40,13 @@
             </div>
             {{ end }}
             <div class="col-md-3"></div>
-            
+
         </div>
     </div>
 </section>
 
 {{ with site.Data.meta.lfg}}
-<section class="section_padding">
+<section class="section_padding" style="background: radial-gradient(purple, darkblue);">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
@@ -52,9 +54,9 @@
                     <h1>{{ .headline }}</h1>
                     <p>{{ .text }}</p>
                     <br>
-                    {{ range .buttons }}
-                    <a href="{{ .url }}" class="btn_1">{{ .text }}</a> 
-                    {{ end }}
+                    {{/*  {{ range .buttons }}
+                    <a href="{{ .url }}" style=""  class="button"><i style="padding:10px; font-weight: 700;  " class="fab fa-discord"></i>{{ .text }}</a> 
+                    {{ end }}  */}}
                 </div>
             </div>
 
@@ -67,9 +69,10 @@
                                 <div class="blog-author media align-items-center">
                                     <img class="author-image" src="{{ .logo }}" alt="">
                                     <div class="media-body">
-                                        <h3>{{ .title }}</h3>
-                                        <h4>{{ .type }}</h4>
-                                        <p>{{ .frequency }}</p>
+                                        <p>{{ .title }}</p>
+                                        <h3>{{ .frequency }}</h3>
+                                        <p class="text-uppercase">{{ .type }}</p>
+
                                     </div>
                                 </div>
                             </article>
@@ -78,33 +81,11 @@
                     {{ end }}
                 </div>  
             </div>
-        </div>
-    </div>
-</section>
-{{ end }}
 
-{{ with site.Data.videos }}
-<section class="live_streams section_padding">
-    <div class="container-fluid">
-        <div class=" text-center section_tittle">
-            <h1>{{ .headline }}</h1>
-            <p>{{ .text }}</p>
-            <br>
-            {{ range .buttons }}
-                <a target="_blank" href="{{ .link }}" class="btn_1">{{ .text}}</a>
-            {{ end }}
-        </div>
-        <div class="row align-items-center justify-content-between">
-            <div class="col-md-10 offset-sm-1">
-                <div class="live_streams_slide owl-carousel">
-                    {{ range .links }}
-                    <div class="live_streams_slide_img">
-                        <img src="{{ .thumbnail }}" alt="">
-                        <a class="video-play-button popup-youtube" 
-                           target="_blank"
-                           href="{{ .url }}"><span class="fas fa-play"></span>
-                        </a>
-                    </div>
+            <div class="col-lg-12 p-3">
+                <div class=" text-center section_tittle">
+                    {{ range .buttons }}
+                    <a href="{{ .url }}" style="background: {{ .bg }}"  class="button"><i style="padding:10px; font-weight: 700;  " class="fab fa-{{ .icon }}"></i>{{ .text }}</a> 
                     {{ end }}
                 </div>
             </div>
@@ -130,6 +111,41 @@
                         <a target="_blank" href="{{ .link }}" class="btn_1">{{ .text}}</a>
                     {{ end }}
                 </div>
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}
+
+{{ with site.Data.meta.videos }}
+<section class="live_streams section_padding" style="background: radial-gradient(purple, darkblue);">
+    <div class="container-fluid">
+
+         <div class="row align-items-center justify-content-between">
+
+            <div class="col-md-10 offset-sm-1 p-3 text-center section_tittle">
+                <h1>{{ .headline }}</h1>
+                <p>{{ .text }}</p>
+            </div>
+            
+            <div class="col-md-10 offset-sm-1 p-3">
+                <div class="live_streams_slide owl-carousel">
+                    {{ range .links }}
+                    <div class="live_streams_slide_img">
+                        <img src="{{ .thumbnail }}" alt="">
+                        <a class="video-play-button popup-youtube" 
+                           target="_blank"
+                           href="{{ .url }}"><span class="fas fa-play"></span>
+                        </a>
+                    </div>
+                    {{ end }}
+                </div>
+            </div>
+
+            <div class="col-md-10 offset-sm-1 p-3 text-center">
+                {{ range .buttons }}
+                    <a target="_blank" style=" background: {{ .bg }}" href="{{ .link }}" class="button"><i style="padding:10px; font-weight: 700;  " class="fab fa-{{ .icon }}"></i>{{ .text}}</a>
+                {{ end }}
             </div>
         </div>
     </div>

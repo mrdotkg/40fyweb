@@ -6,25 +6,43 @@ banner:
   text: 'We at 40FY (as in FORTIFY) Gaming are enthusiast about Anime, Video Games and Movies. Come be part of our family to play and watch together and share stories.'
   buttons:
     - url: '/about'
-      text: About Us
-    - url: '/posts'
-      text: Blogs
+      text: Send Match Request
+      bg: '#075E54'
+      icon: whatsapp
+
 
 lfg:
-  headline: 'COMMITMENT & COMRADARY'
+  headline: 'Looking For A Group?'
   text: 'Participate In The Competetives With Skilled & Serious Gamers With Committment & Comradary. Looking For A Group? #LFG'
   buttons:
-    - url: '/guidelines'
-      text: Guidelines
     - url: '/play'
-      text: Match & Play
+      text: Match With Us & Play
+      bg: transparent
+      icon: discord
+
+videos:
+  headline: 'Watch Us Play?'
+  text: 'We Value Team Strategy And Comradary Above All. And Then The Rest Is For Fun.'
+  buttons:
+    - link: https://www.youtube.com/@40fygaming
+      text: Subscribe Now
+      bg: transparent
+      icon: youtube
+      
+  links:
+    - url: 'https://www.youtube.com/watch?v=DHoZwt50BWs'
+      thumbnail: 'img/tb1.png'
+    - url: 'https://www.youtube.com/watch?v=nDUXs4f7tiY'
+      thumbnail: 'img/tb2.png'
+    - url: 'https://www.youtube.com/watch?v=XgdTylhlo-Q'
+      thumbnail: 'img/tb3.png'
 
 last:
-  headline: 'PLAY, WRITE & SHARE'
+  headline: 'Play, Write & Share'
   text: 'Multiplayer Team Games push the adranaline level. Bring your squad.'
   videobg: '/img/cs2-gp.webm'
   buttons:
-    - url: '/guidelines'
-      text: Guidelines
-    - url: '/play'
-      text: Match & Play
+    - url: '/about'
+      text: About Us
+    - url: '/blogs'
+      text: Our Blogs

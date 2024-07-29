@@ -11,18 +11,19 @@
                         {{ .Content }}
                         {{/*  <h3 class="widget_title">Select Game(s)</h3>  */}}
                         <fieldset>
-                            <legend>Welcome!</legend>
+                            <legend>Welcome! Login to proceed sending match requests.</legend>
                             <div id="banner" class="blog-author media align-items-center">
                                 <img id="avatar" class="" src="/img/author.png" alt="avatar">
                                 <div class="media-body">
-                                <h3 id="name">Xxxxx</h3>
-                                <p id="username">@xxxxx</p>
+                                <h3 id="name"></h3>
+                                <p id="username"></p>
                                     <a 
                                     href="https://discord.com/oauth2/authorize?client_id=820665887513247794&response_type=token&redirect_uri=https%3A%2F%2F40fy.dotkg.in%2Fplay&scope=identify"
                                     href-alt="https://discord.com/oauth2/authorize?client_id=820665887513247794&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A1313%2Fplay%2F&scope=identify"
                                     id="login"
                                     class="btn_1">
-                                    Log In To Proceed
+                                    <i style="color: white !important;" class="fab fa-discord"></i>
+                                    Login With Discord
                                 </a>
                                     <button 
                                     id="logout"
@@ -78,7 +79,7 @@
                             <button 
                                 href="https://discord.com/api/webhooks/1264120016165670914/969O6hvEaf4Xhf8zlnhmcMf2Rhzxs7nbkWu9kyTT7IXt8hR7u4WnUwJv8fxSOE8IUH9r"
                                 id="send"
-                                class="btn_1"
+                                class="button"
                                 onclick="sendMessage();">
                                 Send to Our Discord Gaming Server</button>                             
                         </fieldset>
@@ -210,10 +211,10 @@
                         function jagmag(){
                             setInterval(function(){ 
                                 // toggle the class every five second
-                                $('#login').toggleClass('btn_1:hover');  
+                                $('#login').toggleClass('button:hover');  
                                 setTimeout(function(){
                                   // toggle back after 1 second
-                                  $('#login').toggleClass('btn_1:hover');  
+                                  $('#login').toggleClass('button:hover');  
                                 },1000);
                              
                              },5000);

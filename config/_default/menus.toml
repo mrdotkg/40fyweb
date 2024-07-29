@@ -4,10 +4,10 @@ pageRef = '/clan'
 weight = 10
 
 [[main]]
-class = "btn_1"
-name = "MATCH & PLAY"
+name = "MATCH WITH US"
 pageRef = '/play'
-weight = 80
+pre = '<i class="fab fa-discord"></i>'
+weight = 40
 
 [[main]]
 name = 'BLOGS'

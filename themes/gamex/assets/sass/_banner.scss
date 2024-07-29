@@ -1,21 +1,22 @@
-.breadcrumb_bg {
-	@include background("../img/banner.jpg");
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+.banner_bg {
+	// @include background("../img/banner.jpg");
+	// background-position: center;
+	// background-repeat: no-repeat;
+	// background-size: cover;
+	background: radial-gradient(purple, darkblue);
 }
 
-.breadcrumb {
+.banner {
 	position: relative;
 	z-index: 1;
 	text-align: center;
 	padding: 1rem 0rem;
 	margin-bottom: 0px !important;
-	.breadcrumb_iner {
+	.banner_iner {
 		height: 300px;
 		width: 100%;
 		display: table;
-		.breadcrumb_iner_item {
+		.banner_iner_item {
 			padding: 60px 0;
 			display: table-cell;
 			vertical-align: middle;

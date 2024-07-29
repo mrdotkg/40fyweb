@@ -4,7 +4,7 @@
 {{- with index site.Menus $menuID }}
   <nav class="navbar justify-content-center navbar-light navbar-expand-lg">
 
-    {{/*  website menu  */}}
+    {{/*  Menu Toggle */}}
     <button style="font-size:2.5rem;" class="navbar-toggler" type="button" data-toggle="collapse"
       data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
       aria-expanded="false" aria-label="Toggle navigation">
@@ -12,7 +12,8 @@
         <i style="padding: 0 10px; color: red" class="fas fa-gamepad"></i>
 
       </span>
-      </button>
+    </button>
+    
     <div class="collapse navbar-collapse main-menu-item" id="navbarSupportedContent">
       <ul class="navbar-nav">
         
@@ -28,19 +29,20 @@
           {{- end }}
           
           {{/* Menu link classes   */}}
-          {{- $class := " " }}
-          {{- if strings.Contains .URL $.cta }}
+          {{- $class := "" }}
+          {{/*  {{- if strings.Contains .URL $.cta }}
             {{- $class = "btn_1 d-block" }}
-          {{- end }}
+          {{- end }}  */}}
 
           {{- with .Identifier }}
             {{- with T . }}
               {{- $name = . }}
             {{- end }}
           {{- end }}
-          
+
           {{- if .HasChildren }}
           {{/* Dropdown Menus    */}}
+          
           {{/*  <li class="nav-item" style="padding: 8px;">
             <input id="" 
             class="form-control mr-sm-2" 
@@ -62,8 +64,10 @@
                 {{- end }}
               </ul>
           </li>
+          
           {{- else}}
           {{/*  Simple Menus  */}}
+          
           <li class="nav-item">
             <a class="nav-link {{ $class }}  {{ $attrs.class }}"
               {{- range $k, $v := $attrs }}
@@ -71,7 +75,11 @@
                   {{- printf " %s=%q" $k $v | safeHTMLAttr }}
                 {{- end }}
               {{- end -}}
-            >{{ $name }}</a> 
+            >
+            {{ with .Pre }}
+              {{ . }} 
+            {{ end }}
+            {{ $name }}</a> 
           </li>
           {{- end}}
         {{- end }}
