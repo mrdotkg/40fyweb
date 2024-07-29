@@ -7,6 +7,7 @@
   type: 'War'
   frequency: 'Everyday'
   accentcolor: '#0B374D' 
+
 - cs2:
   title: 'Counter Strike 2'
   shorttitle: 'CS2'
@@ -14,6 +15,7 @@
   type: 'Squad | Dethmatch'
   frequency: 'Everyday'
   accentcolor: '#1286A8'
+
 - aoe4:
   title: 'Age of Empires IV'
   shorttitle: 'AOE IV'
@@ -21,6 +23,7 @@
   type: 'Online | Multiplayer'
   frequency: 'Only on Sunday'
   accentcolor: '#D2B53B'
+
 - codm:
   title: 'Call of Duty Mobile'
   shorttitle: 'COD'
@@ -28,6 +31,7 @@
   type: 'Frontline | TDM'
   frequency: 'Everyday'
   accentcolor: '#DA611E'
+
 - bgmi:
   title: 'Battleground Mobile India'
   shorttitle: 'BGMI' 
@@ -35,6 +39,7 @@
   type: 'Classic | Custom | Arena'
   frequency: 'Everyday'
   accentcolor: '#AC2A1A'
+
 - dota2:
   title: 'Dota 2'
   shorttitle: 'DOTA 2'

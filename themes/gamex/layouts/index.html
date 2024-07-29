@@ -108,7 +108,7 @@
                 </video>
                 <div class="caption">
                     {{ range .buttons }}
-                        <a target="_blank" href="{{ .link }}" class="btn_1">{{ .text}}</a>
+                        <a target="_blank" href="{{ .link }}" class="button">{{ .text}}</a>
                     {{ end }}
                 </div>
             </div>
@@ -132,7 +132,7 @@
                 <div class="live_streams_slide owl-carousel">
                     {{ range .links }}
                     <div class="live_streams_slide_img">
-                        <img src="{{ .thumbnail }}" alt="">
+                        <img loading="lazy" src="{{ .thumbnail }}" alt="">
                         <a class="video-play-button popup-youtube" 
                            target="_blank"
                            href="{{ .url }}"><span class="fas fa-play"></span>

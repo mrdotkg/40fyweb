@@ -43,6 +43,6 @@ last:
   videobg: '/img/cs2-gp.webm'
   buttons:
     - url: '/about'
-      text: About Us
+      text: About 40FY
     - url: '/blogs'
-      text: Our Blogs
+      text: Player Blogs

@@ -25,20 +25,20 @@ pageRef = '/'
 weight = 1
 
 [[main]]
-name = 'Free Goodies'
+name = 'GOODIES'
 pageRef = ''
 weight = 90
 
 [[main]]
-name = 'Free Website Theme'
+name = 'FREE THEME'
 pageRef = 'https://github.com/mrdotkg/40fyweb'
-parent = 'Free Goodies'
+parent = 'GOODIES'
 target = '_blank'
 weight = 1
 
 [[main]]
-name = 'Game Dev Community'
+name = 'DEV COMMUNITY'
 pageRef = 'https://butterops.dotkg.in'
-parent = 'Free Goodies'
+parent = 'GOODIES'
 target = '_blank'
 weight = 2

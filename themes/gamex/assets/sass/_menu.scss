@@ -30,10 +30,13 @@
 				color: $white-color;
 				font-size: 15px;
 				padding: 20px 20px;
-				font-family: $font_stack_2;
+				// font-family: $font_stack_2;
 				text-transform: capitalize;
-				line-height: 12px;
+				// line-height: 12px;
 				font-weight: 400;
+				i {
+					line-height: 11px;
+				}
 				&:hover {
 					color: rgba(0, 0, 0, 0.7);
 				}
