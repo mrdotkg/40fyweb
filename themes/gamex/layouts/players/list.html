@@ -1,14 +1,7 @@
 {{ define "main" }}
 <section class="blog_area  single-post-area section_padding">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-12 single-post">
-                <div class="blog_details">
-                    {{ .Content}}
-                </div>
-            </div>
-        </div>
-        <br>
+        
         <div class="row">
             {{ range .Data.Pages }}
                 <div class="col-lg-6">
@@ -34,6 +27,15 @@
                 </div>
             {{ end }}
         </div>
+        <br>
+        <div class="row">
+            <div class="col-lg-12 single-post">
+                <div class="blog_details">
+                    {{ .Content}}
+                </div>
+            </div>
+        </div>
+
 </div>
 </section>
 {{ end }}
