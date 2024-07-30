@@ -5,7 +5,7 @@ banner:
   headline: '40FY GAMING CLAN'
   text: 'We at 40FY (as in FORTIFY) Gaming are enthusiast about Anime, Video Games and Movies. Come be part of our family to play and watch together and share stories.'
   buttons:
-    - url: '/about'
+    - url: 'https://chat.whatsapp.com/GOwZDGt7CFq1gQHU3rtrmU'
       text: Send Match Request
       bg: '#075E54'
       icon: whatsapp
@@ -24,7 +24,7 @@ videos:
   headline: 'Watch Us Play?'
   text: 'We Value Team Strategy And Comradary Above All. And Then The Rest Is For Fun.'
   buttons:
-    - link: https://www.youtube.com/@40fygaming
+    - url: https://www.youtube.com/@40fygaming
       text: Subscribe Now
       bg: red
       icon: youtube
@@ -44,5 +44,5 @@ last:
   buttons:
     - url: '/about'
       text: About 40FY
-    - url: '/blogs'
+    - url: '/posts'
       text: Player Blogs

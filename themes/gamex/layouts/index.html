@@ -25,7 +25,7 @@
                 <p>{{ .text }}</p> 
                 
                 {{ range .buttons }}
-                <a href="{{ .url }}" style="background: {{ .bg }};" class="m-3 button">
+                <a target="_blank" href="{{ .url }}" style="background: {{ .bg }};" class="m-3 button">
                     <i style="padding:10px;font-weight: 700;" class="fab fa-{{ .icon }}"></i>
                     {{ .text }}
                 </a>
@@ -108,7 +108,7 @@
                 </video>
                 <div class="caption">
                     {{ range .buttons }}
-                        <a target="_blank" href="{{ .link }}" class="button">{{ .text}}</a>
+                        <a href="{{ .url }}" class="button">{{ .text }}</a>
                     {{ end }}
                 </div>
             </div>
@@ -144,7 +144,7 @@
 
             <div class="col-md-10 offset-sm-1 p-3 text-center">
                 {{ range .buttons }}
-                    <a target="_blank" style=" background: {{ .bg }}" href="{{ .link }}" class="button"><i style="padding:10px; font-weight: 700;  " class="fab fa-{{ .icon }}"></i>{{ .text}}</a>
+                    <a target="_blank" style=" background: {{ .bg }}" href="{{ .url }}" class="button"><i style="padding:10px; font-weight: 700;  " class="fab fa-{{ .icon }}"></i>{{ .text}}</a>
                 {{ end }}
             </div>
         </div>
