@@ -1,10 +1,16 @@
 {{ define "main" }}
-
 <!--================Blog Area =================-->
-<section class="blog_area section_padding">
+<section class="blog_area single-post-area section_padding">
     <div class="container">
         <div class="row">
-            <div class="col-lg-8">
+            <div class="col-lg-8 blog_item">
+                {{/*    */}}
+                <div class="single-post">
+                    <div class="blog_details">
+                        {{ .Content }}
+                    </div>
+                </div>
+                <br>
                 <div class="blog_right_sidebar">
                     {{ partial "widget-year" . }}
                 </div>

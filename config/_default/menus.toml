@@ -16,7 +16,7 @@ weight = 50
 
 [[main]]
 name = 'PLAYERS'
-pageRef = '/authors'
+pageRef = '/players'
 weight = 30
 
 [[main]]

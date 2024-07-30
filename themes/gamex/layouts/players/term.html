@@ -1,0 +1,76 @@
+{{ define "main" }}
+<section class="blog_area single-post-area section_padding">
+    <div class="container">
+   
+        {{ if .Content }}
+        <div class="row">
+            <div class="col-lg-12 blog_item">
+                <div class="sinlge-post">
+                    {{/*  Author  */}}
+                    <div class="blog-author media align-items-center">
+                        <img class="author-image" src="{{ .Params.photo }}" alt="">
+                        <div class="media-body">
+                            <h4>{{ .Params.title }}</h4>
+                            <p>{{ .Params.subtitle }} </p>
+                        </div>
+                    </div>
+                    
+                    <div class="blog_details">{{ .Content }}</div>
+                    
+                    {{/*  <div class="navigation-top d-flex justify-content-between text-center">
+                    <h5>Follow </h5>
+                    <ul class="social-icons">
+                        <li><a target="_blank" href="https://steamcommunity.com/id/mrdotkg/"><i class="fab fa-steam"></i></a></li>
+                        <li><a target="_blank" href="https://www.linkedin.com/in/mrdotkg"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a target="_blank" href="https://github.com/mrdotkg"><i class="fab fa-github"></i></a></li>
+                        <li><a target="_blank" href="https://www.instagram.com/mrdotkg"><i class="fab fa-instagram"></i></a></li>
+                        <li><a target="_blank" href="https://www.youtube.com/@mrdotkg"><i class="fab fa-youtube"></i></a></li>
+                    </ul>
+                    </div>  */}}
+
+                </div>
+            </div>
+        </div>
+        {{ end }}
+        {{ if .Data.Pages }}
+        <h4 class="widget_title">Blogs authored by {{ .Title }}</h4>
+        <div class="row">
+            
+            {{ range .Data.Pages }}
+            <div class="col-lg-6">
+                <div class="blog_right_sidebar">
+                    <aside class="single_sidebar_widget post_category_widget">
+                        <ul class="list cat-list">
+                            <li class="flex-row d-flex justify-content-start align-items-center">
+                                {{/*  <div class="thumb">
+                                    <a href="{{ .Permalink }}">
+                                    <img class="/img-fluid" src="/img/preview.png" alt="">
+                                    </a>
+                                </div>  */}}
+                                <div class="detials">
+                                    <a href="{{ .Params.externalLink | default .RelPermalink }}">
+                                        <p>{{ .Date.Format (.Site.Params.dateFormat | default "Jan 2, 2006" ) }}</p>
+                                        <h4>{{ .Title }}</h4>
+                                    </a> 
+                                </div>
+                            </li>    
+                        </ul>
+
+                        <a href="{{ .Permalink }}">
+                            {{/*  <div class="blog-author media align-items-center">
+                                <img class="author-image" src="{{ .Params.photo }}" alt="">
+                                <div class="media-body">
+                                    <h4>{{ .Title }}</h4>
+                                    <p>{{ .Params.subtitle }} </p>
+                                </div>
+                            </div>  */}}
+                        </a>
+                    </aside>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+        {{ end }}
+    </div>
+</section>
+{{ end }}

@@ -1,0 +1,39 @@
+{{ define "main" }}
+<section class="blog_area  single-post-area section_padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 single-post">
+                <div class="blog_details">
+                    {{ .Content}}
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            {{ range .Data.Pages }}
+                <div class="col-lg-6">
+                    <div class="blog_right_sidebar">
+                        <aside class="single_sidebar_widget">
+                            <a href="{{ .Permalink }}">
+                                {{/*  {{ if .Content}}  */}}
+                                <div class="blog-author media align-items-center">
+                                
+                                    <img class="author-image" src="{{ .Params.photo }}" alt="">
+                                    <div class="media-body">
+                                        <h3>{{ .Title }}</h3>
+                                        <p>{{ if .Content}} {{ .Params.subtitle }} {{else }} Has written few blogs but not a bio yet.{{end}}</p>
+                                    </div>
+                                </div>
+                                {{/*  {{ else }}
+                                    <h3>{{ .Title }}</h3> 
+                                    <p> New to this platform, has not written a personal bio yet.</p>
+                                {{ end }}  */}}
+                            </a>
+                        </aside>
+                    </div>
+                </div>
+            {{ end }}
+        </div>
+</div>
+</section>
+{{ end }}

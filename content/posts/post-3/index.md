@@ -3,7 +3,7 @@ title = 'Beautiful Grand Canyon of the USA'
 date = 2023-03-15T11:00:00-07:00
 draft = false
 tags = ['red','green','blue']
-authors =['Kr Gaurav']
+players =['Kr Gaurav']
 image = 'bryce-canyon.jpg'
 +++
 

@@ -17,7 +17,7 @@ lfg:
   buttons:
     - url: '/play'
       text: Match With Us & Play
-      bg: transparent
+      bg: blue
       icon: discord
 
 videos:
@@ -26,7 +26,7 @@ videos:
   buttons:
     - link: https://www.youtube.com/@40fygaming
       text: Subscribe Now
-      bg: transparent
+      bg: red
       icon: youtube
       
   links:

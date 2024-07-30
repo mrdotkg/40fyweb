@@ -7,8 +7,9 @@ themesDir = "./themes/"
 title = "40FY Gaming"
 
 [taxonomies]
-author = "authors"
+# author = "authors"
 category = "categories"
+player = "players"
 tag = "tags"
 
 [markup.goldmark.renderer]
