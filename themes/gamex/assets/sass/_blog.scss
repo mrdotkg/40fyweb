@@ -536,7 +536,7 @@
     // padding: 30px;
     .widget_title {
         font-size: 20px;
-        margin-bottom: 20px;
+        // margin-bottom: 20px;
         // color: $title-color;
 
         &::after {
@@ -569,7 +569,7 @@
             li {
                 border-bottom: 1px solid #f0e9ff;
                 transition: all 0.3s ease 0s;
-                padding-bottom: 12px;
+                padding-bottom: 15px;
 
                 &:last-child {
                     border-bottom: 0;
@@ -585,9 +585,9 @@
                     }
                 }
 
-                &+li {
-                    padding-top: 15px;
-                }
+                // &+li {
+                padding-top: 15px;
+                // }
 
                 &:hover {
                     background: #ff0000;
