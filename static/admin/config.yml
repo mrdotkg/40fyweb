@@ -11,7 +11,7 @@ backend:
 
 publish_mode: editorial_workflow
 
-media_folder: "static/img" # Folder where user uploaded files should go
+media_folder: "static/media" # Folder where user uploaded files should go
 public_folder: "img"
 
 collections: # A list of collections the CMS should be able to edit
@@ -19,9 +19,12 @@ collections: # A list of collections the CMS should be able to edit
     label: "Post" # Used in the UI, ie.: "New Post"
     folder: "content/posts" # The path to the folder where the documents are stored
     path: "{{slug}}/index" # Each document is inside a folder with the slug name.
+    media_folder: ""
+    public_folder: ""
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
       - {label: "Title", name: "title", widget: "string"}
+      - {label: "Subtitle", name: "subtitle", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Intro Blurb", name: "description", widget: "text"}
       - {label: "Image", name: "image", widget: "image", required: false}
@@ -48,9 +51,11 @@ collections: # A list of collections the CMS should be able to edit
           - {label: "Values", name: "values", widget: "object", fields: [
               {label: "Heading", name: "heading", widget: string},
               {label: "Text", name: "text", widget: "text"}]}
-      - file: "content/contact/_index.md"
-        label: "Contact Page"
-        name: "contact"
+      - file: "content/about/_index.md"
+        label: "About Us"
+        name: "about"
+        media_folder: ""
+        public_folder: ""
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Logo, name: logo, widget: image}
@@ -92,9 +97,9 @@ collections: # A list of collections the CMS should be able to edit
   - name: "site_settings"
     label: "Site Settings"
     files:
-      - file: "data/footer.json"
-        label: Footer
-        name: footer
+      - file: "data/games.yml"
+        label: Games
+        name: games
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Blurb, name: blurb, widget: text}
