@@ -1,15 +1,16 @@
 ---
-title: Beautiful Grand Canyon of the USA
-date: 2023-03-15T18:00:00.000Z
 draft: false
+date: 2023-03-15T18:00:00.000Z
+players:
+  - Kr Gaurav
+title: Beautiful Grand Canyon of the USA
+subtitle: The red mountains
 tags:
   - red
   - green
   - blue
-players:
-  - Kr Gaurav
 description: Just up
-image: bryce-canyon.jpg
+image: latest_war_img.png
 ---
 Naruto. Occaecat aliqua consequat laborum ut ex aute aliqua culpa quis irure esse magna dolore quis. Proident fugiat labore eu laboris officia Lorem enim. Ipsum occaecat cillum ut tempor id sint aliqua incididunt nisi incididunt reprehenderit. Voluptate ad minim sint est aute aliquip esse occaecat tempor officia qui sunt. Aute ex ipsum id ut in est velit est laborum incididunt. Aliqua qui id do esse sunt eiusmod id deserunt eu nostrud aute sit ipsum. Deserunt esse cillum Lorem non magna adipisicing mollit amet consequat.
 
