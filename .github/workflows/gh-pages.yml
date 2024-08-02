@@ -57,7 +57,7 @@ jobs:
           # cname: ${{ env.DOMAIN }}
           force: false
           clean: true
-          clean-exclude: pr-preview/
+          clean-exclude: pull/
 
       - name: Set base URL for preview if PR
         if: github.ref != 'refs/heads/main'
