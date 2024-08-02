@@ -50,7 +50,7 @@ jobs:
         run: hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
         env:
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
-          HUGO_ENV: production
+          HUGO_ENV: netlify
 
       - name: Deploy if this is the `main` branch
         uses: peaceiris/actions-gh-pages@v3
