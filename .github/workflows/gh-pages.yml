@@ -63,8 +63,6 @@ jobs:
       - name: Build PR preview website
         if: github.ref != 'refs/heads/main'
         run: hugo --baseURL "${{ env.BASE_URL }}"
-        env:
-          HUGO_ENV: netlify
 
       - name: Deploy to PR preview
         uses: peaceiris/actions-gh-pages@v3
