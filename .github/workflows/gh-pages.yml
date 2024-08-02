@@ -43,7 +43,7 @@ jobs:
         run: echo "BASE_URL=https://${{ env.DOMAIN }}/${{ github.event.repository.name }}/" >> $GITHUB_ENV
 
       - name: Build website
-        run: hugo
+        run: hugo --environemnt production
         env:
           HUGO_ENV: production
 
