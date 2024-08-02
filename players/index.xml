@@ -1,54 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>40FYs Hall of Fame on 40FY Gaming</title>
-    <link>40fy.dotkg.in/players/</link>
-    <description>Recent content in 40FYs Hall of Fame on 40FY Gaming</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <lastBuildDate>Tue, 09 Jul 2024 11:00:00 -0700</lastBuildDate>
-    <atom:link href="40fy.dotkg.in/players/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Kr Gaurav</title>
-      <link>40fy.dotkg.in/players/kr-gaurav/</link>
-      <pubDate>Tue, 09 Jul 2024 11:00:00 -0700</pubDate>
-      <guid>40fy.dotkg.in/players/kr-gaurav/</guid>
-      <description>Free Time Gamer | Full Time Developer I (Kr. Gaurav) write here. I am a software engineer and currently working as a lead into Devops and Cloud. I started working into Embedded, Linux and Computer Vision after graduating from college. I made electronic automation devices like GPS tracker for truckers, LED Billboards for Agencies and softwares like OMR Sheet Reader for a coaching institure and Automatic Palmistry Prediction for a dating site.</description>
-    </item>
-    <item>
-      <title>Guddu</title>
-      <link>40fy.dotkg.in/players/guddu/</link>
-      <pubDate>Wed, 15 Mar 2023 11:00:00 -0700</pubDate>
-      <guid>40fy.dotkg.in/players/guddu/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Bandar Chacha</title>
-      <link>40fy.dotkg.in/players/chacha/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>40fy.dotkg.in/players/chacha/</guid>
-      <description>Free Time Gamer | Full Time Developer I (Kr. Gaurav) write here. I am a software engineer and currently working as a lead into Devops and Cloud. I started working into Embedded, Linux and Computer Vision after graduating from college. I made electronic automation devices like GPS tracker for truckers, LED Billboards for Agencies and softwares like OMR Sheet Reader for a coaching institure and Automatic Palmistry Prediction for a dating site.</description>
-    </item>
-    <item>
-      <title>Gol Bhanta</title>
-      <link>40fy.dotkg.in/players/golu/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>40fy.dotkg.in/players/golu/</guid>
-      <description>Free Time Gamer | Full Time Developer I (Kr. Gaurav) write here. I am a software engineer and currently working as a lead into Devops and Cloud. I started working into Embedded, Linux and Computer Vision after graduating from college. I made electronic automation devices like GPS tracker for truckers, LED Billboards for Agencies and softwares like OMR Sheet Reader for a coaching institure and Automatic Palmistry Prediction for a dating site.</description>
-    </item>
-    <item>
-      <title>Nitish N</title>
-      <link>40fy.dotkg.in/players/ninja/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>40fy.dotkg.in/players/ninja/</guid>
-      <description>Free Time Gamer | Full Time Developer I have been working on web technologies since early 2015 and sicnce then have worked on HTML5 Mobile apps, PHP Symphony and Laravel Apps. Once I knew the web ecosystem I moved into Devops. Where, I started with Vagrant based dev machines, Python Automation integrated into Electron Apps for tech companies.&#xA;Since 2018 I am working with AWS and Kubernetes and currently I adminster the cloud and deployments.</description>
-    </item>
-    <item>
-      <title>Shan E Nerwa</title>
-      <link>40fy.dotkg.in/players/shanu/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>40fy.dotkg.in/players/shanu/</guid>
-      <description>Free Time Gamer | Full Time Developer I (Kr. Gaurav) write here. I am a software engineer and currently working as a lead into Devops and Cloud. I started working into Embedded, Linux and Computer Vision after graduating from college. I made electronic automation devices like GPS tracker for truckers, LED Billboards for Agencies and softwares like OMR Sheet Reader for a coaching institure and Automatic Palmistry Prediction for a dating site.</description>
-    </item>
+    <title>40FYs Hall of Fame on </title>
+    <link>https://www.daiyi.co/40fyweb/players/</link>
+    <description>Recent content in 40FYs Hall of Fame on </description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://www.daiyi.co/40fyweb/players/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
