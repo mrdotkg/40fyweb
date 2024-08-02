@@ -62,7 +62,7 @@ jobs:
 
       - name: Build PR preview website
         if: github.ref != 'refs/heads/main'
-        run: hugo
+        run: hugo --baseURL "${{ env.BASE_URL }}"
         env:
           HUGO_ENV: netlify
 
