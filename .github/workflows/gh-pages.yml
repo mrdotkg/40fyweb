@@ -46,7 +46,7 @@ jobs:
       - name: Build website
         run: hugo
         env:
-          HUGO_ENV: production
+          HUGO_ENV: netlify
 
       - name: Deploy if this is the `main` branch
         uses: peaceiris/actions-gh-pages@v3
