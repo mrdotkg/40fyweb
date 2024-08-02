@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://40fy.dotkg.in/40fyweb/players/</loc>
+    <lastmod>2024-07-09T11:00:00-07:00</lastmod>
+  </url><url>
     <loc>https://40fy.dotkg.in/40fyweb/categories/battleground/</loc>
     <lastmod>2024-07-09T11:00:00-07:00</lastmod>
   </url><url>
@@ -9,6 +12,9 @@
     <lastmod>2024-07-09T11:00:00-07:00</lastmod>
   </url><url>
     <loc>https://40fy.dotkg.in/40fyweb/posts/markdown-kitchen-sibk/</loc>
+    <lastmod>2024-07-09T11:00:00-07:00</lastmod>
+  </url><url>
+    <loc>https://40fy.dotkg.in/40fyweb/players/kr-gaurav/</loc>
     <lastmod>2024-07-09T11:00:00-07:00</lastmod>
   </url><url>
     <loc>https://40fy.dotkg.in/40fyweb/tags/red/</loc>
@@ -29,6 +35,9 @@
     <loc>https://40fy.dotkg.in/40fyweb/tags/green/</loc>
     <lastmod>2023-03-15T18:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://40fy.dotkg.in/40fyweb/players/guddu/</loc>
+    <lastmod>2023-03-15T11:00:00-07:00</lastmod>
+  </url><url>
     <loc>https://40fy.dotkg.in/40fyweb/posts/post-2/</loc>
     <lastmod>2023-03-15T18:00:00+00:00</lastmod>
   </url><url>
@@ -44,16 +53,11 @@
     <loc>https://40fy.dotkg.in/40fyweb/</loc>
     <lastmod>2023-01-01T08:00:00-07:00</lastmod>
   </url><url>
-    <loc>https://40fy.dotkg.in/40fyweb/index.html</loc>
-    <lastmod>2023-01-01T08:00:00-07:00</lastmod>
-  </url><url>
-    <loc>https://40fy.dotkg.in/40fyweb/players/</loc>
+    <loc>https://40fy.dotkg.in/40fyweb/authors/</loc>
   </url><url>
     <loc>https://40fy.dotkg.in/40fyweb/players/chacha/</loc>
   </url><url>
     <loc>https://40fy.dotkg.in/40fyweb/players/golu/</loc>
-  </url><url>
-    <loc>https://40fy.dotkg.in/40fyweb/players/kr-gaurav/</loc>
   </url><url>
     <loc>https://40fy.dotkg.in/40fyweb/players/ninja/</loc>
   </url><url>

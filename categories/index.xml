@@ -1,28 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on </title>
+    <title>Categories on 40FY Gaming</title>
     <link>https://40fy.dotkg.in/40fyweb/categories/</link>
-    <description>Recent content in Categories on </description>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 09 Jul 2024 11:00:00 -0700</lastBuildDate><atom:link href="https://40fy.dotkg.in/40fyweb/categories/index.xml" rel="self" type="application/rss+xml" />
+    <description>Recent content in Categories on 40FY Gaming</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 09 Jul 2024 11:00:00 -0700</lastBuildDate>
+    <atom:link href="https://40fy.dotkg.in/40fyweb/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>battleground</title>
+      <title>Battleground</title>
       <link>https://40fy.dotkg.in/40fyweb/categories/battleground/</link>
-      <pubDate>Tue, 09 Jul 2024 11:00:00 -0700</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://40fy.dotkg.in/40fyweb/categories/battleground/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>rpg</title>
+      <title>Rpg</title>
       <link>https://40fy.dotkg.in/40fyweb/categories/rpg/</link>
-      <pubDate>Tue, 09 Jul 2024 11:00:00 -0700</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://40fy.dotkg.in/40fyweb/categories/rpg/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>
