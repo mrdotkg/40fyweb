@@ -47,7 +47,7 @@ jobs:
         uses: actions/configure-pages@v5
       
       - name: Build website
-        run: hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
+        run: hugo
         env:
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
           HUGO_ENV: netlify
