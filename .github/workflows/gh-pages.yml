@@ -41,15 +41,10 @@ jobs:
 
       - name: Set production base URL
         run: echo "BASE_URL=https://${{ env.DOMAIN }}/${{ github.event.repository.name }}/" >> $GITHUB_ENV
-      
-      - name: Setup Pages
-        id: pages
-        uses: actions/configure-pages@v5
-      
+
       - name: Build website
-        run: hugo
+        run: hugo --baseURL "${{ env.BASE_URL }}"
         env:
-          HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
           HUGO_ENV: netlify
 
       - name: Deploy if this is the `main` branch
