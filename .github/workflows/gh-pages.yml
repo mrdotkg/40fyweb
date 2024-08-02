@@ -41,7 +41,7 @@ jobs:
           hugo-version: "0.128.0" # TODO set this to your hugo version
           extended: true
       - name: Set production base URL
-        run: echo "BASE_URL=https://${{ env.DOMAIN }}/${{ github.event.repository.name }}/" >> $GITHUB_ENV
+        run: echo "BASE_URL=https://${{ env.DOMAIN }}/" >> $GITHUB_ENV
 
       - name: Build website
         run: hugo
