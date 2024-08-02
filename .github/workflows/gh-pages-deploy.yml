@@ -16,13 +16,13 @@ jobs:
         steps:
           - uses: actions/checkout@v3
     
-          - name: Cache Hugo resources
-            uses: actions/cache@v3
-            env:
-                cache-name: cache-hugo-resources
-            with:
-                path: resources
-                key: ${{ env.cache-name }}
+          # - name: Cache Hugo resources
+          #   uses: actions/cache@v3
+          #   env:
+          #       cache-name: cache-hugo-resources
+          #   with:
+          #       path: resources
+          #       key: ${{ env.cache-name }}
     
           - uses: actions/setup-go@v4
             with:
@@ -41,6 +41,8 @@ jobs:
           - name: Deploy to GitHub Pages
             uses: JamesIves/github-pages-deploy-action@v4.5.0
             with:
+              clean-exclude: pr-preview/
+              force: false
               branch: gh-pages
               folder: public
               commit-message: update pages
