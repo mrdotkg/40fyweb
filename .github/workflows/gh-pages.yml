@@ -41,9 +41,13 @@ jobs:
 
       - name: Set production base URL
         run: echo "BASE_URL=https://${{ env.DOMAIN }}/${{ github.event.repository.name }}/" >> $GITHUB_ENV
-
+      
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v5
+      
       - name: Build website
-        run: hugo --baseURL "" --environment production
+        run: hugo --baseURL "${{ steps.pages.outputs.base_url }}/" --environment production
         env:
           HUGO_ENV: production
 
