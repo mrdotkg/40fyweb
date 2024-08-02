@@ -2,34 +2,34 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on </title>
-    <link>/tags/</link>
+    <link>https://40fy.dotkg.in/40fyweb/tags/</link>
     <description>Recent content in Tags on </description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 09 Jul 2024 11:00:00 -0700</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 09 Jul 2024 11:00:00 -0700</lastBuildDate><atom:link href="https://40fy.dotkg.in/40fyweb/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>red</title>
-      <link>/tags/red/</link>
+      <link>https://40fy.dotkg.in/40fyweb/tags/red/</link>
       <pubDate>Tue, 09 Jul 2024 11:00:00 -0700</pubDate>
       
-      <guid>/tags/red/</guid>
+      <guid>https://40fy.dotkg.in/40fyweb/tags/red/</guid>
       <description></description>
     </item>
     
     <item>
       <title>blue</title>
-      <link>/tags/blue/</link>
+      <link>https://40fy.dotkg.in/40fyweb/tags/blue/</link>
       <pubDate>Wed, 15 Mar 2023 18:00:00 +0000</pubDate>
       
-      <guid>/tags/blue/</guid>
+      <guid>https://40fy.dotkg.in/40fyweb/tags/blue/</guid>
       <description></description>
     </item>
     
     <item>
       <title>green</title>
-      <link>/tags/green/</link>
+      <link>https://40fy.dotkg.in/40fyweb/tags/green/</link>
       <pubDate>Wed, 15 Mar 2023 18:00:00 +0000</pubDate>
       
-      <guid>/tags/green/</guid>
+      <guid>https://40fy.dotkg.in/40fyweb/tags/green/</guid>
       <description></description>
     </item>
     

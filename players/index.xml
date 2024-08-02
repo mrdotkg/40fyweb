@@ -2,8 +2,8 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>40FYs Hall of Fame on </title>
-    <link>/players/</link>
+    <link>https://40fy.dotkg.in/40fyweb/players/</link>
     <description>Recent content in 40FYs Hall of Fame on </description>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="/players/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://40fy.dotkg.in/40fyweb/players/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
