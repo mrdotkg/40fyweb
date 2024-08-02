@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on 40FY Gaming</title>
+    <link>https://40fy.dotkg.in/pull/10/tags/</link>
+    <description>Recent content in Tags on 40FY Gaming</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 09 Jul 2024 11:00:00 -0700</lastBuildDate>
+    <atom:link href="https://40fy.dotkg.in/pull/10/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Red</title>
+      <link>https://40fy.dotkg.in/pull/10/tags/red/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://40fy.dotkg.in/pull/10/tags/red/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Blue</title>
+      <link>https://40fy.dotkg.in/pull/10/tags/blue/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://40fy.dotkg.in/pull/10/tags/blue/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Green</title>
+      <link>https://40fy.dotkg.in/pull/10/tags/green/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://40fy.dotkg.in/pull/10/tags/green/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
