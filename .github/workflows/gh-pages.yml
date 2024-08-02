@@ -49,12 +49,15 @@ jobs:
           HUGO_ENV: netlify
 
       - name: Deploy if this is the `main` branch
-        uses: peaceiris/actions-gh-pages@v3
+        uses: JamesIves/github-pages-deploy-action@v4
         if: github.ref == 'refs/heads/main'
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
-          cname: ${{ env.DOMAIN }} # TODO you need to set this if you're using a custom domain. Otherwise you can remove it.
+          token: ${{ secrets.GITHUB_TOKEN }}
+          folder: ./public
+          # cname: ${{ env.DOMAIN }}
+          force: false
+          clean: true
+          clean-exclude: pr-preview/
 
       - name: Set base URL for preview if PR
         if: github.ref != 'refs/heads/main'
