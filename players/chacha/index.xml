@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Bandar Chacha on 40FY Gaming</title>
-    <link>https://40fy.dotkg.in/40fyweb/players/chacha/</link>
+    <link>40fy.dotkg.in/players/chacha/</link>
     <description>Recent content in Bandar Chacha on 40FY Gaming</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://40fy.dotkg.in/40fyweb/players/chacha/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="40fy.dotkg.in/players/chacha/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
