@@ -5,6 +5,7 @@ body{
     padding: 0;
     margin: 0;
     font-size: 14px;
+    cursor: url("http://localhost:1313/img/cursor.svg"), default;
 }
 .message_submit_form:focus{
     outline: none;
