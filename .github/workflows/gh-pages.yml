@@ -58,7 +58,7 @@ jobs:
 
       - name: Set base URL for preview if PR
         if: github.ref != 'refs/heads/main'
-        run: echo "BASE_URL=https://${{ env.DOMAIN }}/${{ github.event.repository.name }}/${{ env.PR_PATH}}/" >> $GITHUB_ENV
+        run: echo "BASE_URL=https://${{ env.DOMAIN }}/${{ env.PR_PATH}}/" >> $GITHUB_ENV
 
       - name: Build PR preview website
         if: github.ref != 'refs/heads/main'
