@@ -1,5 +1,11 @@
 {
     "terminal.integrated.fontSize": 15,
     "terminal.integrated.fontFamily": "Hack Nerd Font",
-    "editor.fontFamily": "'Hack Nerd Font', Monaco, 'Courier New', monospace"
+    "editor.fontFamily": "'Hack Nerd Font', Monaco, 'Courier New', monospace",
+    "[markdown]": {
+    },
+    "frontMatter.framework.id": "hugo",
+    "frontMatter.content.publicFolder": "static",
+    "frontMatter.preview.host": "http://localhost:1313",
+    "frontMatter.git.enabled": true
 }
