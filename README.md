@@ -1,1 +1,1 @@
-## Source code, ci-cd and hosing for 40fy.dotkg.in
+## SFree Hugo theme for game devs and gaming community. 
